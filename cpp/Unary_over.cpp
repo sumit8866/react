@@ -6,9 +6,9 @@ class complax{
     public :
 
     void setdata(int x,int y){
-        cout<< "enter x:";
+        cout<< "enter X:";
         cin >>x; 
-        cout<< "enter y:";
+        cout<< "enter Y:";
         cin >>y; 
         a=x;
         b=y;
