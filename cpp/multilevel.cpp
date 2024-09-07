@@ -20,7 +20,7 @@ class base1{
        cin >> runs;
     }
 };
-class base2{
+class derive: public base1{
    public:
    void set2(){
       
@@ -28,7 +28,7 @@ class base2{
  
    }
 };  
-class derive: public base1,public base2 
+class derive2: public derive
 {
     public:
    void display(){
@@ -42,7 +42,7 @@ class derive: public base1,public base2
 };    
 int main()
 {
-    class derive a;
+    class derive2 a;
     a.set1();
     a.set2();
     a.display();
