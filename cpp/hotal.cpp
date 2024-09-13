@@ -8,32 +8,32 @@ public:
      string i[1000], name, number;
      hotel()
      {
-          i[0] = "Manchurian";
-          i[1] = "veg-65";
-          i[2] = "Garlic-ball";
-          i[3] = "Chaines-Bhel";
-          i[4] = "Panir-Tika";
-          i[5] = "Dosa";
-          i[6] = "Maisur";
-          i[7] = "Gotalo";
-          i[8] = "Mendu-Vada";
-          i[9] = "Idli";
-          i[10] = "7-chesee";
-          i[11] = "Mix-Veg";
-          i[12] = "Margrita";
+          i[0] = "Manchurian     ";
+          i[1] = "veg-65         ";
+          i[2] = "Garlic-ball    ";
+          i[3] = "Chaines-Bhel   ";
+          i[4] = "Panir-Tika     ";
+          i[5] = "Dosa           ";
+          i[6] = "Maisur         ";
+          i[7] = "Gotalo         ";
+          i[8] = "Mendu-Vada     ";
+          i[9] = "Idli           ";
+          i[10] = "7-chesee      ";
+          i[11] = "Mix-Veg       ";
+          i[12] = "Margrita      ";
           i[13] = "Paneer-Tanduri";
-          i[14] = "Onion-Pizza";
-          i[15] = "Kaju-Carry";
-          i[16] = "Paneer-Masala";
+          i[14] = "Onion-Pizza   ";
+          i[15] = "Kaju-Carry    ";
+          i[16] = "Paneer-Masala ";
           i[17] = "Paneer-Tanduri";
-          i[18] = "Veg-Paneer";
-          i[19] = "Aloo-Gobhi";
-          i[20] = "Mazza";
-          i[21] = "Cock";
-          i[22] = "Sprit";
-          i[23] = "Butter-Milk";
-          i[24] = "Thumsup";
-          i[25] = "Sosyo";
+          i[18] = "Veg-Paneer    ";
+          i[19] = "Aloo-Gobhi    ";
+          i[20] = "Mazza         ";
+          i[21] = "Cock          ";
+          i[22] = "Sprit         ";
+          i[23] = "Butter-Milk   ";
+          i[24] = "Thumsup       ";
+          i[25] = "Sosyo         ";
 
           p[0] = 150;
           p[1] = 120;
@@ -117,7 +117,7 @@ public:
 
      again:
 
-          cout << "Enter Customer Mobile Number[10 digit only]:";
+          cout << "|   Enter Customer Mobile Number[10 digit only]   |:";
           cin >> number;
 
           d = 0;
@@ -129,24 +129,24 @@ public:
           }
           else
           {
-               cout << "Invalid Number" << endl;
+               cout << "|   Invalid Number   |" << endl;
                goto again;
           }
      }
      void order()
      {
 
-          cout << "Enter your choice : ";
+          cout << "|   Enter your choice   |: ";
           cin >> choice;
           if (choice == 0)
           {
-               cout << "valid number";
+               cout << "|   valid number   |";
           }
           else
           {
 
                a[z] = choice;
-               cout << "Enter quantity :";
+               cout << "|   Enter quantity   |:";
                cin >> qty;
 
                b[z] = qty;
@@ -158,14 +158,14 @@ public:
      {
           z--;
           int n, f = 0, t = 0;
-          cout << "-----------------------------------------------------------------" << endl;
-          cout << "|                         maharaja hotal                        |" << endl;
-          cout << "-----------------------------------------------------------------" << endl;
+          cout << "-----------------------------------------------------------------------" << endl;
+          cout << "|                         maharaja hotal                              |" << endl;
+          cout << "-----------------------------------------------------------------------" << endl;
           cout << "|   NAME   |:" << name << endl;
           cout << "|   NUMBER   |:" << number << endl;
-          cout << "-----------------------------------------------------------------" << endl;
-          cout << "-----------------------------------------------------------------" << endl;
-          cout << " NO.          ITEM          QTY          PRICE          TOTAL    " << endl;
+          cout << "-----------------------------------------------------------------------" << endl;
+          cout << "-----------------------------------------------------------------------" << endl;
+          cout << "NO.\tITEM\t\t\tQTY\t\tPRICE\t\tTOTAL\t\t" << endl;
           for (int j = 0; j <= z; j++)
           {
 
@@ -176,9 +176,9 @@ public:
 
                total = p[n] * f;
 
-               cout  << j + 1 <<"           ";
+               cout  << j + 1 <<"\t";
 
-               cout << i[n] << "      " << f << "            " << p[n] << "          " << total << endl;
+               cout << i[n] << "\t\t" << f << "\t\t" << p[n] << "\t\t" << total << endl;
                t = f*p[n];
 
           tot = tot + t;
@@ -186,12 +186,12 @@ public:
           net_total = tot + gst;
           }
           
-          cout << "-----------------------------------------------------------------" << endl;
-          cout << "|total bill:                                            " << tot << endl;
-          cout << "|gst:                                                   " << gst << endl;
-          cout << "-----------------------------------------------------------------" << endl;
-          cout << "|after gst add bill:                                    " << net_total << endl;
-          cout << "-----------------------------------------------------------------" << endl;
+          cout << "-----------------------------------------------------------------------" << endl;
+          cout << "|total bill:                                                    " << tot << endl;
+          cout << "|gst:                                                           " << gst << endl;
+          cout << "-----------------------------------------------------------------------" << endl;
+          cout << "|after gst add bill:                                            " << net_total << endl;
+          cout << "-----------------------------------------------------------------------" << endl;
      }
 };
 int main()
