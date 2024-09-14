@@ -65,7 +65,7 @@ public:
      void show_menu()
      {
           cout << "-------------------------------------" << endl;
-          cout << "|           maharaja hotal          |" << endl;
+          cout << "|     bhojan bhandar restaurant     |" << endl;
           cout << "-------------------------------------" << endl;
           cout << "--------------|CHINESE|--------------" << endl;
           cout << "no.           item              price" << endl;
@@ -129,7 +129,7 @@ public:
           }
           else
           {
-               cout << "|   Invalid Number   |" << endl;
+               cout << "|   Please enter valid number   |" << endl;
                goto again;
           }
      }
@@ -138,9 +138,9 @@ public:
 
           cout << "|   Enter your choice   |: ";
           cin >> choice;
-          if (choice == 0)
+          if (choice <= 0 || choice >=25)
           {
-               cout << "|   valid number   |";
+               cout << "| Please enter valid number   |"<<endl;
           }
           else
           {
@@ -159,7 +159,7 @@ public:
           z--;
           int n, f = 0, t = 0;
           cout << "-----------------------------------------------------------------------" << endl;
-          cout << "|                         maharaja hotal                              |" << endl;
+          cout << "|                      Bhojan Bhandar Restaurant                      |" << endl;
           cout << "-----------------------------------------------------------------------" << endl;
           cout << "|   NAME   |:" << name << endl;
           cout << "|   NUMBER   |:" << number << endl;
@@ -176,16 +176,16 @@ public:
 
                total = p[n] * f;
 
-               cout  << j + 1 <<"\t";
+               cout << j + 1 << "\t";
 
                cout << i[n] << "\t\t" << f << "\t\t" << p[n] << "\t\t" << total << endl;
-               t = f*p[n];
+               t = f * p[n];
 
-          tot = tot + t;
-          gst = tot * 0.18;
-          net_total = tot + gst;
+               tot = tot + t;
+               gst = (tot *18)/100;
+               net_total = tot + gst;
           }
-          
+
           cout << "-----------------------------------------------------------------------" << endl;
           cout << "|total bill:                                                    " << tot << endl;
           cout << "|gst:                                                           " << gst << endl;
@@ -203,15 +203,15 @@ int main()
      do
      {
           {
-               cout << "-------------------------------------" << endl;
-               cout << "|           maharaja hotal          |" << endl;
-               cout << "-------------------------------------" << endl;
-               cout << "|   Choose Your Option:            |" << endl;
-               cout << "|   enter 1 for  menu              |" << endl;
-               cout << "|   enter 2 for  food order        |" << endl;
-               cout << "|   enter 3 for  bill              |" << endl;
-               cout << "|   enter 0 for  Exit              |" << endl;
-               cout << "----------------------------------- " << endl;
+               cout << "------------------------------------------------------" << endl;
+               cout << "|             Bhojan Bhandar Restaurant               |" << endl;
+               cout << "------------------------------------------------------" << endl;
+               cout << "|   Welcome enter your choose Your Option:            |" << endl;
+               cout << "|   enter 1 for  menu                                 |" << endl;
+               cout << "|   enter 2 for  food order                           |" << endl;
+               cout << "|   enter 3 for  bill                                 |" << endl;
+               cout << "|   enter 0 for  Exit                                 |" << endl;
+               cout << "------------------------------------------------------ " << endl;
 
                cout << "|   Enter Your choice   |: ";
                cin >> ac;
@@ -229,7 +229,7 @@ int main()
                     break;
                case 0:
                     cout << "--------------------------------" << endl;
-                    cout << "|Thank you for visit           |" << endl;
+                    cout << "|     Thank you for visit      |" << endl;
                     cout << "--------------------------------" << endl;
                     return 0;
                default:
