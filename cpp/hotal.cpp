@@ -34,6 +34,9 @@ public:
           i[23] = "Butter-Milk   ";
           i[24] = "Thumsup       ";
           i[25] = "Sosyo         ";
+          i[26] = "Chocolate Cake";
+          i[27] = "Cheesecake    ";
+          i[28] = "Tiramisu      ";
 
           p[0] = 150;
           p[1] = 120;
@@ -61,6 +64,9 @@ public:
           p[23] = 25;
           p[24] = 25;
           p[25] = 25;
+          p[26] = 2000;
+          p[27] = 4000;
+          p[28] = 5000;
      }
      void show_menu()
      {
@@ -106,6 +112,15 @@ public:
           cout << "23          Sprit                 25 " << endl;
           cout << "24          Butter-Milk           25 " << endl;
           cout << "25          Thumsup               25 " << endl;
+
+          cout << "--------------|DESSERTS |--------------" << endl;
+          cout << "26      Chocolate Lava Cake      2000 " << endl;
+          cout << "27          Cheesecake           4000 " << endl;
+          cout << "28          Tiramisu             5000 " << endl;
+
+
+        
+          
      }
      void data()
      {
@@ -138,7 +153,7 @@ public:
 
           cout << "|   Enter your choice   |: ";
           cin >> choice;
-          if (choice <= 0 || choice >=25)
+          if (choice <= 0 || choice >=28)
           {
                cout << "| Please enter valid number   |"<<endl;
           }
