@@ -1,34 +1,42 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class base{
-    public:
+class base
+{
+public:
     int a;
-    void setA(){
-        cout<< "enter a value:";
+    void setA()
+    {
+        cout << "enter a value:";
         cin >> a;
     }
 };
-class derive : public base{
-    public:
+class derive : public base
+{
+public:
     int b;
-    void setB(){
-        cout<< "enter b value:";
+    void setB()
+    {
+        cout << "enter b value:";
         cin >> b;
     }
 };
-class base2{
-    public:
+class base2
+{
+public:
     int c;
-    void setC(){
-        cout<< "enter c value:";
+    void setC()
+    {
+        cout << "enter c value:";
         cin >> c;
     }
 };
-class derive1 : public base2,public derive{
-    public:
-    void product(){
-        cout << "a*b*c="<<a*b*c<<endl;
+class derive1 : public base2, public derive
+{
+public:
+    void product()
+    {
+        cout << "a*b*c=" << a * b * c << endl;
     }
 };
 int main()
@@ -38,5 +46,5 @@ int main()
     a.setB();
     a.setC();
     a.product();
-return 0;
+    return 0;
 }
