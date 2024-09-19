@@ -15,14 +15,14 @@ int main()
 	{
 		cout << arr[i]<<"  "<<endl;
 	}
-    cout <<"question 1 answer:";
+    cout <<"question no. 1 answer:";
     for (  i =1; i<5; i++)
 	{
 		cout << arr[i]<<"  ";
 	}
     cout <<arr[0]<<" ";
     cout <<endl;
-    cout <<"question 2 answer:";
+    cout <<"question no. 2 answer:";
     cout <<arr[4]<<" ";
     for (  i =1; i<4; i++)
 	{
