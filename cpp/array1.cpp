@@ -23,7 +23,7 @@ int main()
     cout << arr[0] << " ";
     cout << endl;
     cout << "question no. 2 answer:";
-    cout << arr[4] << " ";
+    cout << arr[4] << "  ";
     for (i = 1; i < 4; i++)
     {
         cout << arr[i] << "  ";
