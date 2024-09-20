@@ -3,39 +3,42 @@ using namespace std;
 int main()
 {
     int arrm[50];
-    int arr[3];
+    int n;
+    printf("enter array size:");
+    scanf("%d", &n);
+    int arr[n];
     int i;
-
-    for (i = 0; i < 3; i++)
+    for (i = 0; i < n; i++)
     {
-        cout << "enter element of position:";
-        cin >> arr[i];
+        printf("enter element of position:");
+        scanf("%d", &arr[i]);
     }
-    for (int i = 0; i < 3; i++)
+    for (i = 0; i < n; i++)
     {
-        cout << arr[i];
+        printf("  %d", arr[i]);
         arrm[i] = arr[i];
     }
     int a;
     a = i;
-    int arr1[3];
-    for (int i = 0; i < 3; i++)
+    int arr1[n];
+    printf("\n");
+    for (i = 0; i < n; i++)
     {
-        cout << "enter element of position:";
-        cin >> arr1[i];
+        printf("enter element of position:");
+        scanf("%d", &arr1[i]);
     }
-    for (int i = 0; i < 3; i++)
+    for (i = 0; i < n; i++)
     {
-        cout << arr1[i];
+        printf(" %d", arr1[i]);
         arrm[a] = arr1[i];
         a++;
     }
-    cout << endl;
-    cout << "merge array:" << endl;
+    printf("\n");
+    printf("merge array:");
     for (int i = 0; i < a; i++)
     {
 
-        cout << arrm[i] << " ";
+        printf(" %d", arrm[i]);
     }
 
     return 0;
