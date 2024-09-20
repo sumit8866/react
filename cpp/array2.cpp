@@ -22,9 +22,10 @@ int size =5;
     //     cout << arr[i-1]<<"  ";
     // }
     temp = arr[0];
-    arr[0] = arr[size - 1];
-    arr[size - 1] = temp; 
+  arr[0] = arr[size - 1];
+  arr[size - 1] = temp; 
 
+  printf("Array with first and last element swapped: ");
   for (i = 0; i < size; i++)
     {
         printf (" %d ",arr[i]);
