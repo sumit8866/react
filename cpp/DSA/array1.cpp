@@ -23,8 +23,8 @@ int main()
     // }
     temp = arr[0];
     arr[0] = arr[size - 1];
-    arr[size - 1] = temp;
-
+    arr[size - 1 ] = temp;
+    printf("\n");
     for (i = 0; i < size; i++)
     {
         printf(" %d ", arr[i]);
