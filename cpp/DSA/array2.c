@@ -1,5 +1,4 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 int main()
 {
     int size = 5;
@@ -16,15 +15,13 @@ int main()
     {
         printf("  %d", arr[i]);
     }
-    // cout <<endl;
-    // for(int i=5;i>0;i--){
 
-    //     cout << arr[i-1]<<"  ";
-    // }
+    printf("\n");
     temp = arr[0];
     arr[0] = arr[size - 1];
-    arr[size - 1 ] = temp;
-    printf("\n");
+    arr[size - 1] = temp;
+
+    printf("after swap: ");
     for (i = 0; i < size; i++)
     {
         printf(" %d ", arr[i]);
