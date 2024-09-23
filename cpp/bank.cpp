@@ -20,24 +20,25 @@ public:
         cout<< "------------------------------"<<endl;
         
         cin >> accno;
+
     }
 
     void displaydetail()
     {
-        //  cout<<"--------------------"<<endl;
+         cout<<"--------------------"<<endl;
         cout<< "|   Customer Name    |:"<<name<<endl;
-        // cout<< "--------------------"<<endl;
-        //  cout<<"---------------------"<<endl;
+        cout<< "--------------------"<<endl;
+         cout<<"---------------------"<<endl;
         cout<< "|   Account Number   |:"<<accno<<endl;
-        // cout<< "---------------------"<<endl;
+        cout<< "---------------------"<<endl;
         
     }
 
     void display()
     {
-        // cout<< "--------------"<<endl;
+        cout<< "---------------------"<<endl;
         cout<< "|   Balance          |:"<<balance<<endl;
-        // cout<< "--------------"<<endl;
+        cout<< "---------------------"<<endl;
         
     }
 
