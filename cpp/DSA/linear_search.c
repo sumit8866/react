@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int n;
 
-void data()
+void linear()
 {
     printf("enter array size: ");
     scanf("%d", &n);
@@ -36,5 +36,6 @@ void data()
 int main()
 {
 
-    data();
+    linear();
 }
+
