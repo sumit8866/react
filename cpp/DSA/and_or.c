@@ -43,3 +43,7 @@ int main()
     // printf("a:%d,a:%d,a:%d,a:%d,a:%da:%d,a:%d,a:%d,a:%d,a:%d",a++,a,++a,a++,a++,++a,a,++a,a++,a);
     printf("a:%d,a:%d,a:%d,a:%d,a:%da:%d,a:%d,a:%d,a:%d,a:%da:%d,a:%d,a:%d,a:%d,a:%da:%d,a:%d,a:%d,a:%d,a:%d", ++a, a, a++, ++a, a++, ++a, a, a++, ++a, a++, ++a, a, a++, ++a, a++, ++a, a, a++, ++a, a++);
 }
+
+
+
+

@@ -8,7 +8,7 @@ void push(int val)
 
     if (top == n - 1)
     {
-        printf("stack is full");
+        printf("stack is full"); 
     }
     else
     {

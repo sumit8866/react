@@ -45,7 +45,7 @@ int main()
     {
         printf("data not found");
     }
-    else
+    else 
     {
         printf("data index is :%d", index);
     }

@@ -22,7 +22,7 @@ int main()
     arr[size - 1] = temp;
 
     printf("after swap: ");
-    for (i = 0; i < size; i++)
+    for (i = 0; i < size; i++) 
     {
         printf(" %d ", arr[i]);
     }
