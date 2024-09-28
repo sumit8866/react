@@ -37,6 +37,6 @@ void selection()
     }
 }
 int main()
-{
+{   
     selection();
 }
