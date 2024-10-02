@@ -1,10 +1,10 @@
 #include <stdio.h>
 #define n 8
-int binary(int arr[], int low, int high)
+int binary(int arr[])
 {
-    int x;
-    // int low=0;
-    // int high=n-1;
+    int num;
+     int low=0;
+     int high=n-1;
     int mid;
     for (int i = 0; i < n; i++)
     {
@@ -12,17 +12,17 @@ int binary(int arr[], int low, int high)
     }
 
     printf("\nenter the element:");
-    scanf("%d", &x);
+    scanf("%d", &num);
 
     while (low <= high)
     {
         mid = (high + low) / 2;
 
-        if (arr[mid] == x)
+        if (arr[mid] == num)
         {
             return mid;
         }
-        else if (arr[mid] < x)
+        else if (arr[mid] < num)
         {
             low = mid + 1;
         }
@@ -39,7 +39,7 @@ int main()
 
     int arr[n] = {2, 5, 7, 9, 11, 13, 15, 17};
 
-    int index = binary(arr, 0, n - 1);
+    int index = binary(arr);
 
     if (index == -1)
     {

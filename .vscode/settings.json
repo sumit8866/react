@@ -59,6 +59,7 @@
   "files.associations": {
     "iostream": "cpp",
     "ostream": "cpp",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "stdio.h": "c"
   }
 }
