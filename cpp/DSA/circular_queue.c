@@ -33,7 +33,7 @@ void dequeue(int n)
     }
     else
     {
-        f = f + 1 % n;
+        f = (f + 1) % n;
     }
 }
 void display(int queue[], int n)

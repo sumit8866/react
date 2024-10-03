@@ -17,6 +17,17 @@ void push(int val)
     }
 }
 
+void pop()
+{
+    if (top == -1)
+    {
+        printf("stack is empty.");
+    }
+    else
+    {
+        top = top - 1;
+    }
+}
 void display()
 {
     if (top == -1)
@@ -29,17 +40,6 @@ void display()
         {
             printf("%d ", stack[i]);
         }
-    }
-}
-void pop()
-{
-    if (top == -1)
-    {
-        printf("stack is empty.");
-    }
-    else
-    {
-        top = top - 1;
     }
 }
 int main()
