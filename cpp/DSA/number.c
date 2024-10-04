@@ -1,11 +1,18 @@
 #include <stdio.h>
 
-#define n 4
+#define n 5
 
-void find_indices_for_target() {
-    int nums[n] = {2, 7, 11, 15};
+void number() {
+    int nums[n];
     int targets;
-
+    for(int i=0;i<n;i++){
+        printf("enter the element ");
+        scanf("%d",&nums[i]);
+    }
+    for(int i=0;i<n;i++){
+        printf("  %d",nums[i]);
+    }
+    printf("\n");
     printf("Enter target: ");
     scanf("%d", &targets);
 
@@ -18,7 +25,7 @@ void find_indices_for_target() {
         }
     
         if (sum == targets) {
-            printf("Found target sum with indices: ");
+            printf("index is : ");
             for (int j = 0; j < n; j++) {
                 if (i & (1 << j)) { 
                     printf("%d ", j);
@@ -30,6 +37,6 @@ void find_indices_for_target() {
 }
 
 int main() {
-    find_indices_for_target();
+    number();
     return 0;
 }
