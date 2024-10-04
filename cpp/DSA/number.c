@@ -3,8 +3,15 @@
 #define n 4
 
 void find_indices_for_target() {
-    int nums[n] = {2, 7, 11, 15};
+    int nums[n];
     int targets;
+    for(int i=0;i<n;i++){
+        printf("enter the element ");
+        scanf("%d",&nums[i]);
+    }
+    for(int i=0;i<n;i++){
+        printf("  %d",nums[i]);
+    }
 
     printf("Enter target: ");
     scanf("%d", &targets);
