@@ -2,6 +2,7 @@
 
 #define n 5
 
+
 void number() {
     int nums[n];
     int targets;
@@ -12,7 +13,9 @@ void number() {
     for(int i=0;i<n;i++){
         printf("  %d",nums[i]);
     }
+
     printf("\n");
+
     printf("Enter target: ");
     scanf("%d", &targets);
 
@@ -24,7 +27,7 @@ void number() {
             }
         }
     
-        if (sum == targets) {
+        if(sum == targets) {
             printf("index is : ");
             for (int j = 0; j < n; j++) {
                 if (i & (1 << j)) { 
@@ -35,6 +38,7 @@ void number() {
         }
     }
 }
+
 
 int main() {
     number();
