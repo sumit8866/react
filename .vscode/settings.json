@@ -61,5 +61,6 @@
     "ostream": "cpp",
     "stdlib.h": "c",
     "stdio.h": "c"
-  }
+  },
+  "livePreview.defaultPreviewPath": "/cpp/DSA/index.html"
 }
