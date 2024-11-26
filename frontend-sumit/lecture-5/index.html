@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html form</title>
+  </head>
+  <body>
+    <!-- Html Form Tag -->
+    <form action="">
+      <fieldset>
+        <legend>This is simple form</legend>
+        <figcaption>form elements</figcaption>
+        <label for="firstname">first name</label>
+        <input type="text" name="firstname" id="" required /><br />
+        <label for="lastname">last name</label>
+        <input type="text" name="lastname" id="" required /><br />
+        <label for="email">email</label>
+        <input type="email" name="email" id="" /><br />
+        <label for="Gender">Gender</label><br />
+        <label for="">male</label>
+        <input type="radio" name="gender" id="" />
+        <label for="">female</label>
+        <input type="radio" name="gender" id="" /><br />
+        <input type="checkbox" name="Terms&Condition" id="" />
+        <label for="Terms&Condition">Terms & Condition</label><br />
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+    <!-- Datalist Tag -->
+    <input list="Fruits" />
+    <datalist id="Fruits">
+      <option value="apple"></option>
+      <option value="banana"></option>
+      <option value="kiwi"></option>
+      <option value="orange"></option>
+      <option value="mango"></option>
+    </datalist>
+    <br />
+    <!-- Select Tag -->
+    <select name="" id="">
+      <optgroup label="Fruits">
+        <option>apple</option>
+        <option>banana</option>
+        <option selected>kiwi</option>
+        <option>orange</option>
+        <option>mango</option>
+      </optgroup>
+    </select>
+    <select name="" id="">
+      <optgroup label="Fruits">
+        <option>apple</option>
+        <option>banana</option>
+        <option selected>kiwi</option>
+        <option>orange</option>
+        <option>mango</option>
+      </optgroup>
+      <optgroup label="car">
+        <option>bmw</option>
+        <option>maruti</option>
+        <option>supra</option>
+        <option>ford</option>
+        <option>ferrari</option>
+      </optgroup>
+    </select><br>
+
+    <!-- Textarea Tag -->
+     <!-- example feedback area-->
+
+     <textarea></textarea><br>
+    <textarea cols="15" rows="10" style="resize: none;">
+
+    </textarea><br>
+
+    <!-- Button Tag -->
+     <input type="button" value="click"><br>
+     <button>click</button><br>
+
+     <!-- Progress Bar -->
+      <progress></progress>
+
+      <progress max="100" value="40"></progress>
+      <!-- span tag / inline Tag  -->
+       <span>this is span tag</span>
+
+       <!-- Div Tag / block level -->
+        <!-- inline tag are work in block level tag but block level tag are not work in inline tag-->
+       <div>this is div tag</div>
+       <div>this is <span style="background-color: rgb(188, 29, 29); color:white">div</span> tag </div>
+  </body>
+</html>
