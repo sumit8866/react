@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html layout </title>
+    <style>
+        table,th,td{
+            /* border: 5px solid wheat;
+            border-collapse: collapse; */
+            vertical-align: top;
+            padding: 5px;
+            
+        }
+        nav a {
+            color: rgb(123, 101, 101);
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        nav{
+            height: 20px;
+            background-color: #d9ead3; 
+            padding: 10px;
+            width: 100%;
+            font-weight: 500;
+            margin: 0 em;
+        }
+        body{
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+            
+        }
+        header{
+            background-color: #b4fa6e;
+            text-align: center;
+            padding: 20px;
+            font-size: x-large ;
+        }
+        section{
+            border: 1px solid #dddddd;
+            padding: 0;
+            background-color: #a6e5fa;
+        }
+        article{
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #a6e5fa;
+        }
+        aside{
+            width: 73%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: center;
+  font-style: italic;
+  background-color: #c8f476;
+        }
+        video{
+            height: 370px;
+            width: 1100px;
+        }
+        img{
+            height: 400px;
+            width: 150px;
+            margin: 5%;
+        }
+        footer{
+            background-color: #99cc66;text-align: center;padding: 10px ;
+        }
+    </style>
+</head>
+<body>
+    <table >
+        <tr>
+            <th colspan="2"><header>Zooooooooooo</header></th>
+            
+        </tr>
+        <tr>
+            <td colspan="2">
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="aboutus">about us</a>
+                    <a href="#list">list</a>
+                    <a href="#service">service</a>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+        <td id="home"> <section >
+            <h1>zoo</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo provident officiis laudantium quo dolor illo! Iste repudiandae nulla aspernatur suscipit.
+            <video controls autoplay muted src="zoo2.mp4"alt="zoo"></video>        </section></td>
+        <td rowspan="2" style="background-color: #a6e5fa;"><aside>
+            <h2>zoo information</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+            
+        </aside><img src="zoo1.webp" alt="zoo"></td>
+        </tr>
+            <td ><article id="list"> 
+                <h3>animal details </h3> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur amet fugit magnam dignissimos id necessitatibus? Reiciendis corporis temporibus ad non recusandae, tenetur obcaecati veniam dicta at libero. Sed, consequatur minima.
+            </article></td>
+        </tr>
+        
+        <tr>
+            <td colspan="2"> <Footer id="service"> since 1992 &copy </Footer></td>
+        </tr>
+    </table>
+</body>
+</html>

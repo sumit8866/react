@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Layout3</title>
+    <style>
+        body {
+            font-family: monospace;
+            margin: auto;
+            padding: auto;
+            background-color: #35473d;
+            color: #333;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #555;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        nav a {
+            color: white;
+            margin: 30px;
+            
+        }
+       
+        main {
+            padding: 1em;
+            width: 800px;
+            margin: auto;
+        }
+        section {
+            color: #fff;
+            font-size: large;
+            margin-bottom: 16px;
+            background-color: #55634b;
+            padding: 10px;
+        }
+        img {
+            width: 250px;
+            height: 300px;
+            margin-left: 80px;
+           margin-bottom: 1cm;
+        border-style: double;
+        }
+        video{
+            width: 680px;
+            height: auto;
+            margin: 60px;
+        }
+        footer {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact us</a>
+        <a href="#video">video</a>
+        <a href="#audio">audio</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Zoo Also called zoological garden. a parklike area in which live animals are kept in cages or large enclosures for public exhibition.
+                Informal. a place, activity, or group marked by chaos or unrestrained behavior.
+            </p>
+        </section>
+<hr>
+        <section id="gallery">
+            <h2>zoo photos</h2>
+            <p>view our zoo photos</p>
+            
+            <img src="zoo1.webp" alt="img">
+            <img src="animal1.jpg" alt="img">
+            <img src="animal2.jpg" alt="img">
+            <img src="animal3.jpg" alt="img">
+            <img src="animal4.jpg" alt="img">
+        </section>
+        <hr>
+        <section id="video">
+            <h2>
+                zoo video
+            </h2>
+            <p>view our zoo videos</p>
+            <video autoplay muted controls src="zoo2.mp4" poster="zoo3.jpg" ></video>
+        </section>
+        <hr>
+        <section id="audio">
+            <h2>zoo sound</h2>
+            <p>animals sound</p>
+            <audio controls autoplay muted loop>
+                <source src="audio1.mp3" type="audio/mp3">
+            </audio>
+        </section>
+        <hr>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <ul>
+                <li>Name: &nbsp;xyz xyz</li>
+                <li>Email: <a href="mailto:xyz@gmail.com">xyz@gamil.com</a></a></li>
+                <li>Phone: <a href="tel:+9999944444">9999944444</a></li>
+            </ul>
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+        <p>&copy;  All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

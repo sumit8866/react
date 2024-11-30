@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            vertical-align: top;
+            padding: 10px;
+            width: 100%;
+        }
+        nav a{
+            margin: 100px;
+        }
+        nav{
+            height: 20px;
+            overflow: auto;background-color: #d9ead3; 
+            width: 100%;
+
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: #99cc66;
+            text-align: center;
+            padding: 20px 0;
+        }
+        section{
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: x-large;
+        }
+        aside{
+            width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+        }
+        footer{
+            background-color: #99cc66;text-align: center;padding: 10px ;
+        }
+        main
+        {
+            background-color: #99cc66;
+        }
+        img{
+            margin: auto;
+            padding: auto;
+            width: 1200px;
+            height: 390px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="3">
+                <header>
+                    <h1>
+                        this is header part
+                    </h1>
+                </header>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="3" >
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#section">section </a>
+                    <a href="#about">about us</a>
+                    <a href="#photo">photos</a>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+            <main>
+            <section id="home">
+                <aside>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, blanditiis.</p>
+                </aside>
+                <label for="Gallery">Gallery</label>
+                <article>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quis non est ullam consequatur, aliquid sapiente. Perferendis, modi. Maxime nam ducimus, voluptate quae sunt dolorem tenetur alias. Aliquam, obcaecati. Illo?
+                </article>
+                <label for="selection">selection</label>
+                <article>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolores nobis? Maxime, repudiandae et. Ea omnis, necessitatibus iure, soluta hic atque perspiciatis neque iusto expedita enim sit eaque dicta ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quisquam corrupti odio neque explicabo consequuntur delectus id hic numquam ad nam cum molestias reiciendis, error itaque est ut dolores earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod sit quibusdam maiores voluptas quis magni quas illum officiis aut, eveniet, minus eligendi veritatis labore corrupti odio error atque eos vel!lorem100 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aspernatur asperiores reiciendis earum dolores accusamus nostrum, magnam tempora laborum nisi at est suscipit praesentium commodi autem, sunt laboriosam temporibus voluptatem deserunt omnis iusto rem unde obcaecati. Repudiandae quod quae dignissimos impedit tenetur inventore architecto maxime dolorem. Id eligendi alias at? Facere possimus deleniti magni nulla deserunt eos asperiores dolorem enim adipisci id hic quam eligendi eveniet cumque quisquam quae, recusandae amet quibusdam voluptatibus nobis expedita rerum! At sit optio maiores enim dolore ipsam atque quia, incidunt aperiam deleniti, veritatis voluptatibus necessitatibus. Corporis eligendi beatae ea facere odio culpa ab illo.
+                </article>
+            </section>
+            <section id="audio">
+                <h2>zoo sound</h2>
+                <p>animals sound</p>
+                <audio controls autoplay muted loop>
+                    <source src="audio1.mp3" type="audio/mp3">
+                </audio>
+            </section>
+            
+            <section id="section">
+                <label for="onther">onther</label>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vitae, tempora ullam voluptates repellendus cum laborum delectus repellat explicabo eligendi, culpa nobis iste! Veritatis aperiam consequatur porro nemo, nobis neque.
+                </article>
+            </section>
+            </main>
+            </td>
+        
+            <td >
+                <menu>
+                    <h3>Main Menu</h3>
+                    <ul>
+                        <li>Menu Item 1</li>
+                        <li>Menu Item 2</li>
+                        <li>Menu Item 3</li>
+                        <li>Menu Item 4</li>
+                        <li>Menu Item 5</li>
+                    </ul>
+                </menu>
+                <h3>Block</h3>
+                <p>Lorem ipsum dolor,dfsgbbfdgvfgergbm</p>
+                
+                </td>
+    </tr>
+    <tr>
+        <td colspan="2" id="photo">
+            <img src="photo1.jpg" alt="img">
+            <img src="photo1.jpg" alt="img">
+            <img src="photo1.jpg" alt="img">
+        </td>
+        <td id="about">
+            <label for="aboutus">about us</label>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolores nobis? Maxime, repudiandae et. Ea omnis, necessitatibus iure, soluta hic atque perspiciatis neque iusto expedita enim sit eaque dicta ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, quisquam corrupti odio neque explicabo consequuntur delectus id hic numquam ad nam cum molestias reiciendis, error itaque est ut dolores earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod sit quibusdam maiores voluptas quis magni quas illum officiis aut, eveniet, minus eligendi veritatis labore corrupti odio error atque eos vel!lorem100 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aspernatur asperiores reiciendis earum dolores accusamus nostrum, magnam tempora laborum nisi at est suscipit praesentium commodi autem, sunt laboriosam temporibus voluptatem deserunt omnis iusto rem unde obcaecati. Repudiandae quod quae dignissimos impedit tenetur inventore architecto maxime dolorem. Id eligendi alias at? Facere possimus deleniti magni nulla deserunt eos asperiores dolorem enim adipisci id hic quam eligendi eveniet cumque quisquam quae, recusandae amet quibusdam voluptatibus nobis expedita rerum! At sit optio maiores enim dolore ipsam atque quia, incidunt aperiam deleniti, veritatis voluptatibus necessitatibus. Corporis eligendi beatae ea facere odio culpa ab illo.</p>
+        </td>
+    </tr>
+        <tr >
+            <td colspan="3">
+            <footer>
+                Copyright © 
+            </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
