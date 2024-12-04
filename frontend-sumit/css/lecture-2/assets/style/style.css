@@ -1,0 +1,70 @@
+/* tag selectors */
+
+/* p{
+    background-color: gray;
+} */
+
+/* calss selector0 */
+
+/* .box{
+    background-color: gray;
+    height: 100px;  
+}
+.division{
+    width: 100px;
+} */
+
+/* id selector */
+
+/* #inline{
+    background-color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* link selector */
+/* a:active{
+    background-color: aqua;
+}
+a:hover{
+    background-color: blue;
+color: aliceblue;}
+a:active{
+    background-color: black;
+}
+a:visited{
+    background-color: chartreuse;
+} */
+
+/* decendent selector  */
+
+/* div span{
+    height: 100px;
+    display: inline-block;
+    width: 100px;
+    background-color: gray;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px green;
+} */
+
+
+ /* child selector */
+
+ /* div > p{
+    background-color: gray;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px green;
+ } */
+
+
+ /* sibling selector */
+
+ div + p{
+    background-color: gray;
+ }
+
+ /* General Sibling Selector */
+
+ 
+ section ~ p{
+    background-color: rgb(125, 17, 17);
+ }
