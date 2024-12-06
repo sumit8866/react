@@ -1,0 +1,90 @@
+@import "./demo.css";
+
+/* nested css concept */
+
+/* #demo {
+  background-color: darkseagreen;
+  height: 300px;
+  width: 350px;
+  padding: 10px;
+
+  .card-head {
+    font-size: large;
+    font-family: cursive;
+    background-color: gray;
+
+    .card-body {
+      padding: 10px;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-style: italic;
+
+      a {
+        padding: 5px;
+        border: 3px solid gray;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      
+      a:hover {
+        color: rgb(19, 232, 161);
+        background-color: brown;
+      }
+    }
+  }
+} */
+ body{
+  background-color: gray;
+ }
+ header{
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px green;
+  margin: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: white;
+  padding: 55px;
+ }
+
+
+/* Css Pseudo Class */
+
+ /* h1:first-child{
+    background-color: orange;
+    
+} */
+
+/* h1:last-child{
+    background-color: orange;
+}  */
+
+/* h1:first-of-type{
+    background-color: orange;
+} */
+
+/* h1:last-of-type{
+    background-color: orange;
+} */
+
+/* h1:nth-child(5){
+    background-color: orange;
+} */
+
+/* h1:nth-last-child(6){
+    background-color: orange;
+} */
+
+/* h1:nth-of-type(5){
+    background-color: orange
+} */
+
+/* h1:nth-last-of-type(4){
+    background-color: orange;
+}
+
+p:nth-last-of-type(3){
+  background-color: orange;
+} */
+
+h1:only-child{
+  background-color: orange;
+}

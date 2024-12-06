@@ -1,0 +1,56 @@
+/* Pseudo Elements */
+div{
+    height: auto;
+    width: 400px;
+    border: 2px solid black;
+    margin: 3px;
+}
+p::after{
+    content: "  this is after tag  " ;
+}
+p::before{
+    content: "  This is before tag   ";
+}
+p{
+    text-decoration: 2px solid red underline;
+}
+
+p::first-letter{
+    color: aqua;
+    font-size: 50px;
+}
+p::first-line{
+    color: white;
+    background-color: gray;
+}
+
+::marker{
+    
+    color: blue;
+}
+#email::placeholder{
+    color: aqua;
+    
+}
+span::selection{
+    color: gold;
+    background-color: gray;
+}
+::selection{
+    color: white;
+    background-color: aquamarine;
+}
+video::cue{
+    color: gold;
+    
+}
+video{
+    height: 400px;
+    width: 400px;
+}
+input:valid{
+    background-color: green;
+}
+input:invalid{
+    background-color: red;
+}
