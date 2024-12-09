@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+/* #colors{
+    height: 600px;
+    width: 600px;
+    background-color: beige;
+    text-align: center;
+    margin: 100px;
+    border:50px solid transparent;
+    padding: 100px;
+    background-clip: content-box;
+} */
+#image{
+    /* height: 600px;
+    width: 600px; */
+    /* background-image: url(../img/photo1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; */
+    /* background-attachment:scroll; */
+    /* background-size: contain;
+    background: url(../img/photo1.jpg) fixed center no-repeat ; */
+}
+
+/* Css Box-Model Properties */
+
+/* #blend-mode{
+    height: 100vh;
+    background-image: url(../img/photo1.jpg),url(../img/photo2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-blend-mode: lighten;
+    text-align: center;
+    text-transform: capitalize;
+} */
+
+#gradiant{
+    /* height: 100vh; */
+    /* background-image:linear-gradient(to right ,red ,gray , black) */
+    /* background-image: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(167,148,118,1) 24%, rgba(0,212,255,1) 100%);; */
+    /* background-image: conic-gradient(red ,gray , black,rgba(0,212,255,1)); */
+}
+/* https://cssgradient.io/ */
+
