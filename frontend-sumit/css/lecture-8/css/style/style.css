@@ -1,0 +1,199 @@
+/* Css Border / Outline Propertise */
+
+*{
+    /* font-family: 'Courier New', Courier, monospace; */
+    box-sizing: border-box;
+}
+
+/* type of border */
+
+.maindiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div{
+    margin: 20px;
+}
+
+.div-1{
+    background-color: gray;
+    padding: 10px 20px;
+    color:white;
+    font-weight: bold;
+    border: 5px solid yellow;
+    outline: 5px double yellow;
+    outline-offset: 5px;
+    /* border-top:5px solid yellow;
+    border-bottom:5px solid yellow;
+    border-left:5px solid yellow;
+    border-right:5px solid yellow; */
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: yellow;
+    outline-width: 5px;
+    outline-style: solid;
+    outline-color: yellow); */
+}
+
+.div-2{
+    background-color: gray;
+    padding: 10px 20px;
+    color:white;
+    font-weight: bold;
+    border: 5px solid yellow;
+    outline: 5px solid yellow;
+    outline-offset: 5px;
+
+
+}
+
+.div-3{
+    background-color: gray;
+    padding: 10px 20px;
+    color:white;
+    font-weight: bold;
+    border: 5px solid yellow;
+    outline: 5px solid yellow;
+    outline-offset: 5px;
+
+
+}
+.div-4{
+    background-color: gray;
+    padding: 10px 20px;
+    color:white;
+    font-weight: bold;
+    border: 5px solid yellow;
+    outline: 5px solid yellow;
+    outline-offset: 5px;
+
+
+}
+
+.div-5{
+    background-color: gray;
+    padding: 10px 20px;
+    color:white;
+    font-weight: bold;
+    border: 5px solid yellow;
+    outline: 5px solid yellow;
+    outline-offset: 5px;
+
+
+}
+
+.div-6{
+  background-color: gray;
+    padding: 10px 20px;
+    color:white;
+    font-weight: bold;
+    border: 5px solid yellow;
+    outline: 5px solid yellow;
+    outline-offset: 5px;
+
+
+}
+
+.div-7{
+    background-color: gray;
+    padding: 10px 20px;
+    color:white;
+    font-weight: bold;
+    border:5px solid yellow;
+    border-left:hidden;
+}
+
+.div-8{
+    background-color: gray;
+    padding: 10px 20px;
+    color:white;
+    font-weight: bold;
+    border:5px solid yellow;
+    border-top: none;
+}
+
+.div-9{
+    background-color: gray;
+    padding: 10px 20px;
+    color:white;
+    font-weight: bold;
+    border:5px double yellow;
+    outline: 5px double yellow;
+    outline-offset: 2px;
+}
+.div-10{
+    background-color: gray;
+    padding: 10px 20px;
+    color:white;
+    font-weight: bold;
+    border:5px groove yellow;
+    outline: 5px groove yellow;
+    outline-offset: 5px;
+
+}
+
+/* Border Radius */
+
+.radius1{
+    background-color: gray;
+    padding: 20px 40px;
+    color:white;
+    font-weight: bold;
+    border:5px solid yellow;
+    width: fit-content;
+    border-radius: 20px;
+    display: inline;
+}
+
+.radius2{
+    background-color: gray;
+    padding: 20px 40px;
+    color:white;
+    font-weight: bold;
+    border:5px solid yellow;
+    width: fit-content;
+    border-radius:20px 30px;
+    display: inline;
+}
+
+.radius3{
+    background-color: gray;
+    padding: 20px 40px;
+    color:white;
+    font-weight: bold;
+    border:5px solid yellow;
+    width: fit-content;
+    border-radius:10px 20px 30px;
+    display: inline;
+}
+
+.radius4{
+    background-color: gray;
+    padding: 20px 40px;
+    color:white;
+    font-weight: bold;
+    border:5px solid yellow;
+    width: fit-content;
+    border-radius:10px 20px 30px 40px;
+    display: inline;
+}
+
+.radius-hover{
+    background-color: gray;
+    padding: 20px 40px;
+    color:white;
+    font-weight: bold;
+    border:5px solid yellow;
+    width: fit-content;
+    border-radius: 50px;
+    display: inline;
+}
+
+.radius-hover:hover{
+    background-color: black;
+    border:5px solid lightcoral;
+    color:gold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}

@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/* .img-1{
+height: 500px;
+width: 500px;
+}
+.img1{
+    height: 100%;
+    width: 100%;
+} */
+/* .img-2{
+    max-height: auto;
+    max-width: 500px;
+    }
+    .img2{
+        height: 100%;
+        width: 100%;
+    } */
+    /* .img-3{
+        min-height: 500px;
+        min-width: 500px;
+        }
+        .img3{
+            height: 100%;
+            width: 100%;
+        } */
+
+        .img-4{
+            max-height: 500px;
+            max-width: 500px;
+
+            }
+            .img4{
+                height: 100%;
+                width: 100%;
+            }

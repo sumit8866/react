@@ -45,3 +45,17 @@ body{
 }
 /* https://cssgradient.io/ */
 
+p{
+    
+    background-image: url(../img/photo1.jpg);
+    background-repeat: repeat;
+            background-clip: text;
+            color: transparent;
+            margin-top: 20px;
+            font-size: 100px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 800;
+}

@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+*{
+box-sizing: border-box;
+}
+
+/* #font1{
+    font-family: "Eater", serif;
+}
+
+#font2{
+    font-family: "Mountains of Christmas", serif;
+    font-weight: 600;
+}
+#font3{
+    font-family: "eater";
+} */
+
+div{
+height: 500px;
+width: 700px;
+border: 3px solid black;
+text-align: center;
+font-size: 30px;
+font-weight: 700;
+}
+
+.div-1{
+    margin: 10px;
+    margin: 10px 20px;
+    margin: 10px 20px 30px;
+    margin: 10px 20px 30px 40px;
+    margin-left: -50px;
+}
+.div-2{
+    text-wrap: wrap;
+    font-size: 30px;
+    padding: 10px ;
+    padding: 10px 20px ;
+    padding: 10px 20px 30px ;
+    padding: 200px 20px 30px 40px;
+}
