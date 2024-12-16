@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Css Flex-box Properties */
+/* 
+
+flex-shrink
+flex-basis
+flex-grow 
+flex:grow , shrink , basis
+*/
+    
+.maindiv div{
+    /* flex-grow: 1; */
+    /* flex-basis: 200px; */
+    border: 2px solid black;
+    height: 600px;
+    width: 500px;
+}
+.maindiv{
+    display: flex;
+    /* height: 500px; */
+    /* width: 1400px; for basis */
+    /* width: 800px;  for shrink */
+    /* width: 500px; for grow */
+    color: red;
+    text-align: center;
+    border: 1px solid black;
+    div:nth-child(1){
+        background-color: rgb(156, 228, 12);
+        /* flex-basis: 100px; */
+        /* flex-shrink: 2; */
+    }
+    div:nth-child(2){
+        background-color: green;
+        /* flex-shrink: 3; */
+    }
+    div:nth-child(3){
+        background-color:orangered;
+        display: flex;
+    }
+    div:nth-child(4){
+        background-color: gray;
+        /* flex-shrink: 5; */
+    }
+    div:nth-child(5){
+        background-color:gold;
+        /* flex-shrink: 7; */
+    }
+    div:nth-child(6){
+        background-color: peru;
+        /* flex-shrink: 7; */
+    }
+}
+/* .ch{
+    border: 1px solid black;
+} */
+

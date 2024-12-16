@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 img{
-    margin: 20px;
+    margin: 10px;
     border: 3px groove black;
     border-radius: 70px;
 }
@@ -19,6 +19,7 @@ p{
     font-family: monospace;
     border: 1px solid black;
     text-shadow: 5px 0px 10px gold;
+    text-decoration:overline 2px;
 }
 img:hover{
     padding: 20px;
@@ -45,6 +46,5 @@ img:hover{
     /* object-fit: fill; */
     /* object-fit:scale-down; */
     object-position: 30px 30px;
-    object-position: center;
-    
+    object-position: center;   
 }
