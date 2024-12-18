@@ -28,7 +28,7 @@ h1 + p{
     width: auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
-padding: 20px;
+    padding: 20px;
     
     div{
         border-radius: 10px;

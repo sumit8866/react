@@ -1,0 +1,21 @@
+/* css icons */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+h2{
+    margin: 20px 10px;
+}
+div{
+    margin-left: 20px;
+    text-align: center;
+    width: 200px;
+    padding: 50px;
+    font-size: 80px;
+    border: 2px solid black;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
