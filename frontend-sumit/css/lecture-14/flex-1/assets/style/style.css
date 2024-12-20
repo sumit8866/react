@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: wheat;
+}
+.header {
+    margin-bottom: 10px;
+    padding: 30px;
+    background-color: purple;
+    text-align: center;
+}
+
+.container {
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.maindiv{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 30px;
+
+    h3{
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+    }
+
+    p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        
+    }
+        div{
+            flex: 1 ;
+            background-color: cyan;
+                padding: 20px;
+                color: black;
+        }
+        .box-3{
+            flex: 0 1 500px;
+            text-align: center;
+         }
+         button {
+            background-color: lightgray;
+            border: none;
+            width: 21%;
+            padding: 10px;
+            margin: 0 5px;
+        }
+        button:hover {
+            background-color: darkgray;
+        }
+        .button-1{
+            width: 95%;
+        }
+}
