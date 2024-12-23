@@ -59,5 +59,33 @@
         order:1;
     }
 } */
-
-
+div{
+    margin: 30px ;  
+    border-radius: 20px;
+}
+.box-1{
+    height: 300px;
+    width: 300px;
+    box-shadow: 10px 10px 10px green;
+}
+.box-2{
+    height: 300px;
+    width: 300px;
+    box-shadow: 10px -10px 10px gold;
+}
+.box-3{
+    height: 300px;
+    width: 300px;
+    box-shadow: 10px 10px 10px rgb(14, 86, 231),
+    inset 10px 10px 20px darkkhaki;
+}.box-4{
+    height: 300px;
+    width: 300px;
+    box-shadow: 10px 10px 10px rgb(225, 48, 36),inset 10px 10px 10px darkkhaki ,
+    inset 20px 20px 30px teal;
+}.box-5{
+    height: 300px;
+    width: 300px;
+    box-shadow: 10px 10px 10px rgb(235, 150, 12),
+    -10px -10px 10px rgb(205, 190, 13);
+}
