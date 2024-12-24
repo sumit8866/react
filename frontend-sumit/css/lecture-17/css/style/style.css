@@ -1,0 +1,98 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+.maindiv
+{
+  margin: 20px;
+  height: 490px;
+  border: 1px solid black;
+  
+}
+.stumps{
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+.ball{
+ height: 80px;
+ width: 80px;
+ border-radius: 100%;
+ border: 1px solid black;
+ background-color: red;
+ animation-name: go-ball;
+ animation-duration: 20s;
+ transition-timing-function: linear;
+}
+.line{
+  background-color: white;
+ height: 80px;
+ width: 5px;
+ margin-left: 35px;
+ border: 1px solid black;
+}
+
+.pitch{
+ /* margin-top: 510px; */
+height: 10px;
+width: 1400px;
+background-color: green;
+}
+.stump1{
+  height: 400px;
+  width: 10px;
+  background-color: black;
+}
+.stump2{
+  height: 400px;
+  width: 10px;
+  background-color: black;
+}
+.stump3{
+  height: 400px;
+  width: 10px;
+  background-color: black;
+}
+
+/* @keyframes go-ball{
+ from{
+  transform: translate(0px);
+  
+ }
+ to{
+  transform: translate(400px) ;
+ }
+} */
+
+@keyframes go-ball{
+  0%
+  {
+    transform: translate(0px);
+  }
+  /* 5%
+  {
+    transform: translate(100px ,100px);
+  } 
+ 10%
+  {
+    transform: translate(200px ,200px);
+  }
+  15%
+  {
+    transform: translate(300px ,300px);
+  } */
+  20%
+  {
+    transform: translate(400px ,400px);
+  }
+  /* 25%
+  {
+    transform: translate(500px , 300px);
+  } */
+  30%
+  {
+    transform: translate(600px , 200px);
+  }
+  
+}
