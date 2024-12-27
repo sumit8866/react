@@ -1,98 +1,107 @@
-*
-{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-.maindiv
-{
-  margin: 20px;
-  height: 490px;
-  border: 1px solid black;
-  
+
+.maindiv {
+  background-color: rgb(196, 190, 190);
+  width: 1300px;
+  height: 430px;
+  overflow: auto;
 }
-.stumps{
+
+.stumps {
   display: flex;
   gap: 20px;
   justify-content: end;
 }
-.ball{
- height: 80px;
- width: 80px;
- border-radius: 100%;
- border: 1px solid black;
- background-color: red;
- animation-name: go-ball;
- animation-duration: 20s;
- transition-timing-function: linear;
+
+.ball {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  border-radius: 100%;
+  background-color: red;
+  transform: translatex(0px);
+  animation: go-ball 5s ;
+  animation-timing-function: linear ;
 }
-.line{
+
+.line {
   background-color: white;
- height: 80px;
- width: 5px;
- margin-left: 35px;
- border: 1px solid black;
+  height: 35px;
+  width: 4px;
+  margin-left: 15px;
 }
 
-.pitch{
- /* margin-top: 510px; */
-height: 10px;
-width: 1400px;
-background-color: green;
-}
-.stump1{
-  height: 400px;
-  width: 10px;
-  background-color: black;
-}
-.stump2{
-  height: 400px;
-  width: 10px;
-  background-color: black;
-}
-.stump3{
-  height: 400px;
-  width: 10px;
-  background-color: black;
-}
-
-/* @keyframes go-ball{
- from{
-  transform: translate(0px);
-  
- }
- to{
-  transform: translate(400px) ;
- }
-} */
-
-@keyframes go-ball{
-  0%
-  {
-    transform: translate(0px);
-  }
-  /* 5%
-  {
-    transform: translate(100px ,100px);
-  } 
- 10%
-  {
-    transform: translate(200px ,200px);
-  }
-  15%
-  {
-    transform: translate(300px ,300px);
-  } */
-  20%
-  {
-    transform: translate(400px ,400px);
-  }
-  /* 25%
-  {
-    transform: translate(500px , 300px);
-  } */
-  30%
-  {
-    transform: translate(600px , 200px);
-  }
+.pitch {
+  height: 10px;
+  width: 100%;
+  background-color: green;
   
 }
+
+.stump1, .stump2, .stump3 {
+  margin-top: 230px;
+  height: 200px;
+  width: 10px;
+  background-color: black;
+}
+.stump1, .stump2, .stump3 {
+  animation: stump-color 2s ;
+  animation-delay: 5s;
+
+}
+.stump2 {
+  animation: hit-stumps 2s ;
+ animation-delay: 5s;
+}
+  @keyframes go-ball {
+      0% {
+          /* width: 0; */
+          margin: 0;
+          transform: rotate(0deg);
+      }
+      20% {
+          margin-top: 400px;
+          animation-timing-function: ease-out;
+      }
+      30% {
+      margin-top: 150px;
+      animation-timing-function: ease-in;
+      }
+      50%{
+      margin-top: 400px;
+      animation-timing-function: ease-out;
+      }
+      60% {
+          margin-top: 250px;
+          animation-timing-function: ease-in;
+      }
+      80%{
+          margin-top: 400px;
+          animation-timing-function: ease-out;
+      }
+      90% {
+          margin-top: 300px;
+          animation-timing-function: ease-in;
+      }
+      100% {
+          margin-left: 95%;
+          margin-top: 350px;
+          transform: rotate(2000deg);
+          animation-timing-function: ease-out;
+      }
+  }
+
+  @keyframes stump-color{
+      
+      100% {
+          background-color: red;
+      }
+  }
+  @keyframes hit-stumps{
+      100% {
+          transform: rotate(20deg);
+      }
+  }
