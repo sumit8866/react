@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .static{
+  height: 200px;
+  background-color: green;
+  position: static;
+} */
+
+
+/* .fixed{
+  height: 50px;
+  background-color: #FFBF00;
+  position: fixed;
+  width: 50px;
+  border-radius: 10%;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed i{
+  font-size: 30px;
+  color:white;
+} */
+
+/* .sticky{
+  height: 200px;
+  background-color: purple;
+  position: sticky;
+  top:200px;
+  bottom: 200px;
+} */
+
+.maindiv{
+  height: 700px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: slategrey;
+  /* display: flex; */
+  position: relative;
+}
+
+.maindiv div{
+  height: 120px;
+  width: 120px;
+  position: absolute;
+}
+
+.box-1{
+  background-color: brown;
+  .inside-1{
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+  }
+}
+.box-2{
+  background-color: aquamarine;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  .inside-2{
+    height: 40px;
+    width: 40px;
+    background-color: rebeccapurple;
+    top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  }
+}
+.box-3{
+  background-color: red;
+  right: 0;
+  .inside-3{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(238, 192, 93);
+    right: 0;
+  }
+}
+.box-4{
+  background-color: blue;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  .inside-4{
+    height: 40px;
+    width: 40px;
+    color: aliceblue;
+    background-color: rgb(14, 15, 15);
+    
+    bottom: 0;
+    margin: auto;
+    top: 0;
+  }
+}
+.box-5{
+  background-color: blanchedalmond;
+  inset: 0;
+  margin: auto;
+  .inside-5{
+   height: 40px;
+    width: 40px;
+    background-color: aqua;
+    inset: 0;
+  margin: auto;
+  }
+}
+.box-6{
+  background-color: gold;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  .inside-6{
+    height: 40px;
+    width: 40px;
+    background-color: #ed1aad;
+    right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  }
+}
+.box-7{
+  background-color: chartreuse;
+  bottom: 0;
+  .inside-7{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(35, 24, 240);
+    bottom: 0;
+  }
+}
+.box-8{
+  background-color: darkcyan;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  .inside-8{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(77, 134, 12);
+    right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  }
+}
+.box-9{
+  background-color: lightsalmon;
+  right: 0;
+  bottom: 0;
+  .inside-9{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(239, 22, 22);
+    right: 0;
+  bottom: 0;
+  }
+}
