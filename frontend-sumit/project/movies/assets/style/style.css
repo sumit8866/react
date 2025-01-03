@@ -1,0 +1,21 @@
+/* ************************ FILMS & MOVIES ************************ */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* ************************ HEADER PART ************************ */
+
+.header{
+    background-image: url(../photos/asset\ 1.jpeg);
+    height: 100vh;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.nav{
+
+}
+.logo{
+    
+}
