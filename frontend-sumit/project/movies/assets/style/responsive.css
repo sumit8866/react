@@ -2,4 +2,12 @@
     .nav-links a{
         display: none;
     }
+    .story .container{
+        flex-wrap: wrap;
+    }
+    .story-content{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
 }
