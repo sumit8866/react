@@ -4,14 +4,22 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   /* background-color: gray; */
 }
 
-a, h1, h2, h3, h4, h5, h6, p, span {
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
   overflow-wrap: break-word;
 }
 body {
@@ -19,30 +27,29 @@ body {
 }
 
 /* ************************ HEADER PART ************************ */
-header{
+header {
   height: 100%;
-    width: 100%;
-    
+  width: 100%;
 }
 
-.home-img{
-    position: absolute;
-    z-index: -2;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /* transition-timing-function: linear; */
-  }
-  .first-img{
-    /* position: absolute; */
-    width: 100%;
-    height: 100%;
-    filter: brightness(65%);
-    transform: scale(1.2);
-    transition: 5s transform ;
-  }
+.home-img {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* transition-timing-function: linear; */
+}
+.first-img {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  filter: brightness(65%);
+  transform: scale(1.2);
+  transition: 5s transform;
+}
 .header {
-    /* background-image: url(../photos/asset\ 1.jpeg);
+  /* background-image: url(../photos/asset\ 1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto; */
@@ -92,7 +99,6 @@ header{
   justify-content: center;
   color: white;
   flex-wrap: wrap;
-
 
   .first-text {
     font-size: 18px;
@@ -151,52 +157,49 @@ header{
 /* ************************ STORY SECTION START ************************ */
 
 .story {
-  padding: 120px ;
-  width: 100%;
+  padding: 120px;
   /* height: 300px; */
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  .container{
+  .container {
     display: flex;
     width: 1050px;
-    max-height: 300px;
-    
+    max-height: auto;
   }
-  .container{
+  .container {
     display: flex;
     justify-content: space-between;
     gap: 10px;
   }
-  .story-content{
+  .story-content {
     padding-left: calc(100%-10px);
-    max-width: 100%;
     height: auto;
     flex-wrap: wrap;
   }
-  .story-img{
-    max-width: 505px;
-    height: auto;
+  .story-img {
     flex-wrap: wrap;
+    width: calc(100% - 2px);
+    height: auto;
   }
-  .story-img img{
-    max-width: 505px;
+  .story-img img {
+    flex-wrap: wrap;
+    width: calc(100% - 2px);
     height: auto;
   }
 
-  .first-text{
+  .first-text {
     font-family: Poppins, sans-serif;
     color: #ffbf00;
     margin-bottom: 10px;
   }
-  .second-text{
+  .second-text {
     font-family: Oswald, sans-serif;
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 25px;
     overflow-wrap: break-word;
   }
-  .third-text{
+  .third-text {
     font-family: Roboto, sans-serif;
     margin-bottom: 25px;
     line-height: 25px;
@@ -204,11 +207,11 @@ header{
     font-weight: 300;
     overflow-wrap: break-word;
   }
-  .forth-text{
+  .forth-text {
     display: flex;
     /* justify-content: center; */
 
-    .stoty-btn{
+    .stoty-btn {
       font-family: Roboto, sans-serif;
       /* margin-top: 20px; */
       /* border: 1px solid black; */
@@ -219,16 +222,14 @@ header{
       font-weight: 500;
       text-align: center;
       background-color: #ffbf00;
-      a{
-        
-          color: white;
-          text-decoration: none;
-        
-        }
-        &:hover {
-          background-color: black;
-          transition: 0.5s;
-        }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      &:hover {
+        background-color: black;
+        transition: 0.5s;
+      }
     }
   }
 }
@@ -236,35 +237,120 @@ header{
 
 /* ************************ STORY PRODUCTION START ************************ */
 
+.our-production {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
 
-.our-production{
-height: 360px;
-max-width: 100%;
-display: flex;
-justify-content: center;
-.heading{
-  margin-left: 20px;
-  font-family: 'Oswald', sans-serif;
+ 
+  .heading {
+    font-family: "Oswald", sans-serif;
     font-size: 50px;
+    padding-bottom: 50px;
     display: inline-block;
     line-height: 1.2;
     font-weight: 500;
-  &:before {
-    content: "";
-    display: inline-block;
-    height: 6px;
-    width: 80px;
-    background-color: #ffc107;
-    margin-bottom: 16px;
+    p {
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 6px;
+        width: 80px;
+        background-color: #ffc107;
+        margin-bottom: 16px;
+      }
+      &::after {
+        content: "";
+        display: inline-block;
+        height: 6px;
+        width: 80px;
+        background-color: #ffc107;
+        margin-bottom: 16px;
+      }
+    }
+  }
 }
-&::after {
-  content: "";
-  display: inline-block;
-  height: 6px;
-  width: 80px;
-  background-color: #ffc107;
-  margin-bottom: 16px;
-  
-}
-}
+.our-production-content {
+
+  display: flex;
+  max-height: auto;
+  width: 1050px;
+  justify-content: space-between;
+  text-align: center;
+  gap: 20px;
+  border: 1px solid black;
+  .tv-show {
+    height: 250px;
+    width: auto;
+    
+    img{
+      margin-top: 50px;
+      margin-bottom: 5px;
+      height: 50px;
+      width: 50px;
+    }
+    h2{
+      font-family: Oswald, sans-serif;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p{
+      text-align: center;
+      font-family: Roboto, sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+  }
+  .awards {
+   
+    height: 250px;
+    width: auto;
+    img{
+      margin-top: 50px;
+      margin-bottom: 10px;
+      height: 40px;
+      width: 40px;
+    }
+    h2{
+      font-family: Oswald, sans-serif;
+      font-size: 24px;
+      margin-bottom: 15px;
+
+    }
+  }
+  .movies {
+    
+    height: 250px;
+    width: auto;
+    
+    img{
+      margin-top: 50px;
+      margin-bottom: 10px;
+      height: 40px;
+      width: 40px;
+    }
+    h2{
+      font-family: Oswald, sans-serif;
+      font-size: 24px;
+      margin-bottom: 15px;
+
+    }
+  }
+  .festivals {
+    
+    height: 250px;
+    width: auto;
+    img{
+      margin-top: 40px;
+      
+    }
+    h2{
+      font-family: Oswald, sans-serif;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+  }
 }
