@@ -281,6 +281,8 @@ header {
   justify-content: space-between;
   text-align: center;
   gap: 20px;
+  
+    
   border: 1px solid black;
   .tv-show {
     height: 250px;
