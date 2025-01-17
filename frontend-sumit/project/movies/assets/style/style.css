@@ -178,11 +178,10 @@ header {
     height: auto;
     display: flex;
     justify-content: center;
-   
   }
-  .story-img img{
+  .story-img img {
     max-width: 100%;
-    
+
     height: auto;
   }
 
@@ -458,21 +457,20 @@ header {
 
 /* * * ************************ VIDEO SECTION END ************************ * * */
 
-
 /* * * ************************ OUR CAST SECTION START ************************ * * */
 
-
-.our-cast
-{
+.our-cast {
   height: auto;
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 50px 0;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
 
   .heading {
-    h2{
+    h2 {
+      display: flex;
+      justify-content: center;
       font-family: "Oswald", sans-serif;
       font-size: 50px;
       padding-bottom: 30px;
@@ -483,7 +481,6 @@ header {
     }
 
     h2 {
-
       &:before {
         content: "";
         display: inline-block;
@@ -502,71 +499,92 @@ header {
       }
     }
   }
-  .main-container{
+  .main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 1112px;
     max-height: 500px;
-    padding-top: 200px;
-    padding-bottom: 180px;
     
-    img-scroll{
-      width: 278px;
-    }
-    .box{
-      max-height: 500px;
-      
-    }
-    .text-scroll{
+
+    .img-scroll {
+      width: auto;
       height: 250px;
-      width: 237px;
-      padding: 10px 20px;
-      .cast-name{
-        font-size: 18px;
-      font-weight: bold;
-      font-family: 'Oswald', sans-serif;
-      margin-bottom: 5px;
-      transition: .3s ease;
-      text-transform: uppercase;
-      margin-bottom: 5px;
-      margin-top: 10px;
-      display: flex;
-      align-items: center !important;
+      overflow: hidden;
       
+    }
+    .box {
+      max-height: 500px;
+      width: 100%;
+    }
+    .text-scroll {
+      height: 250px;
+      width: auto;
+      padding: 10px 20px;
+      .cast-name {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Oswald", sans-serif;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center !important;
       }
-      .cast-designation{
+      .cast-designation {
         font-size: 12px;
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    color: #FFBF00;
-    margin-bottom: 15px;
-    display: block;
-    transition: .3s ease;
-    margin-bottom: 15px;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        color: #ffbf00;
+        margin-bottom: 15px;
+        display: block;
+        
+        margin-bottom: 15px;
       }
-      .cast-des{
+      .cast-des {
         height: 75px;
         font-size: 15px;
-    font-family: Roboto, sans-serif;
-    font-weight: 300;
-    margin-bottom: 15px;
-    transition: .3s ease;
-      }
-      .cast-social{
-      
-          padding: 0;
-          
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        margin-bottom: 15px;
         
-        li{
+      }
+      .cast-social {
+        padding: 0;
+
+        li {
           list-style: none;
           display: inline-block;
           margin-left: 5px;
+          
           border: 1px solid black;
-          border-radius: 50%;
-         
+          border-radius: 35px;
+          img{
+            padding: 5px;
+          }
         }
       }
-    }
+      
     }
   }
+}
+
+.box:hover{
+  background-color: #ffbf00;
+  transition: 0.5s ;
+  .text-scroll{
+    color: white;
+    li{
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+  }
+  
+    img{
+     transform: scale(1.1);
+     transition: 0.5s ;
+    }
+}
+
+/* * * ************************ OUR CAST SECTION END ************************ * * */
