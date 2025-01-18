@@ -279,7 +279,9 @@ header {
   justify-content: space-between;
   text-align: center;
   gap: 50px;
-
+  img{
+    transition: 0.5s all;
+  }
   .tv-show {
     height: 250px;
     width: auto;
@@ -466,125 +468,139 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 50px;
-
-  .heading {
-    h2 {
+  .container
+  {
+    .row{
       display: flex;
       justify-content: center;
-      font-family: "Oswald", sans-serif;
-      font-size: 50px;
-      padding-bottom: 30px;
-      display: inline-block;
-      line-height: 1.2;
-      font-weight: 900;
-      color: black;
-    }
-
-    h2 {
-      &:before {
-        content: "";
-        display: inline-block;
-        height: 6px;
-        width: 80px;
-        background-color: #ffc107;
-        margin-bottom: 16px;
-      }
-      &::after {
-        content: "";
-        display: inline-block;
-        height: 6px;
-        width: 80px;
-        background-color: #ffc107;
-        margin-bottom: 16px;
-      }
-    }
-  }
-  .main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1112px;
-    max-height: 500px;
-    
-
-    .img-scroll {
-      width: auto;
-      height: 250px;
-      overflow: hidden;
-      
-    }
-    .box {
-      max-height: 500px;
-      width: 100%;
-    }
-    .text-scroll {
-      height: 250px;
-      width: auto;
-      padding: 10px 20px;
-      .cast-name {
-        font-size: 18px;
-        font-weight: bold;
-        font-family: "Oswald", sans-serif;
-        margin-bottom: 5px;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-        margin-top: 10px;
-        display: flex;
-        align-items: center !important;
-      }
-      .cast-designation {
-        font-size: 12px;
-        font-family: Roboto, sans-serif;
-        font-weight: 500;
-        color: #ffbf00;
-        margin-bottom: 15px;
-        display: block;
-        
-        margin-bottom: 15px;
-      }
-      .cast-des {
-        height: 75px;
-        font-size: 15px;
-        font-family: Roboto, sans-serif;
-        font-weight: 300;
-        margin-bottom: 15px;
-        
-      }
-      .cast-social {
-        padding: 0;
-
-        li {
-          list-style: none;
+      margin-bottom: 50px;
+      .heading {
+        h2 {
+          font-family: "Oswald", sans-serif;
+          font-size: 50px;
+          padding-bottom: 30px;
           display: inline-block;
-          margin-left: 5px;
-          
-          border: 1px solid black;
-          border-radius: 35px;
-          img{
-            padding: 5px;
+          line-height: 1.2;
+          font-weight: 900;
+          color: black;
+        }
+    
+        h2 {
+          &:before {
+            content: "";
+            display: inline-block;
+            height: 6px;
+            width: 80px;
+            background-color: #ffc107;
+            margin-bottom: 16px;
+          }
+          &::after {
+            content: "";
+            display: inline-block;
+            height: 6px;
+            width: 80px;
+            background-color: #ffc107;
+            margin-bottom: 16px;
           }
         }
-      }
-      
     }
-  }
-}
-
-.box:hover{
-  background-color: #ffbf00;
-  transition: 0.5s ;
-  .text-scroll{
-    color: white;
-    li{
-      border: 1px solid white;
-      border-radius: 50%;
+    }
+    .main-container {
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      width: 100%;
+      .img-scroll {
+        width: auto;
+        height: 250px;
+        overflow: hidden;
+        span img{
+          
+          transition: 0.5s ;
+        }
+      }
+      .box {
+        max-height: 500px;
+        width: 100%;
+      }
+      .text-scroll {
+        height: 250px;
+        width: auto;
+        padding: 10px 20px;
+        .cast-name {
+          font-size: 18px;
+          font-weight: bold;
+          font-family: "Oswald", sans-serif;
+          margin-bottom: 5px;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+          margin-top: 10px;
+          display: flex;
+          align-items: center !important;
+        }
+        .cast-designation {
+          font-size: 12px;
+          font-family: Roboto, sans-serif;
+          font-weight: 500;
+          color: #ffbf00;
+          margin-bottom: 15px;
+          display: block;
+          
+          margin-bottom: 15px;
+        }
+        .cast-des {
+          height: 75px;
+          font-size: 15px;
+          font-family: Roboto, sans-serif;
+          font-weight: 300;
+          margin-bottom: 15px;
+          
+        }
+        .cast-social {
+          padding: 0;
+  
+          li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 5px;
+            text-align: center;
+            
+            border: 1px solid black;
+            border-radius: 100%;
+            height: 28px;
+            width: 28px;
+            img{
+              margin-top: 4px;
+            }
+          }
+        }
+        
+      }
     }
   }
   
-    img{
-     transform: scale(1.1);
-     transition: 0.5s ;
+  .box:hover{
+    background-color: #ffbf00;
+    transition: 0.5s all  ;
+    color: white;
+    .text-scroll{
+      .cast-designation{
+        color: white;
+      }
+      li{
+        border: 1px solid white;
+        border-radius: 50%;
+      }
     }
+      img{
+        
+        transform: scale(1.1);
+        transition: 0.5s ;
+      }
+  }
 }
 
 /* * * ************************ OUR CAST SECTION END ************************ * * */
+
+/* * * * ***************************************** MOVIE GALLERY ************************************** * * * */
+

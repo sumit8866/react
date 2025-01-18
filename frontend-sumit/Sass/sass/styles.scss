@@ -1,9 +1,10 @@
-
+@import 'var.scss';
 body{
-    background-color: gray;
+    background-color: $bg_3;
 }
 
 p{
     color: white;
-    background-color: black;
+    background-color: $bg_5;
+
 }
