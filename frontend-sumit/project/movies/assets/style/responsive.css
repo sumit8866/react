@@ -48,11 +48,118 @@
             object-fit: cover;
         }
     }
+    .movie-img{
+        width: 800px;
+        .justify-1{
+            .box-4{
+                display: none;
+            }
+        }
+        .justify-2{
+            .box-7{
+                display: none;
+            }
+        }
+    }
+    .latest-videos-container{
+        justify-content: center;
+        .box-4{
+            display: none;
+        }
+    }
+    .latest-videos-content{
+        justify-content: center;
+        .text-4{
+            display: none;
+        }
+    }
+}
+@media(max-width:750px){
+    .movie-img{
+        width: 500px;
+        .justify-1{
+            .box-3{
+                display: none;
+            }
+        }
+        .justify-2{
+            .box-6{
+                display: none;
+            }
+        }
+    }
+    .latest-videos-container{
+        justify-content: center;
+        .box-3{
+            display: none;
+        }
+    }
+    .latest-videos-content{
+        justify-content: center;
+        .text-3{
+            display: none;
+        }
+    }
+}
+@media(max-width:576px){
+    .latest-videos-container{
+        justify-content: center;
+        .box-2{
+            display: none;
+        }
+    }
+    .latest-videos-content{
+        justify-content: center;
+        .text-2{
+            display: none;
+        }
+    }
 }
 @media(max-width:400px){
+    .movie-img{
+        width: 270px;
+        .justify-1{
+            flex-wrap: wrap;
+        }
+        .justify-2{
+            .box-5{
+
+                display: none;
+            }
+        }
+    }
+}
+@media (min-width: 576px) {
+    .latest-videos-container {
+        max-width: 540px;
+    }
+    .latest-videos-content {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .latest-videos-container {
+        max-width: 720px;
+    }
+    .latest-videos-content {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .latest-videos-container {
+        max-width: 960px;
+        
+    }
+    .latest-videos-content {
+        max-width: 960px;
+    }
+    
 }
 @media (min-width: 1200px) {
     .container {
         max-width: 1110px;
     }
+    /* .latest-videos-container{
+        max-width: 1140px;
+    } */
 }
