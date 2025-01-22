@@ -25,23 +25,17 @@
         justify-content: center;
         padding: 0 10px;
     }
-    
-    .main-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 500px;
-        .box{
-            width: 100%;
+    .our-cast{
+
+        .main-container{
+            display: flex;
+            justify-content: center;
+            
+            .box-4{
+                display: none;
+            }
+           
         }
-        div#1 {order: 1;}
-        div#2 {order: 2;}
-        div#4 {order: 3;}
-        div#3 {order: 4;}
-        div#5 {order: 5;}
-        div#6 {order: 6;}
-        div#8 {order: 7;}
-        div#7 {order: 8;}
     }
     .home-img{
         img{
@@ -73,6 +67,14 @@
             display: none;
         }
     }
+    .logo-section{
+        .logo-container{
+            width: auto;
+            .logo-4{
+                display:none ;
+        }
+        }
+}
 }
 @media(max-width:750px){
     .movie-img{
@@ -84,6 +86,13 @@
         }
         .justify-2{
             .box-6{
+                display: none;
+            }
+        }
+    }
+    .our-cast{
+        .main-container{
+            .box-3{
                 display: none;
             }
         }
@@ -100,6 +109,13 @@
             display: none;
         }
     }
+    .logo-section{
+        .logo-container{
+        .logo-3{
+            display: none;
+        }
+    }
+}
 }
 @media(max-width:576px){
     .latest-videos-container{
@@ -108,14 +124,22 @@
             display: none;
         }
     }
+    .our-cast{
+        .main-container{
+            .box-1{
+                max-width: 250px;
+            }
+            .box-2{
+                display: none;
+            }
+        }
+    }
     .latest-videos-content{
         justify-content: center;
         .text-2{
             display: none;
         }
     }
-}
-@media(max-width:400px){
     .movie-img{
         width: 270px;
         .justify-1{
@@ -128,7 +152,15 @@
             }
         }
     }
+    .logo-section{
+        .logo-container{
+        .logo-2{
+            display: none;
+        }
+    }
 }
+}
+
 @media (min-width: 576px) {
     .latest-videos-container {
         max-width: 540px;
