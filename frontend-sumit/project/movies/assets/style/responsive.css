@@ -151,6 +151,9 @@
         width: 620px;
     }
 }
+.footer{
+    padding: 0 20px;
+}
 }
 @media(max-width:576px){
     .latest-videos-container{
@@ -217,6 +220,14 @@
         width: 400px;
     }
 }
+}
+
+@media(max-width:450px){
+    .contact-section{
+        .content {
+            max-width: 390px;
+        };
+    }
 }
 
 
