@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap w/ Vite</title>
     <style>
-      .container-xl{
+      /*
+         .container-xl{
         background-color: rgb(40, 41, 41);
         margin: 300px 0;
       }
@@ -15,16 +16,54 @@
           padding: 10px 0;
         }
       }
+         */
+         /* Gutters-padding  */
+
+         /* .row{
+            border: 1px solid black;
+            .col{
+               border: 1px solid black ;
+               .p-3{
+               border: 1px solid black ;
+            }
+         }
+      } */
     </style>
 </head>
 <body>
+
+
+   <!-- Prefix -->
+
+    <!--
+      xs :  < 576
+      sm :  >= 576
+      md :  >= 768
+      lg :  >= 992
+      xl :  >= 1200
+      xxl:  >= 1400    
+    -->
+
+    <!-- Container Breakpoint -->
+     <!--
+        container       xxl-1320  xl-1140  lg-960  md-720  sm-540  xs-100%
+        container-sm    xxl-1320  xl-1140  lg-960  md-720  sm-540  xs-100%
+        container-md    xxl-1320  xl-1140  lg-960  md-720  sm-100% xs-100%
+        container-lg    xxl-1320  xl-1140  lg-960  md-100%  sm-100% xs-100%
+        container-xl    xxl-1320  xl-1140  lg-100%  md-100%  sm-100%  xs-100%
+        container-xxl   xxl-1320  xl-100%  lg-100%  md-100%  sm-100%  xs-100%
+        container-fluid xxl-100%  xl-100%  lg-100%  md-100%  sm-100%  xs-100%
+
+     -->
+
+
     <!-- <div class="container py-4 px-3 mx-auto">
         <h1>Hello, Bootstrap and Vite!</h1>
         <button class="btn btn-primary">Primary button</button>
     </div> -->
     <!-- <h1 class="bg-primary color-white"> this is h1 tag</h1> -->
 
-    <div class="container-xl   border border-solid border-2 border-black">
+    <!-- <div class="container-xl   border border-solid border-2 border-black">
       <div class="row ">
          <div class="col ">1</div>
          <div class="col ">2</div>
@@ -142,7 +181,557 @@
     <div class="row ">
       <div class="col-12">1</div>
   </div>
-</div>
+</div> -->
+
+
+
+<!-- *************************** Gutters-padding*******************************************************************************-->
+
+<!-- <div class="container overflow-hidden text-center">
+   <div class="row gy-5 ">
+     <div class="col-6 ">
+       <div class="p-3 "> column padding</div>
+     </div>
+     <div class="col-6">
+       <div class="p-3"> column padding</div>
+     </div>
+     <div class="col-6">
+       <div class="p-3"> column padding</div>
+     </div>
+     <div class="col-6">
+       <div class="p-3"> column padding</div>
+     </div>
+   </div>
+ </div> -->
+ <!-- <div class="container text-center">
+   <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+     <div class="col">
+       <div class="p-3">Row column</div>
+     </div>
+     <div class="col">
+       <div class="p-3">Row column</div>
+     </div>
+     <div class="col">
+       <div class="p-3">Row column</div>
+     </div>
+     <div class="col">
+       <div class="p-3">Row column</div>
+     </div>
+     <div class="col">
+       <div class="p-3">Row column</div>
+     </div>
+     <div class="col">
+       <div class="p-3">Row column</div>
+     </div>
+     <div class="col">
+       <div class="p-3">Row column</div>
+     </div>
+     <div class="col">
+       <div class="p-3">Row column</div>
+     </div>
+     <div class="col">
+       <div class="p-3">Row column</div>
+     </div>
+     <div class="col">
+       <div class="p-3">Row column</div>
+     </div>
+   </div>
+ </div> -->
+
+
+ <!--************************** z-index ***********************************************************************************-->
+
+ <!-- $zindex-dropdown:              1000;
+ $zindex-sticky:                     1020;
+ $zindex-fixed:                      1030;
+ $zindex-offcanvas-backdrop:         1040;
+ $zindex-offcanvas:                  1045;
+ $zindex-modal-backdrop:             1050;
+ $zindex-modal:                      1055;
+ $zindex-popover:                    1070;
+ $zindex-tooltip:                    1080;
+ $zindex-toast:                      1090; -->
+
+
+ <!-- *********************************Typography***************************************************************************** -->
+
+ <!-- *******************************heading********************************************************************************* -->
+ 
+ 
+ <!-- <p class="h1">h1. Bootstrap heading</p>
+ <p class="h2">h2. Bootstrap heading</p>
+ <p class="h3">h3. Bootstrap heading</p>
+ <p class="h4">h4. Bootstrap heading</p>
+ <p class="h5">h5. Bootstrap heading</p>
+ <p class="h6">h6. Bootstrap heading</p> -->
+ 
+ <!-- *******************************Customizing headings**************************** -->
+ 
+ <!-- <h3>
+    Fancy display heading
+    <small class="text-body-secondary">With faded secondary text</small>
+   </h3> -->
+   <!-- *******************************Display text**************************** -->
+
+<!-- <h1 class="display-1">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>
+<h1 class="display-5">Display 5</h1>
+<h1 class="display-6">Display 6</h1> -->
+
+
+<!-- *********************************Lead*************************  -->
+
+<!-- Make a paragraph stand out by adding .lead. -->
+
+
+<!-- <p >
+   This is a lead paragraph. It stands out from regular paragraphs.
+</p>
+<p class="lead">
+   This is a lead paragraph. It stands out from regular paragraphs.
+</p> -->
+
+<!-- *********************************Inline text elements *************************  -->
+
+<!-- <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+<p><del>This line of text is meant to be treated as deleted text.</del></p>
+<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+<p><u>This line of text will render as underlined.</u></p>
+<p><small>This line of text is meant to be treated as fine print.</small></p>
+<p><strong>This line rendered as bold text.</strong></p>
+<p><em>This line rendered as italicized text.</em></p> -->
+
+<!-- ************************************************Text utilities******************************************************* -->
+
+<!-- *********************************Abbreviations  ************************* -->
+
+<!-- <p><abbr title="attribute">attr</abbr></p>
+<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p> -->
+
+<!-- *********************************Blockquotes   ************************* -->
+
+<!-- <blockquote class="blockquote">
+   <p>A well-known quote, contained in a blockquote element.</p>
+ </blockquote> -->
+
+<!-- *********************************Naming a source   ************************* -->
+
+<!-- The HTML spec requires that blockquote attribution be placed outside the <blockquote>. When providing attribution, wrap your <blockquote> in a <figure> and use a <figcaption> or a block level element (e.g., <p>) with the .blockquote-footer class. Be sure to wrap the name of the source work in <cite> as well. -->
+
+   <!-- <figure>
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure> -->
+
+    <!-- <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure> -->
+
+    <!-- <figure class="text-end">
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure> -->
+
+<!-- ************************************************Lists******************************************************************** -->
+<!-- *********************************Unstyled ************************* -->
+
+<!-- <ul class="list-unstyled">
+   <li>This is a list.</li>
+   <li>It appears completely unstyled.</li>
+   <li>Structurally, it's still a list.</li>
+   <li>However, this style only applies to immediate child elements.</li>
+   <li>Nested lists:
+     <ul>
+       <li>are unaffected by this style</li>
+       <li>will still show a bullet</li>
+       <li>and have appropriate left margin</li>
+     </ul>
+   </li>
+   <li>This may still come in handy in some situations.</li>
+ </ul> -->
+
+<!-- *********************************Inline ************************* -->
+
+<!-- <ul class="list-inline">
+   <li class="list-inline-item">This is a list item.</li>
+   <li class="list-inline-item">And another one.</li>
+   <li class="list-inline-item">But they're displayed inline.</li>
+ </ul> -->
+
+<!-- *********************************Description list alignment ************************* -->
+ 
+<!-- <dl class="row">
+   <dt class="col-sm-3">Description lists</dt>
+   <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+ 
+   <dt class="col-sm-3">Term</dt>
+   <dd class="col-sm-9">
+     <p>Definition for the term.</p>
+     <p>And some more placeholder definition text.</p>
+   </dd>
+ 
+   <dt class="col-sm-3">Another term</dt>
+   <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+ 
+   <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+   <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+ 
+   <dt class="col-sm-3">Nesting</dt>
+   <dd class="col-sm-9">
+     <dl class="row">
+       <dt class="col-sm-4">Nested definition list</dt>
+       <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+     </dl>
+   </dd>
+ </dl> -->
+
+<!-- ************************************************Images******************************************************************** -->
+
+<!-- *********************************Responsive images ************************* -->
+
+<!-- <img src="./img/asset 1.jpeg" class="img-fluid" alt="..."> -->
+
+<!-- *********************************Image thumbnails ************************* -->
+
+<!-- <img src="./img/asset 1.jpeg" class="img-thumbnail" alt="..."> -->
+
+<!-- *********************************Aligning images  ************************* -->
+
+<!-- <img src="./img/asset 19.jpeg" class="rounded float-start" alt="...">
+<img src="./img/asset 20.jpeg" class="rounded float-end" alt="..."> -->
+
+<!-- <img src="./img/asset 20.jpeg" class="rounded mx-auto d-block" alt="..."> -->
+
+<!-- <div class="text-center">
+   <img src="./img/asset 19.jpeg" class="rounded" alt="...">
+ </div> -->
+
+<!-- *********************************Picture ************************* -->
+
+<!-- <picture>
+   <source srcset="" type="image/svg+xml">
+   <img src="./img/asset 19.jpeg" class="img-fluid img-thumbnail" alt="...">
+ </picture> -->
+
+<!-- ************************************************Tables******************************************************************** -->
+
+<!-- <table class="table" class="table table-striped">
+   <thead>
+     <tr>
+       <th scope="col">#</th>
+       <th scope="col">First</th>
+       <th scope="col">Last</th>
+       <th scope="col">Handle</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th scope="row">1</th>
+       <td>Mark</td>
+       <td>Otto</td>
+       <td>@mdo</td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td>Jacob</td>
+       <td>Thornton</td>
+       <td>@fat</td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td colspan="2">Larry the Bird</td>
+       <td>@twitter</td>
+     </tr>
+   </tbody>
+ </table> -->
+
+<!-- *********************************Variants ************************* -->
+
+<!-- On tables -->
+<!-- <table class="table-primary">...Primary</table>
+<table class="table-secondary">... Secondary</table>
+<table class="table-success">...Success</table>
+<table class="table-danger">...Danger</table>
+<table class="table-warning">...Warning</table>
+<table class="table-info">...Info</table>
+<table class="table-light">...Light</table>
+<table class="table-dark">...Dark</table> -->
+
+<!-- On rows -->
+<!-- <tr class="table-primary">...Primary</tr>
+<tr class="table-secondary">...Secondary</tr>
+<tr class="table-success">...Success</tr>
+<tr class="table-danger">...Danger</tr>
+<tr class="table-warning">...Warning</tr>
+<tr class="table-info">...Info</tr>
+<tr class="table-light">...Light</tr>
+<tr class="table-dark">...Dark</tr> -->
+
+<!-- On cells (`td` or `th`) -->
+<!-- <tr>
+   <td class="table-primary">...Primary</td>
+   <td class="table-secondary">...Secondary</td>
+   <td class="table-success">...Success</td>
+   <td class="table-danger">...Danger</td>
+   <td class="table-warning">...Warning</td>
+   <td class="table-info">...Info</td>
+   <td class="table-light">...Light</td>
+   <td class="table-dark">...Dark</td>
+</tr> -->
+
+<!-- *********************************Striped rows ************************* -->
+
+<!-- <table class="table table-striped">
+   <thead>
+     <tr>
+        <th scope="col">#</th>
+       <th scope="col">First</th>
+       <th scope="col">Last</th>
+       <th scope="col">Handle</th>
+     </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <th scope="row">1</th>
+         <td>Mark</td>
+         <td>Otto</td>
+         <td>@mdo</td>
+      </tr>
+      <tr>
+         <th scope="row">2</th>
+       <td>Jacob</td>
+       <td>Thornton</td>
+       <td>@fat</td>
+     </tr>
+     <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+   </tbody>
+</table> -->
+
+
+<!-- *********************************Striped columns ************************* -->
+
+
+ <!-- <table class="table table-striped-columns">
+   <thead>
+     <tr>
+       <th scope="col">#</th>
+       <th scope="col">First</th>
+       <th scope="col">Last</th>
+       <th scope="col">Handle</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th scope="row">1</th>
+       <td>Mark</td>
+       <td>Otto</td>
+       <td>@mdo</td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td>Jacob</td>
+       <td>Thornton</td>
+       <td>@fat</td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td colspan="2">Larry the Bird</td>
+       <td>@twitter</td>
+     </tr>
+   </tbody>
+ </table> -->
+
+
+<!-- *********************************DARK color ************************* -->
+
+
+ <!-- <table class="table table-dark table-striped-columns">
+   <thead>
+     <tr>
+       <th scope="col">#</th>
+       <th scope="col">First</th>
+       <th scope="col">Last</th>
+       <th scope="col">Handle</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th scope="row">1</th>
+       <td>Mark</td>
+       <td>Otto</td>
+       <td>@mdo</td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td>Jacob</td>
+       <td>Thornton</td>
+       <td>@fat</td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td colspan="2">Larry the Bird</td>
+       <td>@twitter</td>
+     </tr>
+   </tbody>
+ </table> -->
+
+
+ <!-- <table class="table table-success table-striped">
+   <thead>
+     <tr>
+       <th scope="col">#</th>
+       <th scope="col">First</th>
+       <th scope="col">Last</th>
+       <th scope="col">Handle</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th scope="row">1</th>
+       <td>Mark</td>
+       <td>Otto</td>
+       <td>@mdo</td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td>Jacob</td>
+       <td>Thornton</td>
+       <td>@fat</td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td colspan="2">Larry the Bird</td>
+       <td>@twitter</td>
+     </tr>
+   </tbody>
+ </table> -->
+
+ <!-- <table class="table table-success table-striped-columns">
+   <thead>
+     <tr>
+       <th scope="col">#</th>
+       <th scope="col">First</th>
+       <th scope="col">Last</th>
+       <th scope="col">Handle</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th scope="row">1</th>
+       <td>Mark</td>
+       <td>Otto</td>
+       <td>@mdo</td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td>Jacob</td>
+       <td>Thornton</td>
+       <td>@fat</td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td colspan="2">Larry the Bird</td>
+       <td>@twitter</td>
+     </tr>
+   </tbody>
+ </table> -->
+
+
+<!-- *********************************table hover ************************* -->
+ 
+
+ <!-- <table class="table table-hover">
+   <thead>
+     <tr>
+       <th scope="col">#</th>
+       <th scope="col">First</th>
+       <th scope="col">Last</th>
+       <th scope="col">Handle</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th scope="row">1</th>
+       <td>Mark</td>
+       <td>Otto</td>
+       <td>@mdo</td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td>Jacob</td>
+       <td>Thornton</td>
+       <td>@fat</td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td colspan="2">Larry the Bird</td>
+       <td>@twitter</td>
+     </tr>
+   </tbody>
+ </table> -->
+
+ <!-- <table class="table table-dark table-hover">
+   <thead>
+     <tr>
+       <th scope="col">#</th>
+       <th scope="col">First</th>
+       <th scope="col">Last</th>
+       <th scope="col">Handle</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th scope="row">1</th>
+       <td>Mark</td>
+       <td>Otto</td>
+       <td>@mdo</td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td>Jacob</td>
+       <td>Thornton</td>
+       <td>@fat</td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td colspan="2">Larry the Bird</td>
+       <td>@twitter</td>
+     </tr>
+   </tbody>
+ </table> -->
+ 
+<!-- ************************************************Figures******************************************************************** -->
+
+<!-- <figure class="figure">
+   <img src="./img/asset 19.jpeg" class="figure-img img-fluid rounded" alt="...">
+   <figcaption class="figure-caption">A caption for the above image.</figcaption>
+ </figure> -->
+
+ <!-- <figure class="figure">
+   <img src="./img/asset 1.jpeg" class="figure-img img-fluid rounded" alt="...">
+   <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
+ </figure> -->
+ 
 <script type="module" src="./js/main.js"></script>
   </body>
 </html>
