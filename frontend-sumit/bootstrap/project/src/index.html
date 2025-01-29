@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Vite</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .navbar-nav .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .tooltip-custom {
+            position: absolute;
+            background-color: black;
+            color: white;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+            transform: translate(50px , -150px);
+            
+        }
+        .portfolio-item:hover .tooltip-custom {
+            display: block;
+
+        }
+        .dropdown-menu{
+          li{
+            background-color: black;
+            text-align: center;
+            padding: 5px;
+            a{
+              color: white;
+              text-decoration: none;
+            }
+          }
+        }
+    </style>
+</head>
+<body class="container">
+    <nav class="navbar navbar-light bg-white px-5 py-3 navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/asset 0.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Basic</a></li>
+                        <li><a href="#">Centered Menu</a></li>
+                        <li><a href="#">Fullwidth Slider</a></li>
+                        <li><a href="#">Fullwidth Showcase</a></li>
+                        <li><a href="#">Hero Image</a></li>
+                        <li><a href="#">Hamburger Menu</a></li>
+                        <li><a href="#">Single Row</a></li>
+                        <li><a href="#">Slider Single</a></li>
+                        <li><a href="#">Split Slider</a></li>
+                        <li><a href="#">Sidebar Menu</a></li>
+                        <li><a href="#">Zigzag Listing</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button">Pages</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">About</a></li>
+                      <li><a class="dropdown-item" href="#">Service</a></li>
+                      <li><a class="dropdown-item" href="#">Contect</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button">Portfolio Layouts</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Grid</a></li>
+                        <li><a class="dropdown-item" href="#">Masonry</a></li>
+                        <li><a class="dropdown-item" href="#">Mossaic</a></li>
+                        <li><a class="dropdown-item" href="#">Loadmore Button</a></li>
+                        <li><a class="dropdown-item" href="#">Loadmore Auto</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button">Portfolio Single</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Images</a></li>
+                        <li><a class="dropdown-item" href="#">Sliders</a></li>
+                        <li><a class="dropdown-item" href="#">Videos</a></li>
+                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                        <li><a class="dropdown-item" href="#">Before After</a></li>
+                        <li><a class="dropdown-item" href="#">Mixed Media</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button">Blog</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Blog List</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Classic</a></li>
+                        <li><a class="dropdown-item" href="#">Single Standard</a></li>
+                        <li><a class="dropdown-item" href="#">Single Slider</a></li>
+                        <li><a class="dropdown-item" href="#">Single Video</a></li>
+                        <li><a class="dropdown-item" href="#">Single Full width</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">All</a></li>
+        <li class="breadcrumb-item">Branding</a></li>
+        <li class="breadcrumb-item">Illustration</li>
+        <li class="breadcrumb-item">Logo</li>
+      </ol>
+    </nav>
+
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4 portfolio-item position-relative">
+                <img src="./assets/asset 2.jpeg" alt="Portfolio">
+                <div class="tooltip-custom">Portfolio Item 1</div>
+            </div>
+            <div class="col-md-4 portfolio-item position-relative">
+                <img src="./assets/asset 3.jpeg" alt="Portfolio">
+                <div class="tooltip-custom">Portfolio Item 2</div>
+            </div>
+            <div class="col-md-4 portfolio-item position-relative">
+                <img src="./assets/asset 4.jpeg" alt="Portfolio">
+                <div class="tooltip-custom">Portfolio Item 3</div>
+            </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 portfolio-item position-relative">
+              <img src="./assets/asset 2.jpeg" alt="Portfolio">
+              <div class="tooltip-custom">Portfolio Item 1</div>
+          </div>
+          <div class="col-md-4 portfolio-item position-relative">
+              <img src="./assets/asset 3.jpeg" alt="Portfolio">
+              <div class="tooltip-custom">Portfolio Item 2</div>
+          </div>
+          <div class="col-md-4 portfolio-item position-relative">
+              <img src="./assets/asset 4.jpeg" alt="Portfolio">
+              <div class="tooltip-custom">Portfolio Item 3</div>
+          </div>
+      </div>
+    </div>
+
+  
+
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>
