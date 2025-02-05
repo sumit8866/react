@@ -2,57 +2,153 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap w/ Vite</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+        .containers {
+            max-width: 1100px;
+            margin: auto;
+        }
+
         .portfolio-item img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
         }
+
+        .nav-item {
+            a {
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+
+        .nav-link {
+            margin-left: 10px;
+
+        }
+
         .navbar-nav .nav-item:hover .dropdown-menu {
             display: block;
         }
+
         .tooltip-custom {
             position: absolute;
-            background-color: black;
+            background-color: #1d1d1d;
             color: white;
-            width: 200px;
-            height: 100px;
-            text-align: center;
+            width: 250px;
+            height: 70px;
+            text-align: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 10px;
-            border-radius: 5px;
-            display: none;
-            transform: translate(50px , -150px);
-            
-        }
-        .portfolio-item:hover .tooltip-custom {
-            display: block;
+            border-radius: 0px;
+            visibility: hidden;
+            transform: translate(-20px, -90px);
+            transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out, transform 0.1s ease-in-out;
 
         }
-        .dropdown-menu{
-          li{
+
+        .portfolio-item:hover .tooltip-custom {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-10px, -90px);
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+
+        }
+
+        .dropdown-menu {
             background-color: black;
-            text-align: center;
-            padding: 5px;
-            a{
-              color: white;
-              text-decoration: none;
+
+            li {
+                background-color: black;
+                text-align: center;
+                padding: 5px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
             }
-          }
+        }
+
+        .filters-container .filter-items {
+            text-decoration: none;
+            color: #151515;
+            font-size: 15px;
+            line-height: 21px;
+            letter-spacing: normal;
+            text-align: left;
+        }
+
+        .filters-container a:active {
+            color: #707070;
+        }
+
+        .filters-container .illustration:active {
+            display: block;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .Gallery .row .col {
+            margin: 15px 0;
+        }
+
+        .main-content {
+            margin-top: 50px;
+            font-size: 44px;
+            max-width: 884px;
+            font-weight: bold;
+            font-family: 'roboto, sans-serif';
+        }
+
+        .px768 {
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            .Full {
+                display: none;
+            }
+
+            .px768 {
+                margin-top: 50px;
+                display: block;
+
+                .col {
+                    margin: 10px;
+                }
+            }
+        }
+
+        .size {
+            font-size: 14px;
+
+        }
+
+        .bg-hover {
+            a:hover i {
+                color: #707070;
+            }
+        }
+
+        footer {
+            margin: auto;
+            height: 100px;
         }
     </style>
 </head>
+
 <body class="container">
-    <nav class="navbar navbar-light bg-white px-5 py-3 navbar-expand-lg">
+    <nav class="navbar navbar-light bg-white navbar-expand-lg containers">
         <a class="navbar-brand" href="#">
-          <img src="./assets/asset 0.png" alt="">
+            <img src="./assets/asset 0.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -60,7 +156,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button">Home</a>
+                    <a class="nav-link" href="#" role="button">HOME</a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Basic</a></li>
                         <li><a href="#">Centered Menu</a></li>
@@ -76,15 +172,15 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button">Pages</a>
+                    <a class="nav-link" href="#" role="button">PAGES</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">About</a></li>
-                      <li><a class="dropdown-item" href="#">Service</a></li>
-                      <li><a class="dropdown-item" href="#">Contect</a></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                        <li><a class="dropdown-item" href="#">Service</a></li>
+                        <li><a class="dropdown-item" href="#">Contect</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button">Portfolio Layouts</a>
+                    <a class="nav-link" href="#" role="button">PORTFOLIO LAYOUTS</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Grid</a></li>
                         <li><a class="dropdown-item" href="#">Masonry</a></li>
@@ -94,7 +190,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button">Portfolio Single</a>
+                    <a class="nav-link" href="#" role="button">PORTFOLIO SINGLE</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Images</a></li>
                         <li><a class="dropdown-item" href="#">Sliders</a></li>
@@ -105,7 +201,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button">Blog</a>
+                    <a class="nav-link" href="#" role="button">BLOG</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Blog List</a></li>
                         <li><a class="dropdown-item" href="#">Blog Classic</a></li>
@@ -119,49 +215,184 @@
         </div>
     </nav>
 
-    
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">All</a></li>
-        <li class="breadcrumb-item">Branding</a></li>
-        <li class="breadcrumb-item">Illustration</li>
-        <li class="breadcrumb-item">Logo</li>
-      </ol>
-    </nav>
-
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-md-4 portfolio-item position-relative">
-                <img src="./assets/asset 2.jpeg" alt="Portfolio">
-                <div class="tooltip-custom">Portfolio Item 1</div>
-            </div>
-            <div class="col-md-4 portfolio-item position-relative">
-                <img src="./assets/asset 3.jpeg" alt="Portfolio">
-                <div class="tooltip-custom">Portfolio Item 2</div>
-            </div>
-            <div class="col-md-4 portfolio-item position-relative">
-                <img src="./assets/asset 4.jpeg" alt="Portfolio">
-                <div class="tooltip-custom">Portfolio Item 3</div>
+    <div class="containers">
+        <p class="main-content">We combine strategy & technology to solve complex business challenges in the design
+            industry.</p>
+    </div>
+    <div class="containers m-t-25 m-b-100">
+        <div class="row rows">
+            <div class="col-sm-12">
+                <div class="portfolio-wrap">
+                    <div class="filters-container mt-5 ms-2">
+                        <a class="filter-items px-2" href="#">All</a>
+                        <a class="filter-items px-2" href="#">/</a>
+                        <a class="filter-items px-2" href="#">Branding</a>
+                        <a class="filter-items px-2" href="#">/</a>
+                        <a class="filter-items px-2" href="#">Illustration</a>
+                        <a class="filter-items px-2" href="#">/</a>
+                        <a class="filter-items px-2" href="#">Logo</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row g-4">
-          <div class="col-md-4 portfolio-item position-relative">
-              <img src="./assets/asset 2.jpeg" alt="Portfolio">
-              <div class="tooltip-custom">Portfolio Item 1</div>
-          </div>
-          <div class="col-md-4 portfolio-item position-relative">
-              <img src="./assets/asset 3.jpeg" alt="Portfolio">
-              <div class="tooltip-custom">Portfolio Item 2</div>
-          </div>
-          <div class="col-md-4 portfolio-item position-relative">
-              <img src="./assets/asset 4.jpeg" alt="Portfolio">
-              <div class="tooltip-custom">Portfolio Item 3</div>
-          </div>
-      </div>
     </div>
 
-  
 
+
+
+    <div class="containers Gallery Full">
+        <div class="row">
+            <div class="col">
+                <div class="row ">
+                    <div class="col portfolio-item position-relative">
+                        <img src="./assets/asset 2.jpeg" alt="Portfolio">
+                        <div class="tooltip-custom">LightBox project <br>
+                            Video</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col portfolio-item position-relative">
+                        <img src="./assets/asset 5.jpeg" alt="Portfolio">
+                        <div class="tooltip-custom">Small jar <br>
+                            Art</div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col portfolio-item position-relative">
+                        <img src="./assets/asset 8.jpeg" alt="Portfolio">
+                        <div class="tooltip-custom">Cusion Mockup <br>
+                            Photoshop</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="row ">
+                    <div class="col portfolio-item position-relative">
+                        <img src="./assets/asset 3.jpeg" alt="Portfolio">
+                        <div class="tooltip-custom">LightBox project <br>
+                            Image</div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col portfolio-item position-relative">
+                        <img src="./assets/asset 7.jpeg" alt="Portfolio">
+                        <div class="tooltip-custom">Wristband <br>
+                            Blue</div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col portfolio-item position-relative">
+                        <img src="./assets/asset 9.jpeg" alt="Portfolio">
+                        <div class="tooltip-custom">Business Card <br>
+                            Branding</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="row">
+                    <div class="col portfolio-item position-relative">
+                        <img src="./assets/asset 4.jpeg" alt="Portfolio">
+                        <div class="tooltip-custom">Catalogue <br>
+                            Branding</div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col portfolio-item position-relative">
+                        <img src="./assets/asset 6.jpeg" alt="Portfolio">
+                        <div class="tooltip-custom">Funcky paper <br>
+                            Identity</div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col portfolio-item position-relative">
+                        <img src="./assets/asset 10.jpeg" alt="Portfolio">
+                        <div class="tooltip-custom">Pink Headphone <br>
+                            Gadget</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px768">
+        <div class="row">
+            <div class="row ">
+                <div class="col portfolio-item position-relative">
+                    <img src="./assets/asset 2.jpeg" alt="Portfolio">
+                    <div class="tooltip-custom">LightBox project <br>
+                        Video</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col portfolio-item position-relative">
+                    <img src="./assets/asset 5.jpeg" alt="Portfolio">
+                    <div class="tooltip-custom">Small jar <br>
+                        Art</div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col portfolio-item position-relative">
+                    <img src="./assets/asset 8.jpeg" alt="Portfolio">
+                    <div class="tooltip-custom">Cusion Mockup <br>
+                        Photoshop</div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col portfolio-item position-relative">
+                    <img src="./assets/asset 3.jpeg" alt="Portfolio">
+                    <div class="tooltip-custom">LightBox project <br>
+                        Image</div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col portfolio-item position-relative">
+                    <img src="./assets/asset 7.jpeg" alt="Portfolio">
+                    <div class="tooltip-custom">Wristband <br>
+                        Blue</div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col portfolio-item position-relative">
+                    <img src="./assets/asset 9.jpeg" alt="Portfolio">
+                    <div class="tooltip-custom">Business Card <br>
+                        Branding</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col portfolio-item position-relative">
+                    <img src="./assets/asset 4.jpeg" alt="Portfolio">
+                    <div class="tooltip-custom">Catalogue <br>
+                        Branding</div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col portfolio-item position-relative">
+                    <img src="./assets/asset 6.jpeg" alt="Portfolio">
+                    <div class="tooltip-custom">Funcky paper <br>
+                        Identity</div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col portfolio-item position-relative">
+                    <img src="./assets/asset 10.jpeg" alt="Portfolio">
+                    <div class="tooltip-custom">Pink Headphone <br>
+                        Gadget</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-white py-3 containers">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="mb-0 text-muted size">© 2020 CaliberThemes</p>
+            <div class="bg-hover">
+                <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-dark me-3"><i class="fab fa-dribbble"></i></a>
+                <a href="#" class="text-dark"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
     <script type="module" src="./js/main.js"></script>
 
 </body>
