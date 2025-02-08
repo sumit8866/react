@@ -95,7 +95,7 @@ header {
   .main{
     position:absolute;
     z-index:1;
-    
+    height: 0px;
   }
   .main li{
     list-style:none;
