@@ -617,17 +617,11 @@
   .isolation-auto {
     isolation: auto;
   }
-  .-z-1 {
-    z-index: calc(1 * -1);
-  }
   .-z-50 {
     z-index: calc(50 * -1);
   }
   .-z-\[1\] {
     z-index: calc(1 * -1);
-  }
-  .z-1 {
-    z-index: 1;
   }
   .z-10 {
     z-index: 10;
@@ -740,6 +734,12 @@
       max-width: 96rem !important;
     }
   }
+  .m-\[500px\] {
+    margin: 500px;
+  }
+  .m-auto {
+    margin: auto;
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -754,6 +754,15 @@
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-14 {
+    margin-top: calc(var(--spacing) * 14);
+  }
+  .mt-\[500px\] {
+    margin-top: 500px;
+  }
+  .mt-\[50px\] {
+    margin-top: 50px;
   }
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
@@ -860,9 +869,6 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
-  .h-\[30px\] {
-    height: 30px;
-  }
   .h-\[40px\] {
     height: 40px;
   }
@@ -896,6 +902,27 @@
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+  .w-\[\%\] {
+    width: %;
+  }
+  .w-\[40\%\] {
+    width: 40%;
+  }
+  .w-\[42\%\] {
+    width: 42%;
+  }
+  .w-\[43\%\] {
+    width: 43%;
+  }
+  .w-\[45\%\] {
+    width: 45%;
+  }
   .w-\[50\%\] {
     width: 50%;
   }
@@ -905,8 +932,17 @@
   .w-\[80\%\] {
     width: 80%;
   }
-  .w-\[100\%\] {
-    width: 100%;
+  .w-\[80\] {
+    width: 80;
+  }
+  .w-\[90\%\] {
+    width: 90%;
+  }
+  .w-\[905\] {
+    width: 905;
+  }
+  .w-\[90\] {
+    width: 90;
   }
   .w-\[150px\] {
     width: 150px;
@@ -1599,11 +1635,11 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
-  }
   .bg-amber-300 {
     background-color: var(--color-amber-300);
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1789,9 +1825,6 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
@@ -1810,6 +1843,12 @@
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
   }
+  .pt-\[50px\] {
+    padding-top: 50px;
+  }
+  .pt-\[100px\] {
+    padding-top: 100px;
+  }
   .pr-9 {
     padding-right: calc(var(--spacing) * 9);
   }
@@ -1818,6 +1857,9 @@
   }
   .pb-\[75px\] {
     padding-bottom: 75px;
+  }
+  .pb-\[100px\] {
+    padding-bottom: 100px;
   }
   .text-center {
     text-align: center;
@@ -1861,24 +1903,18 @@
   .align-top {
     vertical-align: top;
   }
-  .font-\[g\] {
-    font-family: g;
-  }
-  .font-\[gil\] {
-    font-family: gil;
-  }
-  .font-\[gill\] {
-    font-family: gill;
-  }
-  .font-\[mono\] {
-    font-family: mono;
-  }
   .font-mono {
     font-family: var(--font-mono);
+  }
+  .font-serif {
+    font-family: var(--font-serif);
   }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[38px\] {
+    font-size: 38px;
   }
   .text-\[47px\] {
     font-size: 47px;
@@ -1890,6 +1926,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-balance {
     text-wrap: balance;
@@ -1966,6 +2006,15 @@
   }
   .text-\[\#666\] {
     color: #666;
+  }
+  .text-\[\#888888\] {
+    color: #888888;
+  }
+  .text-\[888888\] {
+    color: 888888;
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .text-white {
     color: var(--color-white);
@@ -2424,20 +2473,6 @@
       }
     }
   }
-  .hover\:bg-amber-300 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-amber-300);
-      }
-    }
-  }
-  .hover\:bg-amber-400 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-amber-400);
-      }
-    }
-  }
   .hover\:bg-amber-500 {
     &:hover {
       @media (hover: hover) {
@@ -2485,9 +2520,9 @@
       display: block;
     }
   }
-  .lg\:flex-wrap {
+  .lg\:text-left {
     @media (width >= 64rem) {
-      flex-wrap: wrap;
+      text-align: left;
     }
   }
   .lg\:text-start {

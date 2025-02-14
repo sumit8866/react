@@ -11,10 +11,10 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-blac">
   <!-- navbar -->
 
-  <header class="header flex justify-center h-[100px] items-center">
+  <header class="header flex justify-center h-[100px] items-center text-white">
     <nav class="navbar container w-[75%]">
       <!-- logo -->
       
@@ -25,7 +25,7 @@
           <li>
             <div class="order-0">
               <a href="index">
-                <img src="../assets/photos/asset 0.svg" height="30" width="147" alt="logo" />
+                <img class="" src="../assets/photos/asset 0.svg" height="30" width="147" alt="logo" />
               </a>
             </div>
           </li>
@@ -79,7 +79,7 @@
           <li class="nav-item">
             <a href="#contact" class="nav-link">Contact</a>
           </li>
-          <li class="nav-item flex items-center justify-center bg-white h-[40px] w-[150px] rounded-3xl">
+          <li class="nav-item flex items-center justify-center bg-black h-[40px] w-[150px] rounded-3xl">
           <div class="  ">
               <a class="btn btn-white btn-sm" href="signin.html">Sing Up Now</a>
             </div>
@@ -91,7 +91,7 @@
   </header>
 
   <!-- Banner -->
-  <section class="section  relative flex  justify-center">
+  <section class="section  relative flex  justify-center text-white pt-[50px]">
     <div class="container flex justify-center flex-wrap">
       <div class="row flex w-[80%] justify-center">
         <div class=" w-[50%]">
@@ -117,110 +117,115 @@
   <!-- ./end Banner -->
 
   <!-- Key features -->
-  <section class="section key-feature relative">
-    <img class="absolute left-0 top-0 -z-[1] -translate-y-1/2" src="images/icons/feature-shape.svg" alt="" />
+  <section class="section key-feature relative text-white">
+    <img class="absolute left-0 top-0 -z-[1] -translate-y-1/2" src="../assets/photos/asset 3.svg" alt="" />
     <div class="container">
-      <div class="row justify-between text-center lg:text-start">
-        <div class="lg:col-5">
-          <h2>The Highlighting Part Of Our Solution</h2>
-        </div>
-        <div class="mt-6 lg:col-5 lg:mt-0">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas
-            Werat viverra id et aliquet. vulputate egestas sollicitudin .
-          </p>
+      <div class="flex justify-center pt-[100px] pb-[100px]">
+
+        <div class="row justify-between text-center flex w-[80%] ">
+          <div class="lg:col-5 w-[50%] text-[38px] font-bold font-mono">
+            <h2>The Highlighting Part Of Our Solution</h2>
+          </div>
+          <div class="w-[42%] text-center text-[#888888] lg:text-left font-mono">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas
+              Werat viverra id et aliquet. vulputate egestas sollicitudin .
+            </p>
+          </div>
         </div>
       </div>
-      <div class="key-feature-grid mt-10 grid grid-cols-2 gap-7 md:grid-cols-3 xl:grid-cols-4">
-        <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
-          <div>
-            <h3 class="h4 text-xl lg:text-2xl">Live Caption</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <div class="flex justify-end text-black font-serif">
+        <div class="key-feature-grid mt-10 grid grid-cols-2 gap-7 md:grid-cols-3 xl:grid-cols-4 w-[90%]">
+          <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+            <div>
+              <h3 class="h4 text-xl lg:text-2xl text-black">Live Caption</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <span class="icon mt-4">
+              <img class="objec-contain" src="../assets/photos/asset 4.svg" alt="" />
+            </span>
           </div>
-          <span class="icon mt-4">
-            <img class="objec-contain" src="images/icons/feature-icon-1.svg" alt="" />
-          </span>
-        </div>
-        <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
-          <div>
-            <h3 class="h4 text-xl lg:text-2xl">Smart Reply</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+            <div>
+              <h3 class="h4 text-xl lg:text-2xl">Smart Reply</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <span class="icon mt-4">
+              <img class="objec-contain" src="../assets/photos/asset 5.svg" alt="" />
+            </span>
           </div>
-          <span class="icon mt-4">
-            <img class="objec-contain" src="images/icons/feature-icon-2.svg" alt="" />
-          </span>
-        </div>
-        <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
-          <div>
-            <h3 class="h4 text-xl lg:text-2xl">Sound Amplifier</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+            <div>
+              <h3 class="h4 text-xl lg:text-2xl">Sound Amplifier</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <span class="icon mt-4">
+              <img class="objec-contain" src="../assets/photos/asset 6.svg" alt="" />
+            </span>
           </div>
-          <span class="icon mt-4">
-            <img class="objec-contain" src="images/icons/feature-icon-3.svg" alt="" />
-          </span>
-        </div>
-        <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
-          <div>
-            <h3 class="h4 text-xl lg:text-2xl">Gesture Navigation</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+            <div>
+              <h3 class="h4 text-xl lg:text-2xl">Gesture Navigation</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <span class="icon mt-4">
+              <img class="objec-contain" src="../assets/photos/asset 7.svg" alt="" />
+            </span>
           </div>
-          <span class="icon mt-4">
-            <img class="objec-contain" src="images/icons/feature-icon-4.svg" alt="" />
-          </span>
-        </div>
-        <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
-          <div>
-            <h3 class="h4 text-xl lg:text-2xl">Dark Theme</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+            <div>
+              <h3 class="h4 text-xl lg:text-2xl">Dark Theme</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <span class="icon mt-4">
+              <img class="objec-contain" src="../assets/photos/asset 8.svg" alt="" />
+            </span>
           </div>
-          <span class="icon mt-4">
-            <img class="objec-contain" src="images/icons/feature-icon-5.svg" alt="" />
-          </span>
-        </div>
-        <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
-          <div>
-            <h3 class="h4 text-xl lg:text-2xl">Privacy Controls</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+            <div>
+              <h3 class="h4 text-xl lg:text-2xl">Privacy Controls</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <span class="icon mt-4">
+              <img class="objec-contain" src="../assets/photos/asset 9.svg" alt="" />
+            </span>
           </div>
-          <span class="icon mt-4">
-            <img class="objec-contain" src="images/icons/feature-icon-6.svg" alt="" />
-          </span>
-        </div>
-        <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
-          <div>
-            <h3 class="h4 text-xl lg:text-2xl">Location Controls</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+            <div>
+              <h3 class="h4 text-xl lg:text-2xl">Location Controls</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <span class="icon mt-4">
+              <img class="objec-contain" src="../assets/photos/asset 10.svg" alt="" />
+            </span>
           </div>
-          <span class="icon mt-4">
-            <img class="objec-contain" src="images/icons/feature-icon-7.svg" alt="" />
-          </span>
-        </div>
-        <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
-          <div>
-            <h3 class="h4 text-xl lg:text-2xl">Security Updates</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+            <div>
+              <h3 class="h4 text-xl lg:text-2xl">Security Updates</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <span class="icon mt-4">
+              <img class="objec-contain" src="../assets/photos/asset 11.svg" alt="" />
+            </span>
           </div>
-          <span class="icon mt-4">
-            <img class="objec-contain" src="images/icons/feature-icon-8.svg" alt="" />
-          </span>
-        </div>
-        <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
-          <div>
-            <h3 class="h4 text-xl lg:text-2xl">Focus Mode</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+            <div>
+              <h3 class="h4 text-xl lg:text-2xl">Focus Mode</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <span class="icon mt-4">
+              <img class="objec-contain" src="../assets/photos/asset 12.svg" alt="" />
+            </span>
           </div>
-          <span class="icon mt-4">
-            <img class="objec-contain" src="images/icons/feature-icon-9.svg" alt="" />
-          </span>
-        </div>
-        <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
-          <div>
-            <h3 class="h4 text-xl lg:text-2xl">Family Link</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+            <div>
+              <h3 class="h4 text-xl lg:text-2xl">Family Link</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <span class="icon mt-4">
+              <img class="objec-contain" src="../assets/photos/asset 13.svg" alt="" />
+            </span>
           </div>
-          <span class="icon mt-4">
-            <img class="objec-contain" src="images/icons/feature-icon-10.svg" alt="" />
-          </span>
         </div>
       </div>
     </div>
@@ -256,15 +261,15 @@
             </p>
             <ul class="tab-nav -ml-4 mt-8 border-b-0" data-tab-nav>
               <li class="tab-nav-item active" data-tab="0">
-                <img class="mr-3" src="images/icons/drop.svg" alt="" />
+                <img class="mr-3" src="../assets/photos/asset 16.svg" alt="" />
                 Habit building essential choose habit
               </li>
               <li class="tab-nav-item" data-tab="1">
-                <img class="mr-3" src="images/icons/brain.svg" alt="" />
+                <img class="mr-3" src="../assets/photos/asset 17.svg" alt="" />
                 Get an overview of Habit Calendars.
               </li>
               <li class="tab-nav-item" data-tab="2">
-                <img class="mr-3" src="images/icons/timer.svg" alt="" />
+                <img class="mr-3" src="../assets/photos/asset 18.svg" alt="" />
                 Start building with Habitify platform
               </li>
             </ul>
@@ -274,8 +279,8 @@
       <div class="row gx-5 mt-12 items-center lg:mt-0">
         <div class="lg:col-7">
           <div class="relative">
-            <img class="w-full object-contain" src="images/collaboration.png" />
-            <img class="absolute bottom-6 left-1/2 -z-[1] -translate-x-1/2" src="images/shape.svg" alt="" />
+            <img class="w-full object-contain" src="../assets/photos/asset 15.png" />
+            <img class="absolute bottom-6 left-1/2 -z-[1] -translate-x-1/2" src="../assets/photos/asset 3.svg" alt="" />
           </div>
         </div>
         <div class="mt-6 lg:col-5 lg:mt-0">
