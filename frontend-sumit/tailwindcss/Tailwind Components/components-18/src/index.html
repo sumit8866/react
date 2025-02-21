@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-gray-100 flex items-center justify-center min-h-screen relative">
+    <img class="absolute h-screen w-screen blur-[6px]" src="../assets/ss-18.png" alt="">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-2xl absolute">
+      <form>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="first-name" class="block text-sm font-medium text-gray-700">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name"
+              class="mt-1 block w-full px-3 py-2   border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-gray-100"
+              value="" placeholder="Jane" required>
+          </div>
+          <div>
+            <label for="last-name" class="block text-sm font-medium text-gray-700">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name"
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-gray-100"
+              value="" placeholder="Doe">
+          </div>
+        </div>
+        <div class="mt-6">
+          <label for="password" class="block text-sm font-medium text-gray-700">PASSWORD</label>
+          <input type="password" id="password" name="password"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-gray-100"
+            value="" placeholder="****************">
+          <p class="mt-2 text-sm text-gray-500 italic">Make it as long and as crazy as you'd like</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          <div>
+            <label for="city" class="block text-sm font-medium text-gray-700">CITY</label>
+            <input type="text" id="city" name="city"
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-gray-100"
+              value="" placeholder="Albuquerque">
+          </div>
+          <div>
+            <label for="state" class="block text-sm font-medium text-gray-700">STATE</label>
+            <select id="state" name="state"
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-gray-100">
+              <option>New Mexico</option>
+              <option>Usa</option>
+              <option>India</option>
+              <option>sri Lanka </option>
+            </select>
+          </div>
+          <div>
+            <label for="zip" class="block text-sm font-medium text-gray-700">ZIP</label>
+            <input type="text" id="zip" name="zip"
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-gray-100"
+              value="" placeholder="90210">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

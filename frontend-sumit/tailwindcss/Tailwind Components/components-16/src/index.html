@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>   
+  
+    <div class="bg-gray-100 text-gray-800 justify-center flex h-[100vh] items-center relative">
+      <img class="absolute h-screen w-screen blur-[6px]" src="../assets/ss-16.png" alt="">
+     <div class="container mx-auto p-4 absolute">
+      <div class="flex justify-between items-center mb-4">
+       <div>
+        <h1 class="text-2xl font-semibold">
+         Customers
+         <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-full text-sm">
+          240 vendors
+         </span>
+        </h1>
+        <p class="text-gray-500">
+         These companies have purchased in the last 12 months.
+        </p>
+       </div>
+       <div class="flex space-x-2">
+        <button class="bg-white border border-gray-300 text-gray-700 px-4 py-1 rounded-md">
+         Import
+        </button>
+        <button class="bg-blue-600 text-white px-4 py-1 rounded-md">
+         Add vendor
+        </button>
+       </div>
+      </div>
+      <div class="flex justify-between ">
+        <div class="flex mb-4 ">
+         <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-l-xl">
+          View all
+         </button>
+         <button class="bg-white border border-gray-300 text-gray-700 px-4 py-2 ">
+          Monitored
+         </button>
+         <button class="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-r-xl">
+          Unmonitored
+         </button>
+        </div>
+        <div class="flex justify-between items-center mb-4">
+          <div class="relative">
+           <input class=" border border-gray-300  bg-white py-2 px-4 w-84" placeholder="Search" type="text"/>
+           <i class="fas fa-search absolute top-3 right-3 text-gray-500">
+           </i>
+          </div>
+       </div>
+      </div>
+      <div class="bg-white shadow overflow-hidden">
+       <div class="p-4">
+        
+        <table class="min-w-full bg-white">
+         <thead>
+          <tr>
+           <th class="py-2 px-4 border-b border-gray-200 text-left text-gray-600">
+            Company
+           </th>
+           <th class="py-2 px-4 border-b border-gray-200 text-left text-gray-600">
+            Status
+           </th>
+           <th class="py-2 px-4 border-b border-gray-200 text-left text-gray-600">
+            About
+           </th>
+           <th class="py-2 px-4 border-b border-gray-200 text-left text-gray-600">
+            Users
+           </th>
+           <th class="py-2 px-4 border-b border-gray-200 text-left text-gray-600">
+            License use
+           </th>
+           <th class="py-2 px-4 border-b border-gray-200 text-left text-gray-600">
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="text-gray-900">
+             Catalog
+            </div>
+            <div class="text-gray-500">
+             catalogapp.io
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-sm">
+             Customer
+            </span>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="text-gray-900">
+             Content curating app
+            </div>
+            <div class="text-gray-500">
+             Brings all your news into one place
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="flex items-center">
+             <img alt="User 1" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-1.webp" width="24"/>
+             <img alt="User 2" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-2.webp" width="24"/>
+             <img alt="User 3" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-3.png" width="24"/>
+             <img alt="User 4" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-1.webp" width="24"/>
+             <span class=" -ml-2 text-[11px] p-1 border-white border-2 bg-blue-300 text-blue-600 rounded-full">
+              +4 
+             </span>
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="bg-blue-100 h-2 rounded-full overflow-hidden">
+             <div class="bg-blue-600 h-full" style="width: 60%;">
+             </div>
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200 text-right">
+            <i class="fas fa-ellipsis-h text-gray-500">
+            </i>
+           </td>
+          </tr>
+          <tr>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="text-gray-900">
+             Circooles
+            </div>
+            <div class="text-gray-500">
+             getcircooles.com
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-sm">
+             Churned
+            </span>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="text-gray-900">
+             Design software
+            </div>
+            <div class="text-gray-500">
+             Super lightweight design app
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="flex items-center">
+              <img alt="User 1" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-1.webp" width="24"/>
+              <img alt="User 2" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-2.webp" width="24"/>
+              <img alt="User 3" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-3.png" width="24"/>
+              <img alt="User 4" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-1.webp" width="24"/>
+              <span class=" -ml-2 text-[11px] p-1 border-white border-2 bg-blue-300 text-blue-600 rounded-full">
+                +4 
+               </span>
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="bg-blue-100 h-2 rounded-full overflow-hidden">
+             <div class="bg-blue-600 h-full" style="width: 40%;">
+             </div>
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200 text-right">
+            <i class="fas fa-ellipsis-h text-gray-500">
+            </i>
+           </td>
+          </tr>
+          <tr>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="text-gray-900">
+             Sisyphus
+            </div>
+            <div class="text-gray-500">
+             sisyphus.com
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-sm">
+             Customer
+            </span>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="text-gray-900">
+             Automation and workflow
+            </div>
+            <div class="text-gray-500">
+             Time tracking, invoicing and expenses
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="flex items-center">
+              <img alt="User 1" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-1.webp" width="24"/>
+              <img alt="User 2" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-2.webp" width="24"/>
+              <img alt="User 3" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-3.png" width="24"/>
+              <img alt="User 4" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-1.webp" width="24"/>
+              <span class=" -ml-2 text-[11px] p-1 border-white border-2 bg-blue-300 text-blue-600 rounded-full">
+                +4 
+               </span>
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="bg-blue-100 h-2 rounded-full overflow-hidden">
+             <div class="bg-blue-600 h-full" style="width: 80%;">
+             </div>
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200 text-right">
+            <i class="fas fa-ellipsis-h text-gray-500">
+            </i>
+           </td>
+          </tr>
+          <tr>
+           <td class="py-2 px-4 border-gray-200">
+            <div class="text-gray-900">
+             Hourglass
+            </div>
+            <div class="text-gray-500">
+             hourglass.app
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-sm">
+             Churned
+            </span>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="text-gray-900">
+             Productivity app
+            </div>
+            <div class="text-gray-500">
+             Time management and productivity
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="flex items-center">
+              <img alt="User 1" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-1.webp" width="24"/>
+              <img alt="User 2" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-2.webp" width="24"/>
+              <img alt="User 3" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-3.png" width="24"/>
+              <img alt="User 4" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-1.webp" width="24"/>
+              <span class=" -ml-2 text-[11px] p-1 border-white border-2 bg-blue-300 text-blue-600 rounded-full">
+                +4 
+               </span>
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="bg-blue-100 h-2 rounded-full overflow-hidden">
+             <div class="bg-blue-600 h-full" style="width: 30%;">
+             </div>
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200 text-right">
+            <i class="fas fa-ellipsis-h text-gray-500">
+            </i>
+           </td>
+          </tr>
+          <tr>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="text-gray-900">
+             Quotient
+            </div>
+            <div class="text-gray-500">
+             quotient.co
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-sm">
+             Customer
+            </span>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="text-gray-900">
+             Sales CRM
+            </div>
+            <div class="text-gray-500">
+             Web-based sales doc management
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="flex items-center">
+              <img alt="User 1" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-1.webp" width="24"/>
+              <img alt="User 2" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-2.webp" width="24"/>
+              <img alt="User 3" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-3.png" width="24"/>
+              <img alt="User 4" class="w-6 h-6 rounded-full border-2 border-white -ml-2" height="24" src="../assets/person-1.webp" width="24"/>
+              <span class=" -ml-2 text-[11px] p-1 border-white border-2 bg-blue-300 text-blue-600 rounded-full">
+                +4 
+               </span>
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200">
+            <div class="bg-blue-100 h-2 rounded-full overflow-hidden">
+             <div class="bg-blue-600 h-full" style="width: 50%;">
+             </div>
+            </div>
+           </td>
+           <td class="py-2 px-4 border-b border-gray-200 text-right">
+            <i class="fas fa-ellipsis-h text-gray-500">
+            </i>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="flex justify-between items-center p-4 bg-gray-50 border-t border-gray-200">
+        <span class="text-gray-600">
+         Page 1 of 10
+        </span>
+        <div class="flex space-x-2">
+         <button class="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-md">
+          Previous
+         </button>
+         <button class="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-md">
+          Next
+         </button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+</body>
+</html>
