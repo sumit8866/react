@@ -126,26 +126,15 @@
       background-color: #4070f4;
     }
 
-    .active::after {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 3px;
-      left: 0;
-      top: 32px;
-      background-color: #4070f4;
-    }
+    
 
-    .home-social-icon:hover,
-    .footer-icon:hover {
-      color: #4070f4;
+   
+    .skills-data{
+      transition: 0.5s ease;
     }
-
-    .skills-names:hover {
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
+    .skills-data:hover {
       transform: scale(1.1);
-      transition: 1s ease;
+      transition: 0.5s ease;
     }
 
     @media screen and (min-width: 768px) {
@@ -273,15 +262,16 @@
       transition: all 0.4s;
       border: 2px solid black;
       background-color: white;
-
-
-
+      img{
+        transition: 0.5s;
+      }
       &:hover {
+
         background-color: rgb(227, 218, 218);
 
         img {
           transform: scale(1.2);
-          transition: 0.8s;
+          transition: 0.5s;
         }
       }
 
@@ -348,9 +338,9 @@
 
     <section class="home bd-grid section">
       <div class="home-data self-center">
-        <h2 class="home-title text-[32px] mb-[20px]">
-          Hi 👋,<br />I'am <span class="home-title-color text-[#4070f4]">Sumit Pavasiya</span><br />
-          <span id="jobTitle">FRONTEND <br>DEVELOPER</span>
+        <h2 class="home-title text-[32px] mb-[20px] font-semibold">
+          Hi 👋,<br />I'am <span class="home-title-color font-semibold text-[#4070f4]">Sumit Pavasiya</span><br />
+          <span class="font-bold" id="jobTitle">FRONTEND <br>DEVELOPER</span>
         </h2>
 
         <a href="./assets/img/monkey.jpg" target="_blank"
@@ -358,10 +348,10 @@
 
       </div>
       <div class="home-social   flex flex-col">
-        <a href="" target="_blank" class="home-social-icon   w-max mb-[16px] text-[24px] text-[#0e2431]"><i
+        <a href="" target="_blank" class="home-social-icon hover:text-blue-500  w-max mb-[16px] text-[24px] text-[#0e2431]"><i
             class="bx bxl-linkedin"></i></a>
         <a href="https://github.com/sumit8866" target="_blank"
-          class="home-social-icon w-max mb-[16px] text-[24px] text-[#0e2431]"><i class="bx bxl-github"></i></a>
+          class="home-social-icon  hover:text-blue-500 w-max mb-[16px] text-[24px] text-[#0e2431]"><i class="bx bxl-github"></i></a>
       </div>
 
 
@@ -372,7 +362,7 @@
 
     <!--===== ABOUT =====-->
     <section class="about section px-[15px] py-[20vh]" id="about">
-      <h2 class="section-title">About</h2>
+      <h2 class="section-title font-bold">About</h2>
 
       <div class="about-container bd-grid gap-y-[32px] text-center">
         <div class="about-img justify-self-center">
@@ -398,7 +388,7 @@
     </section>
     <!---========Education ======--->
     <section class="education section" id="education">
-      <h2 class="section-title">Education</h2>
+      <h2 class="section-title font-bold">Education</h2>
       <div class="education-container bd-grid">
 
         <div
@@ -447,12 +437,12 @@
 
       <!--===== SKILLS =====-->
       <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title font-bold">Skills</h2>
 
         <div class="skills-container bd-grid gap-y-[32px] text-center">
           <div>
             <div
-              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)] [transition:1s_ease] cursor-pointer">
+              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)]  cursor-pointer">
               <div class="skills-names flex items-center ">
                 <i class="bx bxl-html5 skills-icon w-[32px] text-[32px] mr-[16px] text-[#4070f4]"></i>
                 <span class="skills-name">HTML</span>
@@ -464,7 +454,7 @@
               </div>
             </div>
             <div
-              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)] [transition:1s_ease] cursor-pointer">
+              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)]  cursor-pointer">
               <div class="skills-names flex items-center  ">
                 <i class="bx bxl-css3 skills-icon w-[32px] text-[32px] mr-[16px] text-[#4070f4] "></i>
                 <span class="skills-name">CSS</span>
@@ -476,7 +466,7 @@
               </div>
             </div>
             <div
-              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)] [transition:1s_ease] cursor-pointer">
+              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)]  cursor-pointer">
               <div class="skills-names flex items-center ">
                 <i class="bx bxl-javascript skills-icon w-[32px] text-[32px] mr-[16px] text-[#4070f4]"></i>
                 <span class="skills-name">JavaScript</span>
@@ -488,7 +478,7 @@
 
             </div>
             <div
-              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)] [transition:1s_ease] cursor-pointer">
+              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)]  cursor-pointer">
               <div class="skills-names flex items-center ">
                 <i class="bx bxl-react skills-icon w-[32px] text-[32px] mr-[16px] text-[#4070f4]"></i>
                 <span class="skills-name">React</span>
@@ -500,7 +490,7 @@
               </div>
             </div>
             <div
-              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)] [transition:1s_ease] cursor-pointer">
+              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)]  cursor-pointer">
               <div class="skills-names flex items-center ">
                 <img class="skills-icon w-[32px] text-[32px] mr-[16px] text-[#4070f4]"
                   src="./assets/img/bootstrap-logo.svg" alt="">
@@ -516,7 +506,7 @@
             </div>
 
             <div
-              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)] [transition:1s_ease] cursor-pointer">
+              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)]  cursor-pointer">
               <div class="skills-names flex items-center ">
                 <img class="skills-icon w-[32px] text-[32px] mr-[16px] text-[#4070f4]" src="./assets/img/tailwind.png"
                   alt="" />
@@ -532,7 +522,7 @@
           </div>
           <div>
             <div
-              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)] [transition:1s_ease] cursor-pointer">
+              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)]  cursor-pointer">
               <div class="skills-names flex items-center ">
                 <img class="skills-icon w-[32px] text-[32px] mr-[16px] text-[#4070f4]" src="./assets/img/sass.png"
                   alt="" />
@@ -547,7 +537,7 @@
             </div>
 
             <div
-              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)] [transition:1s_ease] cursor-pointer">
+              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)]  cursor-pointer">
               <div class="skills-names flex items-center ">
                 <img class="skills-icon w-[32px] text-[32px] mr-[16px] text-[#4070f4]" src="./assets/img/c.png"
                   alt="" />
@@ -560,7 +550,7 @@
             </div>
 
             <div
-              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)] [transition:1s_ease] cursor-pointer">
+              class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)]  cursor-pointer">
               <div class="skills-names flex items-center ">
                 <img class="skills-icon w-[32px] text-[32px] mr-[16px] text-[#4070f4]" src="./assets/img/c++.png"
                   alt="" />
@@ -575,7 +565,7 @@
 
             <div>
               <div
-                class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)] [transition:1s_ease] cursor-pointer">
+                class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)]  cursor-pointer">
                 <div class="skills-names flex items-center ">
                   <img class="skills-icon w-[32px] text-[32px] mr-[16px] text-[#4070f4]" src="./assets/img/dsa.png"
                     alt="" />
@@ -589,7 +579,7 @@
                 </div>
               </div>
               <div
-                class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)] [transition:1s_ease] cursor-pointer">
+                class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)]  cursor-pointer">
                 <div class="skills-names flex items-center ">
                   <img class="skills-icon w-[32px] text-[32px] mr-[16px] text-[#4070f4]" src="./assets/img/github.svg"
                     alt="" />
@@ -597,7 +587,7 @@
                 </div>
               </div>
               <div
-                class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)] [transition:1s_ease] cursor-pointer">
+                class="skills-data flex justify-between items-center relative font-semibold px-[16px] py-2 mb-[32px] rounded-lg [box-shadow:0_4px_25px_rgba(14,_36,_49,_0.15)]  cursor-pointer">
                 <div class="skills-names flex items-center ">
                   <img class="skills-icon w-[32px] text-[32px] mr-[16px] text-[#4070f4]" src="../assets/img/git.png "
                     alt="" />
@@ -613,22 +603,22 @@
       <footer class="footer section bg-[#0e2431] text-[#fff] text-center font-semibold px-0 py-4" id="contact">
         <h2 class="section-title">Get in Touch</h2>
         <p class="footer-title text-[32px] ">Sumit Pavasiya</p>
-        <div class="footer-social mb-8 mt-8">
-          <a href="" target="_blank" class="footer-icon text-[16px] text-[#fff] mx-[16px] my-0"><i
+        <div class="footer-social mb-8 mt-8 ">
+          <a href="" target="_blank" class="footer-icon hover:text-blue-500 text-[16px] text-[#fff] mx-[16px] my-0"><i
               class="bx bxl-linkedin">
               <br />
               LinkedIn</i></a>
 
           <a href="mailto:pavasiyasumit@gmail.com" target="_blank"
-            class="footer-icon text-[16px] text-[#fff] mx-[16px] my-0"><i class="bx bx-mail-send">
+            class="footer-icon hover:text-blue-500 text-[16px] text-[#fff] mx-[16px] my-0"><i class="bx bx-mail-send">
               <br />
               E-mail</i></a>
-          <a href="tel:+91 9714051182" target="_blank" class="footer-icon text-[16px] text-[#fff] mx-[16px] my-0"><i
+          <a href="tel:+91 9714051182" target="_blank" class="footer-icon hover:text-blue-500 text-[16px] text-[#fff] mx-[16px] my-0"><i
               class="bx bx-phone">
               <br />
               Phone</i></a>
           <a href="https://github.com/sumit8866" target="_blank"
-            class="footer-icon text-[16px] text-[#fff] mx-[16px] my-0"><i class="bx bxl-github">
+            class="footer-icon hover:text-blue-500 text-[16px] text-[#fff] mx-[16px] my-0"><i class="bx bxl-github">
               <br />
               GitHub
             </i></a>
