@@ -1,0 +1,113 @@
+***==============================================***
+JavaScript History:***==============================================***
+
+-> JavaScript was invented by Brendan Eich in 1995.
+
+-> It was developed by Netscape ,and became the ECMA-262 standard in 1997
+
+-> After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript
+ for the Firefox browser.
+
+-> JavaScript was only supported by the Internet Explorer browser when it was developed.
+
+-> In 1997, to promote JavaScript across all web browsers, Netscape submitted a proposal to the European 
+ Computer Manufacturers Association (ECMA) for standardizing JavaScript.
+
+-> This is how ECMAScript(ES) came into the world of development. After that, the JavaScript developer's 
+ community and Netscape update the JavaScript continuously, adding new features to the JavaScript and 
+ releasing the new version, ES1, ES2, …, ES13, etc.
+
+-> The latest version of JavaScript is ES13.
+
+
+***==============================================***
+What is JavaScript?***==============================================***
+
+-> JavaScript is a lightweight programming language commonly used by web developers to add dynamic interactions
+ to web pages, applications, servers, and even games.
+
+-> It works seamlessly alongside HTML and CSS, complementing CSS in formatting HTML elements while providing user 
+ interaction, a capability that CSS alone lacks.
+
+-> JavaScript’s widespread applications in web, mobile app, and game development make it a valuable language to learn.
+
+***==============================================***
+What Is JavaScript Used For?***==============================================***
+
+-> JavaScript has continued to grow alongside new browsers like Mozilla Firefox and Google Chrome since then. 
+ The latter even started developing the first modern JavaScript engine, called V8, which compiles bytecode
+ into native machine code.
+ 
+-> JavaScript Used For Web and Mobile Apps:
+ The development of JavaScript frameworks, consisting of JavaScript code libraries, allows developers to 
+ use pre-written JavaScript code in their projects. It saves them time and effort from having to code
+ programming features from scratch.
+
+ Each JavaScript framework has features that aim to simplify the development and debugging process.
+
+ For example, front-end JavaScript frameworks like jQuery and ReactJS improve design efficiency. 
+ They allow developers to reuse and update code components without affecting each other, 
+ function or value-wise.
+ 
+-> JavaScript Used For Building Web Servers and Server Applications:
+ Through Node.js, JavaScript lets developers build web servers and back-end infrastructure, 
+ saving you time and effort in web server creation.
+ 
+-> JavaScript Used For Interactive Behavior on Websites:
+ One of JavaScript’s core functions is adding dynamicity to web pages. 
+ This includes displaying animations, modifying text visibility, and creating dropdown menus.
+
+ While you can use only HTML and CSS code to build a website, it will only have a static display. 
+ With JavaScript, a user can interact with web pages and have a better browsing experience.
+
+-> JavaScript Used For Game Development:
+ JavaScript can help you build a game if used with HTML5 and an Application Programming Interface (API).
+ Some of the games made with JavaScript game engines include Angry Birds, The Wizard, and 2048.
+ 
+ 
+ ***==============================================***
+What Make's JavaScript Great ***==============================================***
+ 
+-> JavaScript has a number of advantages that make it a better choice than its competitors. 
+ The following are several benefits of using JavaScript:
+ 
+ [1].Simplicity 
+ [2].Speed 
+ [3].Versatility 
+ [4].Server load 
+ [5].Updates 
+
+
+ ***==============================================***
+What Are JavaScript’s Weaknesses?***==============================================***
+ 
+-> The following are some of the Weaknesses of using JavaScript:
+
+ [1].Browser compatibility :
+     different web browsers interpret JavaScript code differently, causing inconsistency. 
+	 Therefore, you should test your JavaScript script in all popular web browsers, 
+	 including their older versions, to avoid harming the user experience.
+	 
+ [2].Security :
+     JavaScript code that runs on the client-side is vulnerable to exploitation by 
+	 irresponsible users.
+	 
+ [3].Debugging : 
+     while some HTML editors support debugging, they’re less efficient than other editors. 
+	 Since browsers don’t show any warning for errors, finding the issue may be challenging.
+	 
+	 
+ ***==============================================
+How Does the JavaScript Code Work on Your Web Page?
+================================================***
+ 
+-> JavaScript is either embedded directly into a web page or referenced via a separate .js file. 
+ When a user visits that web page, their browser will run the script along with the 
+ HTML and CSS code ‒ creating a functional page displayed via the browser tab.
+ 
+-> The script is downloaded to the visitors’ machines and processed there. 
+ This diffrence from a server-side language, in which the server processes the script before 
+ sending it to the browser.
+ That called compiling.
+ 
+ 
