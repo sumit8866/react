@@ -102,6 +102,14 @@
       margin-left: 16px;
       margin-right: 16px;
     }
+    .work:hover img {
+  transform: scale(0.9);
+}
+
+.work:hover .layer {
+  transform: scale(0.9);
+  height: 100%;
+}
 
     @media screen and (max-width: 768px) {
       .nav-menu {
@@ -319,6 +327,9 @@
           </li>
           <li class="nav-item mb-8">
             <a href="#skills" class="nav-link skills relative text-white hover:relative">Skills</a>
+          </li>
+          <li class="nav-item mb-8">
+            <a href="#project" class="nav-link skills relative text-white hover:relative">project</a>
           </li>
 
           <li class="nav-item mb-8">
@@ -598,6 +609,48 @@
             </div>
           </div>
       </section>
+
+      <div id="project">
+        <div class="container bd-grid">
+          <h1 class="sub-title text-2xl font-bold">My Work</h1>
+          <div class="work-list grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-[20px] mt-[50px]">
+            <div class="work rounded-[10px] relative overflow-hidden h-[250px]">
+              <img class="w-full rounded-[10px] block [transition:transform_0.5s] h-[250px]" src="./assets/img/work4.jfif" />
+              <div class="layer w-full h-[0] bg-[linear-gradient(rgba(0,_0,_0,_0.6),_#081b29)] rounded-[10px] text-[white] absolute left-[0] bottom-[0] overflow-hidden flex items-center justify-center flex-col px-[40px] py-[0] text-center text-[14px] [transition:height_0.5s]">
+                <h3 class="font-medium mb-[20px]">Database Management</h3>
+                <p>
+                  Database for store data and information safe and secure for long
+                  term.
+                </p>
+                <a class="mt-[20px] text-[#081b29] no-underline bg-[white] w-[60px] h-[60px] rounded-[50%] text-center" href="#"><img class="ml-[14px] mt-[13px] h-[30px] w-[30px]" src="./assets/img/new-window.png" alt=""> </a>
+              </div>
+            </div>
+            <div class="work rounded-[10px] relative overflow-hidden h-[250px]">
+              <img class="w-full rounded-[10px] block [transition:transform_0.5s] h-[250px]" src="./assets/img/work2.jfif" />
+              <div class="layer w-full h-[0] bg-[linear-gradient(rgba(0,_0,_0,_0.6),_#081b29)] rounded-[10px] text-[white] absolute left-[0] bottom-[0] overflow-hidden flex items-center justify-center flex-col px-[40px] py-[0] text-center text-[14px] [transition:height_0.5s]">
+                <h3 class="font-medium mb-[20px]">Social Media Webpage</h3>
+                <p>
+                  the app connets you to the talented people around the world.
+                  Download it from play store.
+                </p>
+                <a class="mt-[20px] text-[#081b29] no-underline bg-[white] w-[60px] h-[60px] rounded-[50%] text-center" href="#"><img class="ml-[14px] mt-[13px] h-[30px] w-[30px]" src="./assets/img/new-window.png" alt=""> </a>
+              </div>
+            </div>
+            <div class="work rounded-[10px] relative overflow-hidden h-[250px]">
+              <img class="w-full rounded-[10px] block [transition:transform_0.5s] h-[250px]" src="./assets/img/work3.webp" />
+              <div class="layer  w-full h-[0] bg-[linear-gradient(rgba(0,_0,_0,_0.6),_#081b29)] rounded-[10px] text-[white] absolute left-[0] bottom-[0] overflow-hidden flex items-center justify-center flex-col px-[40px] py-[0] text-center text-[14px] [transition:height_0.5s]">
+                <h3 class="font-medium mb-[20px]">Online Shopping Website</h3>
+                <p>
+                  the app connets you to the talented people around the world.
+                  Download it from play store.
+                </p>
+                <a class="mt-[20px] text-[#081b29] no-underline bg-[white] w-[60px] h-[60px] rounded-[50%] text-center" href="#"><img class="ml-[14px] mt-[13px] h-[30px] w-[30px]" src="./assets/img/new-window.png" alt=""> </a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn block mx-[auto] my-[50px] w-[fit-content] border-[1px] border-solid border-[#081b29] px-[20px] py-[10px] rounded-[6px] no-underline [transition:background_0.5s] hover:text-white hover:bg-[#081b29]">See more</a>
+        </div>
+      </div>
 
 
       <footer class="footer section bg-[#0e2431] text-[#fff] text-center font-semibold px-0 py-4" id="contact">
