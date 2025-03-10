@@ -99,12 +99,6 @@
 
 
 
-
-
-
-
-
-
 // Write a program that calculates the sum of all numbers from 1 to 100
 
 {
@@ -138,7 +132,7 @@
     // fac = 1;
     // for (i = 1; i <= n; i++) {
     //     fac = i * fac;
-        // fac *=i
+    // fac *=i
     // }
     // console.log(`factorial of ${n} is : ${fac}`);
 
@@ -211,11 +205,11 @@
 {
     // let str = prompt(`Enter your char`);
 
-    // let vowels=[`a`,`e`,`i`,`o`,`u`,`A`,`E`,`I`,`O`,`U`];
+    // let vowel=[`a`,`e`,`i`,`o`,`u`,`A`,`E`,`I`,`O`,`U`];
 
     // let count = 0;
 
-    // for(let i=0 ; i<vowels.length ; i++){
+    // for(let i=0 ; i<vowel.length ; i++){
     //     for(let j=0 ; j<str.length ; j++){
     //         if(str[j] == vowels[i]){
     //             count++;
@@ -225,5 +219,15 @@
     // console.log(count);
 
 }
+{
+    
+    // for (let i = 5; i >= 1; i--) {
+    //     for (let j = 5; j >= i; j--) {
+    //         console.log(j);
 
+    //     }
+    //     console.log(`\n`);
+
+    // }
+}
 
