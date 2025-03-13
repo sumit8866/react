@@ -4,6 +4,7 @@
    while loop
    do..while loop
    for loop
+   Nested for loop
    for..in loop
    for..of loop
 */
@@ -62,12 +63,16 @@
 // for..in loop
 
 {
-    // let info = {fname:"John", lname:"Doe", age:25};
-    // let str="";
-    // for (let i in info){
-    //     str += info[i];
+    // let info = {fname:"John", lname:"Doe", age:25}
+    // console.log(info.fname);
+    // console.log(info.lname);
+    // console.log(info.age);
+    // console.log(info["age"]);
+    
+    // for (let key in info){
+        
+    //     console.log(`${key} :- ${info[key]}`);
     // }
-    // console.log(str);
 }
 
 {
