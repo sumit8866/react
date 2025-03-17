@@ -278,23 +278,152 @@
 // substring(indexStart)
 // substring(indexStart, indexEnd)
 
-let str =`**** <<PAVASIYA SUMIT>> ****`
 
-console.log(str.slice(10));
-console.log(str.substring(10));
+{
+    // let str =`**** <<PAVASIYA SUMIT>> ****`
+    
+    // console.log(str.slice(10));
+    // console.log(str.substring(10));
+    
+    // console.log(str.slice(-10));
+    // console.log(str.substring(-20));
+    
+    // console.log(str.slice(-10 , 18));
+    // console.log(str.substring(-10 , 20));
+    
+    // console.log(str.slice(10 , 20));
+    // console.log(str.substring(10 , 20));
+    
+    // console.log(str.slice(10 , 0));
+    // console.log(str.substring(10 , 0));
+    
+    
+    // console.log(str.slice(-10 , -18));
+    // console.log(str.substring(-10 , -20));
+}
 
-console.log(str.slice(-10));
-console.log(str.substring(-20));
 
-console.log(str.slice(-10 , 18));
-console.log(str.substring(-10 , 20));
+// Javascript Regex*********************************************************************************************   
 
-console.log(str.slice(10 , 20));
-console.log(str.substring(10 , 20));
+// A regular expression is a pattern of characters.
 
-console.log(str.slice(10 , 0));
-console.log(str.substring(10 , 0));
+// The pattern is used for searching and replacing characters in strings.
+
+// The RegExp Object is a regular expression with added Properties and Methods.
+
+// syntax:
+//   /pattern/modifier(s);
+
+// modifier:
+//   /g	  : Perform a global match (find all)
+//   /i	  : Perform case-insensitive matching
+//   /m	  : Perform multiline matching
 
 
-console.log(str.slice(-10 , -18));
-console.log(str.substring(-10 , -20));
+// Brackets:
+// [abc] 	: Find any character between the brackets
+// [^abc] 	: Find any character NOT between the brackets
+// [0-9] 	: Find any character between the brackets (any digit)
+// [^0-9] 	: Find any character NOT between the brackets (any non-digit)
+// (x|y) 	: Find any of the alternatives specified
+
+//Metacharacters
+// .	    : Find a single character, except newline or line terminator
+// \w	    : Find a word character
+// \W	    : Find a non-word character
+// \d	    : Find a digit
+// \D	    : Find a non-digit character
+// \s	    : Find a whitespace character
+// \S	    : Find a non-whitespace character
+// \b	    : Find a match at the beginning/end of a word, beginning like this: \bHI, end like this: HI\b
+// \B	    : Find a match, but not at the beginning/end of a word
+// \0	    : Find a NULL character
+// \n	    : Find a new line character
+// \f	    : Find a form feed character
+// \r	    : Find a carriage return character
+// \t	    : Find a tab character
+// \v	    : Find a vertical tab character
+// \xxx	    : Find the character specified by an octal number xxx
+// \xdd	    : Find the character specified by a hexadecimal number dd
+// \udddd	: Find the Unicode character specified by a hexadecimal number dddd
+
+//Quantifiers
+// n+	    : Matches any string that contains at least one n
+// n*	    : Matches any string that contains zero or more occurrences of n
+// n?	    : Matches any string that contains zero or one occurrences of n
+// n{X}	    : Matches any string that contains a sequence of X n's
+// n{X,Y}	: Matches any string that contains a sequence of X to Y n's
+// n{X,}	: Matches any string that contains a sequence of at least X n's
+// n$	    : Matches any string with n at the end of it
+// ^n	    : Matches any string with n at the beginning of it
+// ?=n	    : Matches any string that is followed by a specific string n
+// ?!n	    : Matches any string that is not followed by a specific string n
+
+
+    
+
+//javascript
+//  String.replace() and 
+// String.repalceAll() Method*********************************************************************************
+
+// replaceAll(pattern, replacement)
+// replace(pattern, replacement)
+
+// The replace() method of String values returns a new string with one, some, or all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function called for each match. If pattern is a string, only the first occurrence will be replaced. The original string is left unchanged.
+
+// Give ans in new string with Regex pattern(word)
+
+
+{
+    //  let str = "My city Is big but it is dirty and your city is small but it is beautiful!"
+
+    // let Regex = /city/gi
+
+    // console.log(str.replace(Regex , 'villege'));
+    // console.log(str.replaceAll(Regex , 'villege'));
+}
+
+
+// javcasctipt 
+// String.search() method*************************************************************************************
+
+// search(regexp)
+
+// The search() method of String values executes a search for a match between a regular expression and this string, returning the index of the first match in the string.
+
+// give ans in number the number is Regex pattern start index number
+
+{
+    // let str = "My city Is big but it is dirty and your city is small but it is beautiful!"
+
+    // let Regex = /beautiful/gi
+    
+    // console.log(str.search(Regex));
+    
+    // let str2 = "My city Is big but it is dirty and your city is small but it is beautiful!"
+
+    // let Regex2 = /my/gi
+    
+    // console.log(str2.search(Regex2));
+}
+
+
+// Javascript 
+// String.match() and 
+// String.matchAll() Method*************************************************************************************
+
+// match(regexp)
+// matchAll(regexp)
+
+//The match() method of String values retrieves the result of matching this string against a regular expression.
+
+{
+    // let str = "My City Is Big but it is dirty and your City is Small but it is beautiful!"
+
+    // let Regex = /[A-Z]/g
+    // let Regex2 = /[a-z]/gi
+
+    // console.log(str.match(Regex));
+    // console.log([...str.matchAll(Regex2)]);
+    
+}
