@@ -8,7 +8,7 @@
     
 }
 
-// date get methods 
+// date get methods **********************************************************************************************
 
 /*
 0-January
@@ -61,9 +61,38 @@
 }
 
 {
-    setInterval(() => { 
-                let today = new Date()
+    // setInterval(() => { 
+    //             let today = new Date()
                 
-                console.log(`${today.getHours()}/${today.getMinutes()}/${today.getSeconds()}`);
-            } , 1000)
+    //             console.log(`${today.getHours()}/${today.getMinutes()}/${today.getSeconds()}`);
+    //         } , 1000)
+}
+
+// date set methods **********************************************************************************************
+
+
+{
+    let today = new Date()
+
+    console.log(today.getTime);
+
+    let year = today.setFullYear(2080)
+    console.log(today)
+
+    let month = today.setMonth(7)
+    console.log(today)
+    
+    let date = today.setDate(31)
+    console.log(today)
+
+    let hour = today.setHours(2)
+    console.log(today)
+
+    let minute = today.setMinutes(31)
+    console.log(today)
+
+    let second = today.setSeconds(31)
+    console.log(today)
+    
+
 }
