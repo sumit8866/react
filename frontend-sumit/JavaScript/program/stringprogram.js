@@ -269,4 +269,129 @@
     // }
 }
 
-//21.
+//21.JavaScript Program to Find the Sum of Natural Numbers
+
+
+{
+    // let num =100
+    // let sum=0
+    //     for(i=1 ; i<=num ; i++){
+    //         sum+=i
+    //     }
+    //     console.log(sum);
+}
+
+// 22.JavaScript Program to Check if the Numbers Have Same Last Digit
+
+{
+    // let num1 = "100545"
+    // let num2 = "250546"
+
+    // let n1 = num1.split("")
+    // let n2 = num2.split("")
+
+    // console.log(n1)
+    // console.log(n2)
+
+    // // let l1= n1.length
+    // // let l2= n2.length
+
+    // // console.log(l1)
+    // // console.log(l2)
+
+    // if (n1[n1.length - 1] == n2[n2.length - 1]) {
+    //     console.log(`${num1} and ${num2} both have same last digits.`);
+    // }
+    // else {
+    //     console.log(`${num1} and ${num2} both have not same last digits.`);
+    // }
+}
+
+// 23.JavaScript Program to Find HCF or GCD
+
+{
+
+    // let a = 18;
+    // let b = 24;
+
+
+    // let temp;
+    // let originalB = b;
+
+    // for (let temp = b; b !== 0;) {
+    //     b = a % b;
+    //     a = temp;
+    //     temp = b;
+    // }
+
+    // console.log("GCD:", a);
+
+}
+
+//24.JavaScript Program to Find LCM
+
+{
+
+    // let a = 12;
+    // let b = 18;
+
+    // let temp;
+    // let originalB = b;
+
+
+    // while (b !== 0) {
+    //     temp = b;
+    //     b = a % b;
+    //     a = temp;
+    // }
+
+    // console.log("GCD:", a);
+
+    // let gcd = a;
+    // let gcdValue = gcd;
+    // let lcm = (a * originalB * 2) / gcdValue;
+
+    // console.log("LCM:", lcm);
+
+
+}
+
+//25.JavaScript Program to Find the Factors of a Number
+
+{
+
+    // let num =48
+    // for(let i = 1; i <= num; i++) {
+    // if(num % i == 0) {
+    //     console.log(i);
+    // }
+    // }
+}
+
+// 26.JavaScript Program to Find Sum of Natural Numbers Using Recursion
+
+{
+
+
+
+}
+
+//27.JavaScript Program to Guess a Random Number
+
+{
+
+    // const random = Math.floor(Math.random() *10) + 1;
+    
+    // let number = parseInt(prompt('Guess a number from 1 to 10: '));
+    
+    // if(number == random) {
+    //     console.log('You guessed the correct number.');
+    // }
+    // console.log(random);
+
+  }
+
+28.
+    
+    
+ 
