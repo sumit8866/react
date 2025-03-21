@@ -1,0 +1,93 @@
+.translate{
+    height: 100px;
+    width: 100px;
+    background-color: lavender;
+}
+
+.translate:hover{ 
+    /* transform: translate(200px , 100px); */
+    transform: translateY(-200px);
+    /* transform: translateX(-200px); */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+    /* transform: scale(2); */
+    /* transform: scale(0.5); */
+    /* transform: rotateX(45deg); */
+    /* transform: rotateY(90deg); */
+    /* transform: rotate(180deg); */
+    /* transform: rotate(-180deg); */
+    /* transform: skewX(45deg);
+    transform: skewY(45deg);
+    transform: skew(45deg ,  90deg); */
+    /* transform-origin: bottom right; */
+    /* transition: 3s; */
+}
+
+/* https://polypane.app/css-3d-transform-examples/ */
+
+
+/* Css Transition */
+
+.transition{
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+}
+
+
+/* .box:hover .transition{
+    transform: translate(800px);
+    width: 500px;
+    height: 400px;
+    transition-duration: 7s;
+    transition-delay: 2s;
+    transition-property:transform;
+    transition-timing-function: steps(10);
+    transition: 3s 2s transform linear;
+} */
+
+/* Css Animation */
+
+.animation{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-direction:alternate-reverse;
+    animation-play-state:paused;
+    /* animation-fill-mode: forwards; */
+    /* animation-iteration-count: infinite; */
+}
+
+.animation:hover{
+    animation-name: rotate;
+}
+
+@keyframes rotate{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(900px);
+    }
+}
+
+@keyframes rotate{
+    0%{
+        
+    }
+    25%{
+
+    }
+    50%{
+
+    }
+    75%{
+
+    }
+    100%{
+
+    }
+}

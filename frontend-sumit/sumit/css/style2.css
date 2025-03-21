@@ -1,0 +1,205 @@
+/* body{
+    background-color: cadetblue;
+} */
+
+/* css color properties */
+
+/* .color{ */
+    /* height: 400px; */
+    /* width: 400px;  */
+    /* background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 255, 0);
+    background-color: rgb(0, 0, 255);*/
+    /* background-color: rgb(255, 255, 255);  */
+    /* background-color: rgb(80, 100, 30); */
+    /* background-color: rgb(0, 150, 200);  */
+/* } */
+
+ /* Css Background Properties  
+
+   
+   background-color
+   background-image
+   background-repeat
+   background-size
+   background-position
+   background-origin
+   background-attechment
+   background-clip
+   background-gradiant
+   */
+ 
+
+    /*.box{
+         width: 800px; */
+        /* height: 800px; */
+        /* background-color: plum; */
+        /* background-image: url(./img/image1.jpg); */
+        /* background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: border-box;
+        background-attachment: scroll;
+        background-clip: border-box;
+        padding: 80px; */
+        /* background: radial-gradient(circle, rgba(238,174,202,1) 55%, rgba(148,187,233,1) 71%); */
+        /* border: solid transparent; 
+    }*/
+
+    /* <!-- Css Text Properties --> */
+
+/*     
+        text-color
+        text-decoration
+        text-shadow
+        text-transform
+        line-height
+        letter-spacing
+        word-spacing
+        vertical align
+        text-indent
+        white-space */
+
+        
+    /* .glass{
+        background-color: cadetblue;
+        color: blue;
+    } */
+
+    /* p{
+        text-align: center;
+        text-decoration: double;
+        text-transform: capitalize;
+        text-shadow: 5px;
+        text-decoration-color: brown;
+        text-decoration-thickness: 3px;
+        text-indent: 200px;
+        line-height: 40px;
+        letter-spacing: 30px;
+        word-spacing: 50px;
+        word-wrap: break-word;
+    } */
+
+    /* p{
+        white-space: nowrap;
+        white-space: wrap;
+        white-space:  pre;
+    } */
+
+    /* Css Verticle Alignement */
+
+    /* p{
+    font-size: 40px;
+    text-decoration: underline;
+    border-top:1px solid black;
+    }
+
+    p img{
+        height: 60px;
+        width: 60px;
+        vertical-align: baseline;
+        vertical-align: text-top;
+        vertical-align: text-bottom;
+        vertical-align: super;
+        vertical-align: sub;
+        vertical-align: top;
+        vertical-align: middle;
+    }
+
+    p{
+        font-family:merienda;
+        font-size: 56px;
+        font-weight:bold;
+        font-style: italic;
+        font-style: normal;
+        font-variant: small-caps;
+        
+    } */
+
+     /* Css Border Propertise
+
+    
+        solid
+        dotted
+        dashed
+        inset
+        outset
+        hidden
+        none
+        ridge
+        groove
+        double */
+
+        /* .line{
+            height: 300px;
+            width: 500px;
+            text-align: center;
+            border: 25px solid pink;
+            border: 25px dotted darkmagenta;
+            border: dashed green;
+            border: 25px inset blue;
+            border: 25px outset black;
+            border: 25px hidden;
+            border: 25px ridge grey;
+            border: 25px groove brown;
+            border: 25px double skyblue;
+            border-top-color: bisque;
+            border-right-width: 25px;
+        } */
+
+        .out{
+            height: 300px;
+            width: 300px;
+            border:10px solid brown;
+            outline: 10px solid green;
+            outline-offset: 10px;
+        }
+
+        .content{
+            height: 300px;
+            width: 300px;
+            padding: 50px;
+            border:10px solid transparent;
+            margin: 50px;
+            background-color: brown;
+            box-sizing: content-box;
+        }
+        
+        .border{
+            height: 300px;
+            width: 300px;
+            padding: 50px;
+            border:10px solid transparent;
+            margin: 50px;
+            background-color: pink;
+            box-sizing: border-box;
+        } 
+
+        .main{
+            /* height: 500px; */
+            border: 2px solid black;
+            /* display: flex; */
+            display: inline-flex;
+            display: grid;
+            justify-content: center;
+            display: inline-grid;
+            display: none;
+            visibility: hidden;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+            border:1px solid lightcoral;
+            margin: 20px;
+            display: inline;
+            display: inline-block;
+            display: block;
+        }
+    
+
+
+
+   

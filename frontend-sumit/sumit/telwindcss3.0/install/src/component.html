@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    padding: {
+                        '106': '106px',
+                    },
+                    margin: {
+                        '110px': '110px',
+                        '600px': '600px',
+                        '610px': '610px',
+                        '370px': '370px',
+                        '433px': '433px',
+                        '475px': '475px',
+                        '480px': '480px',
+                        '503px': '503px',
+                        '507px': '507px',
+                        '530px': '530px',
+                    },
+                    height: {
+                        '630' : '630px',
+                        '450': '450px',
+                        '280': '280px',
+                        '360': '360px',
+                        '381': '381px',
+                        '387': '387px',
+                    },
+                    width: {
+                        '300': '300px',
+                        '400': '400px',
+                        '500' : '500px',
+                        '550': '550px',
+                        '600': '600px',
+                        '700': '700px',
+                        '750': '750px',
+                        '950': '950px',
+                        '1350': '1350px',
+                    },
+                    
+                    colors: {
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+        <!-- component-1 -->
+
+    <h1 class="flex justify-center items-center font-bold mt-8 text-3xl">component-1</h1>
+
+    <div class="container flex font-medium m-10 mx-10">
+        <div class="">
+            <div class="text-lg mx-28 mt-14 mb-4">Company</div>
+            <ul class="font-normal ml-28 mt-0 text-md text-gray-500">
+                <li class="mt-2">Brand</li>
+                <li class="mt-2">Contact Us</li>
+                <li class="mt-2">Blog</li>
+            </ul>
+        </div>
+        <div class="">
+            <div class="text-lg mx-28 mt-14 mb-4">Legal</div>
+            <ul class="font-normal ml-28 mt-0 text-md text-gray-500">
+                <li class="mt-2">Privacy</li>
+                <li class="mt-2">Terms</li>
+                <li class="mt-2">Support</li>
+            </ul>
+        </div> 
+        <div class="">
+            <div class="text-lg mx-28 mt-14 mb-4">Products</div>
+            <ul class="font-normal ml-28 mt-0 text-md text-gray-500">
+                <li class="mt-2">Latest Features</li>
+                <li class="mt-2">Product roadmap</li>
+                <li class="mt-2">Knowledge base</li>
+            </ul>
+        </div>
+        <div class="">
+            <div class="text-lg mx-28 mt-14 mb-4 ">Account</div>
+            <button class="border-2 border-purple-300 mx-24 px-6 py-1 rounded-md">Sign in</button>
+            <button class="border-2 border-purple-500 mx-24 my-3 text-white px-6 py-1 rounded-md bg-purple-500">Sign up</button>
+        </div>
+    </div>
+    <hr class="mt-20 mx-6 h-0.5 bg-gray-300">
+
+    <footer class="flex justify-center items-center">
+        <div class="font-normal text-md text-gray-500 my-7 ">Sitemap. Privacy <i class="fa-regular fa-copyright"></i> Robowolf, saint-Peterburg</div>
+    </footer>
+    <div class="flex justify-center">
+        <div class="rounded-full bg-gray-300 text-lg m-3 size-14 flex justify-center items-center"><i class="font-black text-xl fa-brands fa-twitter"></i></div>
+        <div class="rounded-full bg-gray-300 text-lg m-3 size-14 flex justify-center items-center"><i class="font-black text-xl fa-brands fa-linkedin-in"></i></div>
+        <div class="rounded-full bg-gray-300 text-lg m-3 size-14 flex justify-center items-center"><i class="font-black text-xl fa-brands fa-google"></i></div>
+    </div>
+
+    <!-- component-2 -->
+
+     <h1 class="flex justify-center items-center font-bold mt-8 text-3xl">component-2</h1>
+
+     
+     <div class="flex items-center mt-14 text-lg font-medium">
+         <div class="size-28 mt-0 ms-24"><img src="./img/logo-4.png"></div>
+        <div class="ml-44 mr-16 ">
+            <div class="">Company</div>
+            <ul class="font-normal text-md text-gray-500">
+                <li class="mt-2">Brand</li>
+                <li class="mt-2">Contact Us</li>
+                <li class="mt-2">Blog</li>
+            </ul>
+        </div>
+        <div class="mx-16 ">
+            <div class="">Legal</div>
+            <ul class="font-normal text-md text-gray-500">
+                <li class="mt-2">Privacy</li>
+                <li class="mt-2">Terms</li>
+                <li class="mt-2">Support</li>
+            </ul>
+        </div>
+        <div class="mx-16">
+            <div >Products</div>
+            <ul class="font-normal text-md text-gray-500">
+                <li class="mt-2">Latest Features</li>
+                <li class="mt-2">Product roadmap</li>
+                <li class="mt-2">Knowledge base</li>
+            </ul>
+        </div>
+        <div class="ml-16 ">
+            <div class="m-auto">Accounts</div>
+            <button class="border-2 border-purple-500 mt-2 items-center text-white px-6 py-1 rounded-md bg-purple-500">Sign in</button><br>
+            <button class="border-2 border-purple-500 my-3 text-white px-6 py-1 rounded-md bg-purple-500">Sign up</button>
+        </div>
+     </div>
+
+     <hr class="mt-20 mx-6 h-0.5 bg-gray-300">
+
+    <footer class="flex justify-center items-center">
+        <div class="font-normal text-sm text-black-500 my-2 ">Sitemap. Privacy <i class="fa-regular fa-copyright"></i> Robowolf, saint-Peterburg</div>
+    </footer>
+    <div class="flex justify-center">
+        <div class="rounded-full bg-gray-300 mx-3 mt-1 size-14 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-twitter"></i></div>
+        <div class="rounded-full bg-gray-300 mx-3 mt-1 size-14 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-linkedin-in"></i></div>
+        <div class="rounded-full bg-gray-300 mx-3 mt-1 size-14 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-google"></i></div>
+    </div>
+
+    <!-- component-3 -->
+
+    <h1 class="flex justify-center items-center font-bold mt-8 text-3xl">component-3</h1>
+
+    <h1 class="font-semibold text-3xl flex justify-center items-center mt-14">What people say about us</h1>
+    <div class="flex justify-center items-center mt-5">
+        <div class=""><i class="font-semibold text-5xl text-gray-300 fa-solid fa-quote-left"></i><br>
+            <p class="ml-10 mr-20"><span><<</span>Through the gravity still dragged at him, his muscles were making great efforts <br> to adjust. After the daily classes he no longer collapsed immedeatlly into bed. <span>>></span>
+            </p>
+            <div>
+                <i class="font-semibold text-5xl text-gray-300 fa-solid fa-quote-right ml-600px"></i>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center items-center my-10 ">
+        <div class="size-28 rounded-full bg-cover mx-16 "><img src="./img/g1.png"><h3 class="flex justify-center items-center">Rissoto Nero</h3></div><br>
+        <div class="size-28 rounded-full bg-cover mx-16 "><img src="./img/g2.jpg"><h3 class="flex justify-center items-center">Keiji Akira</h3></div>
+        <div class="size-28 rounded-full bg-cover mx-16 "><img src="./img/g3.png"><h3 class="flex justify-center items-center">Goku San</h3></div>
+        <div class="size-28 rounded-full bg-cover mx-16 "><img src="./img/g4.png"><h3 class="flex justify-center items-center">Leone Abachio</h3></div>
+    </div>
+
+    <hr class="mt-20 mx-6 h-0.5 bg-gray-300">
+
+    <div class="flex justify-center">
+        <div class="rounded-full bg-gray-300 mx-3 my-6 size-11 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-facebook-f"></i></div>
+        <div class="rounded-full bg-gray-300 mx-3 my-6 size-11 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-twitter"></i></div>
+        <div class="rounded-full bg-gray-300 mx-3 my-6 size-11 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-instagram"></i></div>
+        <div class="rounded-full bg-gray-300 mx-3 my-6 size-11 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-google"></i></div>
+        <div class="rounded-full bg-gray-300 mx-3 my-6 size-11 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-linkedin-in"></i></div>
+    </div>
+
+        <!-- component-4 -->
+
+        <h1 class="flex justify-center items-center font-bold mt-8 text-3xl">component-4</h1>
+
+        <hr class="mt-20 mb-5 mx-56 h-0.5 bg-black">
+
+        <div class="flex">
+                <ul class="flex">
+                    <li class="ml-64 mb-5 text-xl font-semibold underline underline-offset-[10px] border-purple-700 text-purple-800 ">Features</li>
+                    <li class="ml-20 mb-5 text-xl font-semibold underline underline-offset-[10px] border-purple-700 text-purple-800 ">Use Cases</li>
+                    <li class="ml-20 mb-5 text-xl font-semibold underline underline-offset-[10px] border-purple-700 text-purple-800 ">How it works</li>
+                    <li class="mx-20 mb-5 text-xl font-semibold underline underline-offset-[10px] border-purple-700 text-purple-800 ">Pricing</li>
+                </ul>
+        </div>
+        <hr class="mb-10 h-0.5 mx-56">
+        <div class="text-md ml-80 font-medium">Available on</div>
+        <div class="flex mb-14">
+            <div class="flex ml-44 mt-6 me-3">
+                <div class="flex bg-black text-white px-2 rounded-md mx-10 h-12 w-36">
+                    <div class="">
+                        <i class="mx-1 mt-2 fa-brands fa-apple text-3xl"></i>
+                    </div>
+                    <div class="">
+                        <span class="text-xs font-medium">Download on the</span>
+                        <div class="text-sm text-center ">App Store</div>
+                    </div>
+                </div>
+                <div class="flex bg-black text-white px-2 rounded-md h-12 w-36">
+                    <div class="">
+                        <i class="mx-1 mt-2 fa-brands fa-apple text-3xl"></i>
+                    </div>
+                    <div class="">
+                        <span class="text-xs font-medium">Download on the</span>
+                        <div class="text-sm text-center mb-0">App Store</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center ml-96">
+                <div class="rounded-full bg-gray-300 mx-3 my-6 size-11 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-facebook-f"></i></div>
+                <div class="rounded-full bg-gray-300 mx-3 my-6 size-11 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-twitter"></i></div>
+                <div class="rounded-full bg-gray-300 mx-3 my-6 size-11 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-google"></i></div>
+            </div>
+        </div>
+
+        <div class="flex mb-16">
+            <p class="text-md text-gray-500 ml-56">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="border border-blue-700 rounded-md px-3 font-medium py-2 ms-96">ENG<i class="fa-solid fa-angle-down ms-8"></i></button>
+        </div>
+
+    <!-- component-5 -->
+
+        <h1 class="flex justify-center items-center font-bold mt-8 text-3xl">component-5</h1>
+
+        <div class="flex justify-center items-center mt-16 mb-14">
+            <div class="bg-cover h-630 w-500" style="background-image: url(./img/bali.jpg);">
+                <div class="border bg-amber-700 rounded-md px-2 text-white text-sm font-normal mt-5 ml-433px h-6 w-10">Bali</div>
+                <div class="text-2xl ml-2 mt-480px font-bold text-white ">Bali</div>
+                <div class="text-sm font-normal text-white table-auto ml-2 mb-12">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam aut deserunt unde repellat reiciendis exercitationem ...</div>
+            </div>
+        </div>
+
+    <!-- component-6 -->
+
+    <h1 class="flex justify-center items-center font-bold mt-8 text-3xl">component-6</h1>
+
+    <h2 class="flex justify-center items-center my-6 text-2xl font-semibold">Band Of Directors</h2>
+    <div class="flex items-center mb-16">
+        <div>
+            <div class="ml-16"><img class="bg-cover rounded-md" src="./img/img1.jpg"></div>
+        </div>
+        <div class="flex justify-center items-center">
+             <div class="mx-6">
+                <div class="text-xl font-semibold mb-2">Steven Steel</div>
+                <div class="text-lg font-normal mb-5">Operation Director</div>
+                <p class="text-md font-normal text-gray-600 w-600 mb-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos repellat explicabo dolorem tempore impedit nostrum sunt unde nam, eligendi sit reiciendis. Quidem quibusdam praesentium, nulla voluptatum quo assumenda tempore cumque totam dolores ducimus voluptatem reprehenderit rerum debitis fuga laudantium pariatur iure aspernatur culpa nostrum aperiam? Est facilis velit placeat doloribus recusandae tenetur possimus voluptates voluptas. Fugit autem aliquam ipsa.</p>
+                <hr class="h-0.5 mb-3 bg-gray-400">
+                <div class="flex items-center">
+                    <button class="text-black bg-purple-600 rounded-md px-5 py-3 text-lg text-center font-semibold"><i class="fa-solid fa-envelope me-2"></i>Get in</button>
+                    <div class="flex ml-72">
+                        <div class="rounded-full bg-gray-300 mx-3 my-6 size-10 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-twitter"></i></div>
+                        <div class="rounded-full bg-gray-300 mx-3 my-6 size-10 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-linkedin-in"></i></div>
+                        <div class="rounded-full bg-gray-300 mx-3 my-6 size-10 flex justify-center items-center"><i class=" font-black text-xl fa-brands fa-facebook-f"></i></div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+
+   <!-- component-7 -->
+
+   <h1 class="flex justify-center items-center font-bold mt-8 text-3xl">component-7</h1>
+
+   <div class="flex items-center mb-16">
+    <div>
+        <img class="ml-11 mr-3 rounded-xl mt-16" src="./img/img1.jpg">
+    </div>
+    <div>
+        <h1 class="text-2xl font-bold mb-4 mt-16">I Watched the storm, so Beautiful yet terrific.</h1>
+        <p class="w-600 text-sm font-normal text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, et placeat nobis est recusandae, corporis modi vel cupiditate odio vero velit! Sint voluptas ex nostrum molestias tempore eius, modi itaque</p>
+        <p class="text-sm font-normal text-gray-500 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="w-600 text-sm font-normal text-gray-500 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum magni ipsum iure eos consectetur doloremque, mollitia est tenetur vero, totam deleniti ratione iusto at quae? Corrupti sed architecto, cum saepe culpa tenetur molestias qui nostrum cumque ullam fugiat quibusdam reprehenderit deleniti.</p>
+        <div class="text-sm font-normal text-gray-500 text-end mb-28"><i class="fa-regular fa-clock text-black me-2"></i>20 April,2017</div>
+        <div class="flex">
+            <div class="text-md text-black font-normal me-5"><i class="fa-solid fa-heart text-red-500 me-2"></i>250</div>
+            <div class="text-md text-black font-normal"><i class="fa-regular fa-comment-dots me-2"></i>10</div>
+            <div class="text-sm text-black font-normal ml-96"><i class="fa-solid fa-bookmark me-2"></i>Save for later</div>
+        </div>
+    </div>
+   </div>
+
+   <!-- component-8 -->
+
+   <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-10">component-8</h1>
+
+   <h1 class="flex ml-96 mb-6 text-3xl font-normal text-gray-500">Best Seller</h1>
+   <hr class="0.5 bg-gray-300 mx-56 mb-6">
+   <div class="ml-96 m-5">
+    <div class="flex">
+        <span class="text-md font-semibold text-gray-500">Bathing Shampoo</span>
+        <div class="text-md text-gray-500 font-normal ml-480px">80,451 sales</div>
+    </div>
+        <div class="h-2 w-700 bg-blue-600 mt-2 mb-5 rounded-md"></div>
+    <div class="flex">
+        <span class="text-md font-semibold text-gray-500">Bathing Shampoo</span>
+        <div class="text-md text-gray-500 font-normal ml-480px">15,451 sales</div>
+    </div>
+        <div class="h-2 w-700 bg-blue-600 mt-2 mb-5 rounded-md"></div>
+    <div class="flex">
+        <span class="text-md font-semibold text-gray-500">Running Shoes</span>
+        <div class="text-md text-gray-500 font-normal ml-503px">15,451 sales</div>
+    </div>
+        <div class="h-2 w-700 bg-blue-600 mt-2 mb-5 rounded-md"></div>
+    <div class="flex">
+        <span class="text-md font-semibold text-gray-500 text-end">Toilet pappers</span>
+        <div class="text-md text-gray-500 font-normal ml-507px">15,451 sales</div>
+    </div>
+        <div class="h-2 w-700 bg-blue-600 mt-2 mb-5 rounded-md"></div>
+    <div class="flex">
+        <span class="text-md font-semibold text-gray-500">Hand senitizer</span>
+        <div class="text-md text-gray-500 font-normal ms-507px">15,451 sales</div>
+    </div>
+        <div class="h-2 w-700 bg-blue-600 mt-2 mb-5 rounded-md"></div>
+   </div>
+
+   <!-- component-9 -->
+
+   <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-9</h1>
+
+   <h1 class="flex justify-center items-center text-2xl font-bold mb-4">Best Products ever made</h1>
+   <div class="flex justify-center items-center mb-3">
+        <p class="text-gray-600 text-md font-semibold text-center w-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt consequuntur minus officiis exercitationem assumenda quis qui facilis quod quos.</p>
+   </div>
+   <div class="flex justify-center items-center m-6">
+    <div class="size-96 border-none shadow shadow-gray-500 rounded-md m-3">
+        <img class="bg-cover border rounded-t-md " src="./img/img1.jpg">
+        <h1 class="text-2xl font-semibold my-2 mx-3">Layer Styles</h1>
+        <p class="table-auto ms-3 text-sm font-normal text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora facilis reprehenderit explicabo et? Vel ullam sequi obcaecati sit amet consectetur adipisicing</p>
+    </div>
+    <div class="size-96 border-none shadow shadow-gray-500 rounded-md m-3">
+        <img class="bg-cover border rounded-t-md " src="./img/img1.jpg">
+        <h1 class="text-2xl font-semibold my-2 mx-3">Nested Symbols</h1>
+        <p class="table-auto ms-3 text-sm font-normal text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora facilis reprehenderit explicabo et? Vel ullam sequi obcaecati sit amet consectetur adipisicing</p>
+    </div>
+    <div class="size-96 border-none shadow shadow-gray-500 rounded-md m-3">
+        <img class="bg-cover border rounded-t-md " src="./img/img1.jpg">
+        <h1 class="text-2xl font-semibold my-2 mx-3">Style Guide</h1>
+        <p class="table-auto ms-3 text-sm font-normal text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora facilis reprehenderit explicabo et? Vel ullam sequi obcaecatisit amet consectetur adipisicing</p>
+    </div>
+   </div>
+   <hr class="h-0.5 bg-gray-300 mx-20 mb-5">
+   <div class="flex justify-center items-center h-10 w-72 border-2 shadow-md shadow-gray-300 mx-auto mb-14 rounded-md">
+        <i class="m-5 text-xl text-gray-400 fa-brands fa-square-facebook"></i>
+        <i class="m-5 text-xl text-gray-400 fa-brands fa-twitter"></i>
+        <i class="m-5 text-xl text-gray-400 fa-brands fa-instagram"></i>
+        <i class="m-5 text-xl text-gray-400 fa-brands fa-google"></i>
+        <i class="m-5 text-xl text-gray-400 fa-brands fa-linkedin-in"></i>
+   </div>
+
+   <!-- component-10 -->
+
+   <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-10</h1>
+
+   <div class="flex justify-center items-center m-5">
+        <div class="m-4 w-72 h-280 rounded-lg border-x-2">
+            <img class="bg-cover rounded-t-lg" src="./img/img1.jpg">
+            <div>
+                <h1 class="text-lg mt-2 mb-2 mx-2 font-normal text-gray-500">Startup Unicorn T-shirt</h1>
+                <div class="flex">
+                    <span class="text-md font-semibold ms-2 me-3">$72</span>
+                    <span class="text-md font-semibold text-gray-500 line-through">$96</span>
+                    <button class="text-md font-normal bg-blue-600 px-6 py-1 ms-32 rounded-md">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="m-4 w-72 h-280 size-72 rounded-lg border-x-2">
+            <img class="bg-cover rounded-t-lg" src="./img/img1.jpg">
+            <div>
+                <h1 class="text-lg mt-2 mx-2 mb-2 font-normal text-gray-500">Startup Unicorn T-shirt</h1>
+                <div class="flex">
+                    <span class="text-md font-semibold ms-2 me-3">$72</span>
+                    <span class="text-md font-semibold text-gray-500 line-through">$96</span>
+                    <button class="text-md font-normal bg-blue-600 px-6 py-1 ms-32 rounded-md">Buy</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="m-4 w-72 h-280 size-72 rounded-lg border-x-2">
+            <img class="bg-cover rounded-t-lg" src="./img/img1.jpg">
+            <div>
+                <h1 class="text-lg mt-2 mx-2 mb-2 font-normal text-gray-500">Startup Unicorn T-shirt</h1>
+                <div class="flex">
+                    <span class="text-md font-semibold ms-2 me-3">$72</span>
+                    <span class="text-md font-semibold text-gray-500 line-through">$96</span>
+                    <button class="text-md font-normal bg-blue-600 px-6 py-1 ms-32 rounded-md">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="m-4 w-72 h-280 size-72 rounded-lg border-x-2">
+            <img class="bg-cover rounded-t-lg" src="./img/img1.jpg">
+            <div>
+                <h1 class="text-lg mt-2 mx-2 mb-2 font-normal text-gray-500">Startup Unicorn T-shirt</h1>
+                <div class="flex">
+                    <span class="text-md font-semibold ms-2 me-3">$72</span>
+                    <span class="text-md font-semibold text-gray-500 line-through">$96</span>
+                    <button class="text-md font-normal bg-blue-600 px-6 py-1 ms-32 rounded-md">Buy</button>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <!-- component-11 -->
+
+   <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-11</h1>
+
+   <div class="flex justify-center items-center m-8 bg-black">
+        <div class="w-96 h-360 rounded-lg mx-3 p-3 border bg-white">
+            <img class="bg-cover rounded-lg" src="./img/img1.jpg">
+            <h1 class="text-lg font-semibold my-3">Reusable Elements</h1>
+            <p class="text-sm font-normal text-gray-500">The Earth was small, lighr blue, and so touchingly alone. </p>
+            <div class="text-xs font-normal text-gray-500 text-end mt-3"><i class="text-sm text-gray-500 fa-regular fa-clock"></i>13 May, 2017</div>
+        </div>
+        <div class="w-96 h-360 rounded-lg mx-3 p-3 border bg-white">
+            <img class="bg-cover rounded-lg" src="./img/img1.jpg">
+            <h1 class="text-lg font-semibold my-3">Free Google Fonts</h1>
+            <p class="text-sm font-normal text-gray-500">The Earth was small, lighr blue, and so touchingly alone. </p>
+            <div class="text-xs font-normal text-gray-500 text-end mt-3"><i class="text-sm text-gray-500 fa-regular fa-clock"></i>13 May, 2017</div>
+        </div>
+        <div class="w-96 h-360 rounded-lg mx-3 p-3 border bg-white">
+            <img class="bg-cover rounded-lg" src="./img/img1.jpg">
+            <h1 class="text-lg font-semibold my-3">Responsive Symbols</h1>
+            <p class="text-sm font-normal text-gray-500">The Earth was small, lighr blue, and so touchingly alone. </p>
+            <div class="text-xs font-normal text-gray-500 text-end mt-3"><i class="text-sm text-gray-500 fa-regular fa-clock"></i>13 May, 2017</div>
+        </div>
+   </div>
+
+   <!-- component-12 -->
+
+   <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-12</h1>
+
+   <div class="flex mb-16">
+        <div class="flex items-center justify-center mx-60 h-auto">
+            <img class="bg-cover h-387 w-400" src="./img/phone.jpg">
+        </div>
+        <div class="mt-10 me-16">
+            <div class="flex justify-center items-center rounded-full bg-gray-300 size-14"><i class="text-xl fa-solid fa-camera"></i></div>
+            <p class="text-2xl my-3 font-semibold text-black">The sky was cloudless and of a deep dark blue.</p>
+            <p class="w-600 text-sm font-normal text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ea voluptates provident cupiditate nihil maiores iure minus necessitatibus iste, Quae?</p>
+            <div class="text-sm font-semibold text-blue-600 underline border-blue-800 underline-offset-4 mt-4 mb-5">Learn more</div>
+            <hr class=" bg-gray-300 ">
+            <div class="flex items-center">
+                <div class="flex justify-center mt-5 mr-3 items-center size-12 text-md font-semibold text-white bg-green-400 rounded-full">LB</div>
+                <div class="mt-3">
+                    <h1 class="text-xl font-semibold mt-2">Luca Blight</h1>
+                    <p class="text-sm font-normal text-gray-400">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <!-- component-13 -->
+
+   <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-13</h1>
+   <div class="flex m-6 border">
+        <div class="mx-16 mt-6">
+            <div class="flex justify-center items-center size-16 rounded-full bg-gray-200"><i class="text-2xl fa-solid fa-cloud"></i></div>
+            <h1 class="text-3xl mt-5 font-semibold">The face of the moon is in shadow</h1>
+            <p class="w-550 text-md font-normal text-gray-500">Lorem ipsum dolor, adipisicing elit.ssddwd iste! Porro alias placeat quaerat modi, beatae molestiae? Alias accusamus doloribus nostrum ipsam et reprehenderit quo tempore dicta quidem suscipit unde asperiores quia nihil corrupti qui laudantium modi non nulla quod, officia provident voluptatibus? Dicta modi similique laudantium soluta magni minima deleniti, odit distinctio reiciendis?</p>
+            <div class="flex my-5 items-center">
+                <i class="fa-solid fa-star me-3 text-lg text-black"></i>
+                <i class="fa-solid fa-star me-3 text-lg text-black"></i>
+                <i class="fa-solid fa-star me-3 text-lg text-black"></i>
+                <i class="fa-solid fa-star me-3 text-lg text-black"></i>
+                <i class="fa-solid fa-star me-3 text-lg text-gray-400"></i>
+                <p class="text-sm font-semibold text-gray-600 ms-2">Average App Rating</p>
+            </div>
+            <hr class="mb-5">
+            <div class="flex items-center">
+                <h1 class="text-md font-bold underline underline-offset-8 decoration-gray-400">View Product</h1>
+                <i class="fa-solid fa-cart-shopping ms-3 text-lg"></i>
+            </div>
+        </div>
+        <div>
+            <img class="m-3 h-auto me-3 my-4 rounded-md shadow-md" src="./img/img1.jpg">
+        </div>
+   </div>
+
+      <!-- component-14 -->
+
+   <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-14</h1>
+
+   <div class="mx-20 border-l border-gray-300 mb-5">
+       <div class="flex justify-between items-center mb-5 me-4">
+            <div class="ms-3">
+                <h1 class="text-lg font-bold mt-5 mb-2">Customer Service</h1>
+                <p class="text-md font-semibold text-gray-500">info@robowolf.net</p>
+            </div>
+            <div class="ms-3">
+                <h1 class="flex justify-center items-center text-lg font-bold mt-5 mb-2">Say Hello</h1>
+                <p class="text-md font-semibold text-gray-500">hello@robowolf.net</p>
+            </div>
+            <div class="ms-3">
+                <h1 class="flex justify-center items-center text-lg font-bold mt-5 mb-2">Phone</h1>
+                <p class="text-md font-semibold text-gray-500">+7 965-404-1978</p>
+            </div>
+       </div>
+       <hr class="bg-gray-300 mx-3 mb-10">
+       <h1 class="text-2xl mb-5 font-bold text-center">Subscribe</h1>
+       <div class="flex justify-center items-center mb-5">
+            <input class="p-2 rounded-md text-center w-64 border border-gray-300" type="email" name="" placeholder="Enter Your E-mail">
+            <div class="h-10 w-28 ms-3 text-center py-2 rounded-md bg-blue-600 text-white text-md font-semibold">Sign in</div>
+       </div>
+       <div class="flex justify-center items-center mb-5">
+            <div class="flex justify-center items-center size-11 rounded-full bg-gray-300 text-xl m-2 font-bold"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="flex justify-center items-center size-11 rounded-full bg-gray-300 text-xl m-2 font-bold"><i class="fa-brands fa-twitter"></i></div>
+            <div class="flex justify-center items-center size-11 rounded-full bg-gray-300 text-xl m-2 font-bold"><i class="fa-brands fa-google"></i></div>
+       </div>
+       <div class="flex mx-3">
+            <p class="text-sm font-normal text-gray-500">Sitemap. Privacy <i class="fa-regular fa-copyright"></i> Robowolf, saint-Petersberg</p>
+            <div class="text-sm font-normal text-gray-500 ml-610px">Lorem ipsum dolor sit amet consectetur.</div>
+       </div>
+   </div>
+
+      <!-- component-15 -->
+
+      <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-15</h1>
+
+      <div class="border h-auto w-600 mx-auto p-3 mb-10">
+            <div class="flex mb-5 mt-0">
+                <h1 class="text-2xl font-bold">We use cookies</h1>
+                <div class="flex justify-center items-center size-7 bg-gray-400 border rounded-md ml-370px"><i class="text-lg font-black fa-solid fa-xmark"></i></div>
+            </div>
+            <p class="text-md font-normal text-gray-400 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatibus eum sapiente laboriosam pariatur quidem, unde corporis quasi eius dolores autem? Laborum, architecto itaque? Nam itaque corrupti tempora rerum a aut, eaque ex cupiditate omnis.</p>
+            <div class="flex mb-1">
+                <div class="text-xl font-semibold text-white px-106 py-3 rounded-md border bg-red-500 me-3">Cancel</div>
+                <div class="text-xl font-semibold text-white px-106 py-3 rounded-md border bg-purple-500 me-3">Confirm</div>
+            </div>
+      </div>
+
+      <!-- component-16 -->
+
+      <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-16</h1>
+
+      <div class="flex justify-center items-center mb-10">
+            <div class="w-80 h-40 border rounded-md shadow mr-8 p-3">
+                <h1 class="text-md font-semibold text-gray-300 mb-3">Total Sales</h1>
+                <hr class="h-0.5 bg-gray-300">
+                <div class="flex">
+                    <h1 class="text-2xl font-semibold text-gray-400 mt-3 ml-3">$1.2M</h1>
+                    <img class="py-4 px-4 ml-16" src="./img/red.png">
+                </div>
+                <h2 class="text-md font-semibold text-red-300 ml-3">- 25%</h2>
+            </div>
+            <div class="w-80 h-40 border rounded-md shadow p-3">
+                <h1 class="text-md font-semibold text-gray-300 mb-3">Total Balance</h1>
+                <hr class="h-0.5 bg-gray-300">
+                <div class="flex mb-0">
+                    <h1 class="text-2xl font-semibold text-gray-400 mt-3 ml-3">$1,534</h1>
+                    <img class="py-4 px-4 ml-16" src="./img/green.png">
+                </div>
+                <h2 class="text-md font-semibold text-green-400 ml-3">+ 7%</h2>
+            </div>
+            
+      </div>
+
+      <!-- component-17 -->
+
+      <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-17</h1>
+
+      <div class="flex justify-center items-center mb-14">
+        <div class="h-auto w-auto rounded-md shadow pl-2 pe-3 py-2 border ms-0 me-5">
+            <div class="flex justify-center items-center">
+                <img src="./img/tasks.png">
+                <div class="ml-2">
+                    <h1 class="text-lg font-normal text-slate-400 me-16">Total Tasks</h1>
+                    <h1 class="text-2xl font-semibold">35</h1>
+                </div>
+                <h3 class="text-xl font-normal text-red-500">- 25%</h3>
+            </div>
+        </div>
+        <div class="h-auto w-auto rounded-md shadow pl-2 pe-3 py-2 border me-5">
+            <div class="flex justify-center items-center">
+                <img src="./img/task2.png">
+                <div class="ml-2">
+                    <h1 class="text-lg font-normal text-slate-400 me-16">Tasks to do</h1>
+                    <h1 class="text-2xl font-semibold">14</h1>
+                </div>
+                <h3 class="text-xl font-normal text-red-500">+ 10%</h3>
+            </div>
+        </div>
+        <div class="h-auto w-auto rounded-md shadow py-2 pl-2 pe-3 border me-5">
+            <div class="flex justify-center items-center">
+                <img src="./img/task3.png">
+                <div class="ml-2">
+                    <h1 class="text-lg font-normal text-slate-400 me-16">Tasks Overdue</h1>
+                    <h1 class="text-2xl font-semibold">5</h1>
+                </div>
+                <h3 class="text-xl font-normal text-red-500">- 10%</h3>
+            </div>
+        </div>
+        <div class="h-auto w-auto rounded-md shadow border py-2 pl-2 pe-3 ">
+            <div class="flex justify-center items-center">
+                <img src="./img/task4.png">
+                <div class="ml-2">
+                    <h1 class="text-lg font-normal text-slate-400 me-16">Comleted Tasks</h1>
+                    <h1 class="text-2xl font-semibold">7</h1>
+                </div>
+                <h3 class="text-xl font-normal text-red-500">+ 20%</h3>
+            </div>
+        </div>
+      </div>
+
+      <!-- component-18 -->
+
+      <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-18</h1>
+
+      <div class="ps-12 pb-8 border-b mb-14">
+        <h1 class="text-2xl font-semibold text-slate-400">Total Sales</h1>
+        <h1 class="text-xl font-semibold text-slate-400">$1.2M</h1>
+        <img class="bg-cover" src="./img/graph.png">
+      </div>
+
+      <!-- component-19 -->
+
+      <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-19</h1>
+
+      <div class="pe-10 pl-5 h-auto w-600 m-auto border mb-14">
+            <div>
+              <h1 class="text-2xl font-normal text-slate-500 ml-4 my-5">Activity Feed</h1>
+              <hr class="mb-3 bg-gray-300">
+            </div>
+            <div class="flex mb-3 ml-4">
+                <img class="h-16 w-16 bg-cover" src="./img/g1.png">
+                <div class="text-md font-normal text-slate-400 ml-2 mt-2">
+                    peter <span class="text-md font-normal text-slate-300">ordered </span>Toilet Paper. <br> 2 hours ago.
+                </div>
+            </div>
+            <div class="flex mb-3 ml-4">
+                <img class="h-16 w-16 bg-cover" src="./img/g2.jpg">
+                <div class="text-md font-normal text-slate-400 ml-2 mt-2">
+                    Tom <span class="text-md font-normal text-slate-300">disliked and commented . . . </span><br>  3 hours ago.
+                </div>
+            </div>
+            <div class="flex mb-3 ml-4">
+                <img class="h-16 w-16 bg-cover" src="./img/g3.png">
+                <div class="text-md font-normal text-slate-400 ml-2 mt-2">
+                    John <span class="text-md font-normal text-slate-300">added 12 new products . . .</span><br> 4 hours ago.
+                </div>
+            </div>
+            <div class="flex ml-4 mb-8">
+                <img class="h-16 w-16 bg-cover" src="./img/g4.png">
+                <div class="text-md font-normal text-slate-400 ml-2 w-500">
+                    Tom <span class="text-md font-normal text-slate-300">commented on </span>peter's . . . <br> 4 hours ago <br> Lorem ipsum dolor sit elit. Cum, perspiciatis vero aut laudantium soluta perferendis eveniet! earum, voluptate nemo temporibus beatae cumque aliquid? Iure, aperiam!
+                </div>
+            </div>
+      </div>
+
+      <!-- component-20 -->
+
+      <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-20</h1>
+
+      <div class="pe-10 pl-3 h-auto w-600 m-auto border mb-14">
+        <h1 class="text-2xl font-normal my-3 text-slate-500">New Users</h1>
+        <hr class="h-0.5 mb-3">
+        <div class="flex mb-3">
+            <img class="h-16 w-16 bg-cover" src="./img/g1.png">
+            <div class="ms-3 mt-2 text-md font-normal text-slate-500">Peter Orangatan <br> 2 hours ago</div> 
+        </div>
+        <div class="flex mb-3">
+            <img class="h-16 w-16 bg-cover" src="./img/g2.jpg">
+            <div class="ms-3 mt-2 text-md font-normal text-slate-500">Tommy Delware <br> 3 hours ago</div> 
+        </div>
+        <div class="flex mb-3">
+            <img class="h-16 w-16 bg-cover" src="./img/g3.png">
+            <div class="ms-3 mt-2 text-md font-normal text-slate-500">John Dale <br> 4 hours ago</div> 
+        </div>
+        <div class="flex mb-3">
+            <img class="h-16 w-16 bg-cover" src="./img/g4.png">
+            <div class="ms-3 mt-2 text-md font-normal text-slate-500">Jim Halpert <br> 4 hours ago</div> 
+        </div>
+        <div class="flex mb-3">
+            <img class="h-16 w-16 bg-cover" src="./img/g1.png">
+            <div class="ms-3 mt-2 text-md font-normal text-slate-500">Michel Smith <br> 4 hours ago</div> 
+        </div>
+      </div>
+      
+      <!-- component-21 -->
+
+      <h1 class="flex justify-center items-center font-bold mt-8 text-3xl mb-11">component-21</h1>
+
+      <div class="flex px-3 pt-3 pb-5">
+        <div>
+            <div class="flex justify-end">
+                <h1 class="text-2xl font-semibold text-gray-400 mr-[1205px]">Total Balance</h1>
+                <h1 class="text-xl text-green-500">+ 7%</h1>
+            </div>
+            <h1 class="text-md font-semibold text-gray-400 ml-1">$ 1,534</h1>
+            <img class="w-screen" src="./img/graph1.png">
+        </div>
+      </div>
+
+
+
+</body>
+</html>

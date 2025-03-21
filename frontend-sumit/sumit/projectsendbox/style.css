@@ -1,0 +1,127 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+}
+
+.nav-img{
+    height: auto;
+    max-width: 50px;
+    margin: 30px 50px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Space Grotesk Sandbox", Sans-serif;
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+nav li i{
+    padding: 5px;
+}
+.navbtn{
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: "Space Grotesk Sandbox", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    transition: transform 0.3s;
+    width: 150px;
+    height: 50px;
+}
+
+.navbtn:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 10px 0 lightgray;
+}
+
+.home{
+    height: 100vh;
+    width: 93%;
+    background: url(./asset/images/homeimg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 50px;
+    border-radius: 20px;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slap{
+    height: auto !important;
+    width: 70px;
+    margin: 0 15px !important;
+    /* vertical-align: -0.1em !important; */
+    padding: 0 !important;
+}
+
+
+h1{
+    color: #343F52;
+    font-family: "Space Grotesk Sandbox", Sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.15em;
+    margin-top: 160px;
+    word-spacing: 5px;
+    text-align: center;
+}
+
+.avtar{
+    height:auto;
+    width: 70px;
+    padding: 0;
+}
+
+p{
+    text-align: center;
+    margin: 37px;
+    font-family: "Space Grotesk Sandbox", Sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.6em;
+    word-spacing: 0px;
+    color: gray;
+}
+
+.btn{
+    text-decoration: none;
+    font-family: "Space Grotesk Sandbox", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    border: 1px solid black;
+    padding: 14px 28px 12px 28px;
+    background: black;
+    color: white;
+    margin-left: 548px;
+    border-radius: 10px;
+}
+
+.arrow-right{
+    color: white;
+    margin: 0 5px;
+}
+

@@ -1,0 +1,69 @@
+// @import rule
+
+@import './variables.scss';
+
+// .main-div{
+//     background-color: $bg-color-1;
+//     display: $d-flex;
+//     justify-content: $justify-c;
+//     align-items: $align-c;
+//     color: $color-2;
+//     font-size: $fs-1;
+//     height: $h-5;
+//     width: ($w-5 * 2.5);
+// }
+
+// .div-1{
+//     background-color: $bg-color-2;
+//     color: $color-1;
+//     font-size: $fs-2;
+//     height: $h-3;
+//     width: $w-3;
+// }
+
+// .div-2{
+//     background-color: $bg-color-3;
+//     color: $color-5;
+//     font-size: $fs-5;
+//     height: $h-3;
+//     width: $w-3;
+// }
+
+// .div-3{
+//     background-color: $bg-color-4;
+//     color: $color-1;
+//     font-size: $fs-3;
+//     height: $h-3;
+//     width: $w-3;
+// }
+
+// .div-4{
+//     background-color: $bg-color-5;
+//     color: $color-4;
+//     font-size: $fs-5;
+//     height: $h-3;
+//     width: $w-3;
+// }
+
+// variable use
+
+// $bg:blue;
+
+// body{
+//     background-color: $bg;
+// }
+
+// h1{
+//     color: yellow;
+// }
+
+// placeholder props
+
+.box{
+    %shared style;
+}
+
+%shared style{
+    background-color: $bg-color-5;
+    height: $h-5;
+}

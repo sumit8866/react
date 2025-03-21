@@ -1,0 +1,10 @@
+{
+    "profile" : {
+        "name" : "srushti",
+        "age" : 19,
+        "hair" : "curly",
+        "shop" : {
+            "customer" : ["srushti","19","purse"]
+        }
+    }
+}

@@ -1,0 +1,241 @@
+
+
+
+/* body{
+    background-color: aqua;
+}
+h1{
+    background-color: burlywood;
+}
+p{
+    background-color: darkgray;
+}
+span{
+    background-color: darkgoldenrod;
+}
+div{
+    background-color: darkgray;
+    text-align: center;
+    font: bolder;
+    font-size: 30px;
+    
+} */
+
+/* RULES CSS */
+
+/* CSS @import Rule */
+
+   /* @import 'style2.css';
+   @import 'style1.css'; */
+
+/* CSS Cascade Rule
+
+priority: id/class/tag */
+
+/* div{
+    width: 100px;
+    height: 100px;
+    background-color:chartreuse ;
+    border: 2px solid black;
+}
+
+.glass{
+    background-color: orange;
+}
+
+#innerbox{
+    background-color: black;
+    border: 3px solid white;
+}
+
+div:nth-child(1){
+    background-color: black;
+    border: 3px solid white;
+    height: 500px;
+} */
+
+/* Css Psuedo Class */
+/* 
+h1:first-child{
+    background-color: green;
+    color:white;
+}  */
+
+
+/* h1:last-child{
+    background-color: green;
+    color:white
+}
+
+h1:first-of-type{
+    background-color: green;
+    color:white;
+} 
+
+/* h1:last-of-type{
+    background-color: green;
+    color:white;
+} */
+
+/* h1:nth-child(5){
+    background-color: green;
+    color:white;
+} */
+
+/* h1:nth-of-type(10){
+    background-color: green;
+    color:white;
+} */
+
+/* h1:nth-last-of-type(7){
+    background-color: green;
+    color:white;
+} */
+/* 
+h1:only-child{
+    background-color: red;
+    color:white;
+} */
+
+/* h1:only-of-type{
+    background-color: red;
+    color:white;
+}  */
+
+/* :where(.box){
+    background-color: red;
+}*/
+
+/* div:not(.box-1){
+    background-color: green;
+}  */
+
+ /* practice  */
+
+a:first-child { 
+    /* 1 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+a:nth-child(4) { 
+    /* 2 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+h1:nth-last-child(22) { 
+    /* 3 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+h1:nth-child(6) { 
+    /* 4 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+body input:first-of-type { 
+    /* 5 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+section div h1:first-of-type { 
+    /* 6 , 8 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+div nav h1:first-child { 
+    /* 7  */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+div nav h1:last-child { 
+    /* 9  */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+.heading { 
+    /*10*/ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+div:nth-of-type(2) h1:nth-child(2) { 
+    /* 11 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+.head { 
+    /*12*/ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+h1:nth-last-child(11) { 
+    /* 13 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+span p:last-of-type { 
+    /*14,15*/ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+.h1 { 
+    /*16*/ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+div div div h1:nth-child(4) { 
+    /* 17 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+div span section :nth-child(5) { 
+    /* 18 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+div:nth-last-child(7) div h1:nth-child(1) { 
+    /* 19 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+h1:nth-last-child(6) { 
+    /* 20 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+h1:nth-child(22) { 
+    /* 21 */ 
+    background-color: yellow; 
+    color: red; 
+} 
+ 
+a:nth-child(23) { 
+    /* 22 */
+    background-color: yellow; 
+    color: red; 
+}
+
+
+
+
+
+
+
+

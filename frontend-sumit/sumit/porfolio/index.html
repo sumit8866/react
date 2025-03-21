@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- -------------------------------navbar------------------------ -->
+
+    <header class="header">
+      <a href="#" class="logo"><span style="color: #13adc7">S</span>rushti.</a>
+
+      <nav class="navbar">
+        <ul id="sidemenu">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+          <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+      </nav>
+    </header>
+
+    <!-- -------------------------------home---------------- -->
+
+    <section class="home">
+      <div class="home-content">
+        <h1>Hi, I'm Srushti Gangani</h1>
+        <h3>Fullstack Developer</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate rem
+          in modi fugiat omnis non consequuntur magni, ex eum doloremque,
+          exercitationem ad totam ipsum beatae!
+        </p>
+        <div class="btn-box">
+          <a href="#">Hire Me</a>
+          <a href="#">Let's Talk</a>
+        </div>
+      </div>
+
+      <!-- <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        <span class="home-imghover"></span> -->
+    </section>
+
+    <!-- -------------------about-------------------------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./img/useri.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              distinctio error quis et. Similique tempora rem porro autem esse
+              perspiciatis, ex distinctio odit. Dolores numquam culpa maxime,
+              harum totam excepturi id porro iste fugit beatae ipsa est quos
+              minus laudantium.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span style="color: #081b29; font-weight: 600"
+                    >Frontend Development</span
+                  ><br />Designing web interfaces
+                </li>
+                <li>
+                  <span style="color: #081b29; font-weight: 600"
+                    >Backend Development</span
+                  ><br />Database management system
+                </li>
+                <li>
+                  <span style="color: #081b29; font-weight: 600"
+                    >Soft skills</span
+                  ><br />communication & creativity
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span style="color: #081b29; font-weight: 600">2022</span
+                  ><br />BCA from SDJ International college,Vesu
+                </li>
+                <li>
+                  <span style="color: #081b29; font-weight: 600">2024</span
+                  ><br />MCA from MIT Banglore.
+                </li>
+                <li>
+                  <span style="color: #081b29; font-weight: 600">2024</span
+                  ><br />Full Stack Course Trainning at SqillQode Institute
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------services------------------------ -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur ut totam adipisci nisi accusantium placeat, sit
+              aliquam, fugit illo cum officiis tenetur voluptatum itaque
+              consequuntur!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Database Management</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur ut totam adipisci nisi accusantium placeat, sit
+              aliquam, fugit illo cum officiis tenetur voluptatum itaque
+              consequuntur!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Frontend & Backend of Applications</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur ut totam adipisci nisi accusantium placeat, sit
+              aliquam, fugit illo cum officiis tenetur voluptatum itaque
+              consequuntur!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------portfolio-------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./img/work4.jfif" />
+            <div class="layer">
+              <h3>Database Management</h3>
+              <p>
+                Database for store data and information safe and secure for long
+                term.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i> </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./img/work2.jfif" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                the app connets you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./img/work3.webp" />
+            <div class="layer">
+              <h3>Online Shopping Website</h3>
+              <p>
+                the app connets you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ----------------------contact------------------------->
+
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+            <p><i class="fa-solid fa-phone"></i>0123546987</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a
+              href="./img/40_HOTEL_MANAGEMENT_SYSTEM_DOCUMENTATION (1).pdf"
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright @ Srushti. Made with <i class="fa-solid fa-heart"></i> by Easy
+        Tutorials
+      </p>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+        <!-- <div class="size-52 text-3xl border-2 border-black bg-green-800">hello</div> -->
+
+<!-- --------------flex-basis/ flex-direction ------------->
+
+
+<!-- 
+        <div class="flex flex-row-reverse">
+            <div class="bg-green-600 h-56 w-56 basis-1">div element</div>
+            <div class="bg-green-500 h-56 w-56">div element</div>
+            <div class="bg-green-400 h-56 w-56 basis-4">div element</div>
+            <div class="bg-green-300 h-56 w-56">div element</div>
+            <div class="bg-green-200 h-56 w-56 lg:basis-4 ">div element</div>
+        </div> -->
+
+<!-- ---------------flex-wrap / flex------------ -->
+<!-- 
+    <div class="flex flex-wrap-reverse">
+        <div class="bg-green-300 h-56 w-56 flex-1">element1</div>
+        <div class="bg-green-400 h-56 flex-initial">element2</div>
+        <div class="bg-green-500 h-56 flex-none">element3</div>
+        <div class="bg-green-600 h-56 w-56 flex-auto">element4</div>
+    </div> -->
+
+<!-- ------------flex-grow----------- -->
+
+       <!-- <div class="flex">
+           <div class="grow bg-green-700">1</div>
+           <div class="grow-0 bg-green-600">2</div>
+           <div class="grow bg-green-500">3</div>
+       </div> -->
+       
+<!--- --------------flex-shrink/order------------- -->
+       
+       <!-- <div class="flex">
+           <div class="flex-1 bg-green-700 h-56 w-52 order-3">1</div>
+           <div class="shrink-0 bg-green-600 h-56 w-52 order-1">2</div>
+           <div class="shrink bg-green-500 h-56 w-52 order-2">3</div>
+       </div> -->
+
+<!-- ---------------grid-template-column / start-end-------------------->
+
+<!-- <div class="grid grid-cols-6 gap-12">
+    <div class="bg-gray-700 h-16 col-start-2 col-span-4">col-1</div>
+    <div class="bg-gray-600 h-16 col-start-1 col-end-3">col-2</div>
+    <div class="bg-gray-500 h-16 col-end-7 col-span-2">col-3</div>
+    <div class="bg-gray-400 h-16 col-start-1 col-end-7">col-4</div>
+</div> -->
+
+<!-- ------------------grid-row / start-end / gap---------------------->
+
+<!-- <div class="grid grid-rows-2 gap-6 grid-flow-col">
+    <div class="bg-gray-700 row-span-2 col-span-2">col-1</div>
+    <div class="bg-gray-600 col-span-2">col-2</div>
+    <div class="bg-gray-500">col-3</div>
+    <div class="bg-gray-400">col-4</div>
+</div> -->
+
+<!-- ----------------------grid auto flow-------------- -->
+
+<!-- <div class="grid grid-rows-2 grid-flow-row-dense gap-6 grid-cols-3">
+    <div class="bg-gray-700 col-span-2">col-1</div>
+    <div class="bg-gray-600 col-span-2">col-2</div>
+    <div class="bg-gray-500">col-3</div>
+    <div class="bg-gray-400">col-4</div>
+    <div class="bg-gray-800">col-5</div>
+</div> -->
+
+<!-- -----------justify-items (grid)/ justify-self / align content------- -->
+<!-- 
+<div class="grid grid-rows-2 grid-cols-2 justify-items-center">
+    <div class="bg-gray-700 w-52">col-1</div>
+    <div class="bg-gray-600 h-52 w-52">col-2</div>
+    <div class="bg-gray-500 h-52 w-52">col-3</div>
+    <div class="bg-gray-400 h-52 w-52">col-4</div>
+    <div class="bg-gray-800 h-52 w-52">col-5</div>
+    <div class="bg-gray-800 h-52 w-52">col-5</div>
+</div>  -->
+
+<!-- <div class="grid grid-rows-2 grid-cols-2">
+    <div class="bg-gray-700 h-52 w-52 justify-self-center">col-1</div>
+    <div class="bg-gray-600 h-52 w-52 justify-self-auto">col-2</div>
+    <div class="bg-gray-500 h-52 w-52 justify-self-end">col-3</div>
+    <div class="bg-gray-400 h-52 w-52 justify-self-start">col-4</div>
+    <div class="bg-gray-800 h-52 w-52 justify-self-stretch">col-5</div>
+    <div class="bg-gray-800 h-52 w-52 justify-self-center">col-5</div>
+</div>  -->
+
+<!-- <div class="grid grid-cols-3 content-between h-96">
+    <div class="bg-gray-700 h-32 w-52">col-1</div>
+    <div class="bg-gray-600 h-32 w-52">col-2</div>
+    <div class="bg-gray-500 h-32 w-52">col-3</div>
+    <div class="bg-gray-400 h-32 w-52">col-4</div>
+    <div class="bg-gray-800 h-32 w-52">col-5</div>
+    <div class="bg-gray-800 h-32 w-52">col-5</div>
+</div>  -->
+
+<!-- ------------justify-content (flex) / align-items / align-self------------- -->
+
+<!-- <div class="flex justify-around">
+    <div class="bg-green-600 h-56 w-56">column1</div>
+    <div class="bg-green-500 h-56 w-56">column1</div>
+    <div class="bg-green-400 h-56 w-56">column1</div>
+</div> -->
+<!-- 
+<div class="flex flex-col items-end">
+    <div class="bg-green-800 h-52">col element</div>
+    <div class="bg-green-700 h-52">col element</div>
+    <div class="bg-green-600 h-52">col element</div>
+    <div class="bg-green-500 h-52">col element</div>
+    <div class="bg-green-400 h-52">col element</div>
+</div>  -->
+
+<!-- <div class="flex">
+    <div class="bg-green-700">col element</div>
+    <div class="bg-green-800 ">col element</div>
+    <div class="bg-green-600 self-center">col element</div>
+    <div class="bg-green-500">col element</div>
+    <div class="bg-green-400">col element</div>
+</div>  -->
+
+<!-- ------------place content / place items / place self------------- -->
+
+<!-- <div class="grid grid-cols-2 gap-3 h-96 w-80 place-content-center">
+    <div class="bg-green-600 h-36">elements1</div>
+    <div class="bg-green-500 h-36">elements2</div>
+    <div class="bg-green-400 h-36">elements3</div>
+    <div class="bg-green-300 h-36">elements4</div>
+</div> -->
+
+<!-- <div class="grid grid-cols-2 gap-3 h-96 w-96 place-items-center">
+    <div class="bg-green-600 h-36 w-36">elements1</div>
+    <div class="bg-green-500 h-36 w-36">elements2</div>
+    <div class="bg-green-400 h-36 w-36">elements3</div>
+    <div class="bg-green-300 h-36 w-36">elements4</div>
+</div> -->
+
+<!-- <div class="grid grid-cols-2 gap-3">
+    <div class="bg-green-600 h-36 place-self-auto">elements1</div>
+    <div class="bg-green-500 h-36 place-self-start">elements2</div>
+    <div class="bg-green-400 h-36 place-self-end">elements3</div>
+    <div class="bg-green-300 h-36 place-self-stretch">elements4</div>
+    <div class="bg-green-300 h-36 place-self-center">elements4</div>
+</div> -->
+
+<!-- ----------padding / margin / space between---------- -->
+
+<!-- <div class="p-8">
+    <div class="bg-green-600 px-5 h-20 w-20">div-1</div>
+    <div class="bg-green-500 mx-6 h-20 w-20">div-2</div>
+    <div class="bg-green-400 pt-5 h-20 w-20">div-3</div>
+    <div class="bg-green-300 my-6 h-20 w-20">div-4</div>
+    <div class="bg-green-200 pb-5 h-20 w-20">div-5</div>
+</div> -->
+
+<div class="container">
+    <div dir="ltr">
+        <div class="ps-8 h-20 w-36 bg-green-500 m-4">padding-1</div>
+        <div class="pe-8 h-20 w-36 bg-green-400 m-4">padding-2</div>
+    </div>
+    <div dir="rtl">
+        <div class="ps-8 h-20 w-36 bg-green-500 m-5">padding-1</div>
+        <div class="pe-8 h-20 w-36 bg-green-400 m-5">padding-2</div>
+    </div>
+</div>
+
+    
+</body>
+</html>
