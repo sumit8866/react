@@ -132,5 +132,6 @@
 
     console.log(math);
     console.log(math1);
-    console.log(math2);
+    console.log(math2); 
+    
 }
