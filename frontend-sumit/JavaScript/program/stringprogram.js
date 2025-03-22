@@ -374,6 +374,8 @@
 
 
 
+
+
 }
 
 //27.JavaScript Program to Guess a Random Number
@@ -381,17 +383,249 @@
 {
 
     // const random = Math.floor(Math.random() *10) + 1;
-    
+
     // let number = parseInt(prompt('Guess a number from 1 to 10: '));
-    
+
     // if(number == random) {
     //     console.log('You guessed the correct number.');
     // }
     // console.log(random);
 
-  }
+}
 
-28.
-    
-    
- 
+// 28.JavaScript Program to Shuffle Deck of Cards
+
+{
+    //     let cards = ["Hearts", "Diamonds", "Clubs", "Spades"];
+    // let values = [
+    //     "A","King","Queen","Jack",
+    //     "2", "3", "4", "5", "6",
+    //     "7", "8", "9", "10",
+    // ];
+
+    // let res = [];
+
+    // for (let card in cards) {
+    //     for (let value in values) {
+    //         res.push(values[value] + " of " + cards[card]);
+    //     }
+    // }
+
+    // console.log(res);
+
+}
+
+// 29.JavaScript Program to Display Fibonacci Sequence Using Recursion
+
+{
+
+
+
+
+
+}
+//30.JavaScript Program to Find Factorial of Number Using Recursion
+{
+
+
+
+
+
+}
+
+//31.JavaScript Program to Convert Decimal to Binary
+
+{
+    //    let num =10
+    //    let binary = ''
+
+    //    while (num > 0) {
+    //        binary = (num % 2) + binary;
+    //        num = Math.floor(num / 2);
+    //    }
+    //    console.log(binary);
+
+}
+
+//32.JavaScript Program to Find ASCII Value of Character
+
+{
+    // let str=`a`
+
+    // console.log(str.charCodeAt());
+
+}
+//33.JavaScript Program to Check Whether a String is Palindrome or Not
+
+{
+
+
+
+
+
+
+}
+
+//34.JavaScript Program to Sort Words in Alphabetical Order
+
+{
+
+    // let str = "This is javascript program for sort word"
+
+    // let array= str.split(" ")
+    // console.log(array);
+
+    // console.log(array.sort());
+
+
+}
+
+//35.JavaScript Program to Replace Characters of a String
+
+{
+    // let str = "This is javascript program for sort word"
+    // let str1 = "sssssssssssssssssssssssssssss"
+
+    // console.log(str.replace("sort word","replace word"));
+    // console.log(str1.replaceAll("s","t"));
+
+}
+
+//36.JavaScript Program to Reverse a String
+
+
+{
+    // let str=`my name is sumit`
+
+    // let array=str.split("")
+    // console.log(array);
+
+    // let Reverse = array.reverse()
+    // console.log(Reverse);
+
+    // let str1= Reverse.join("")
+
+    // console.log(str1);
+
+}
+
+//37.JavaScript Program to Create Objects in Different Ways
+
+{
+
+    // let object1 = {
+    //     name: "sumit",
+    //     age: 20
+    // }
+    // console.log(object1);
+
+    // let object2 = {}
+
+    // object2.name = "hari"
+    // object2.age = 25
+    // console.log(object2);
+
+    // const object3 = new Object();
+
+    // object3.name = "jemish"
+    // object3.age = 30
+    // console.log(object3);
+
+}
+
+//38.JavaScript Program to Check the Number of Occurrences of a Character in the String
+
+{
+    // let str = `this that those whare whan why what`
+    // let array1= str.split("")
+    // let array2= str.split(" ")
+    // let Occurrences ="whan"
+
+    // count=0
+    // for (let key of array1){
+    //     if(key == Occurrences){
+    //         count = count + 1
+    //     }
+    // }
+    // for (let key of array2){
+    //     if(key == Occurrences){
+    //         count = count + 1
+    //     }
+    // }
+    // console.log(array1);
+    // console.log(array2);
+    // console.log(count);
+
+}
+
+//39.JavaScript Program to Convert the First Letter of a String into UpperCase
+
+
+{
+    // let str = `good morning`
+
+    // let UpperCase = str.charAt(0).toUpperCase() + str.slice(1);
+
+    // console.log(UpperCase);
+}
+
+//40.JavaScript Program to Count the Number of Vowels in a String
+
+{
+
+    // let str = `good morning`
+    // let array1= str.split("")
+    // let array2= [`a`,`e`,`i`,`o`,`u`]
+    // count=0
+    // for (let key of array1){
+    //     for(let keys of array2)
+    //     if(key == keys){
+    //         count = count + 1
+    //     }
+    // }
+    // console.log(count);
+
+}
+
+//41.JavaScript Program to Remove a Property from an Object
+
+{
+
+
+
+
+
+}
+
+//42.JavaScript Program to Check Whether a String Starts and Ends With Certain Characters
+
+{
+
+    // let object = {
+    //     firstName: "raj",
+    //     lastName: "shah",
+    //     age: 40,
+    // };
+
+    // console.log(object);
+    // delete object.age
+    // console.log(object);
+
+}
+
+//43.JavaScript Program to Check if a Key Exists in an Object
+
+{
+    let object = {
+        firstName: "raj",
+        lastName: "shah",
+        age: 40,
+    };
+
+    for (let key in object){
+
+        console.log(key.object);
+        
+    }
+
+}

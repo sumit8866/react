@@ -81,20 +81,20 @@
 
 // every(callbackFn)
 // every(callbackFn, thisArg)
-//every methods can check all elements
+//every methods can check all elements (check all elements and all elements get true than ans is true or one false than all false)
 // some(callbackFn)
 // some(callbackFn, thisArg)
-//some methods can not check all elements
+//some methods can not check all elements(check elements one by one and give one true than all true)
 
 
 {
 
-    //     let array1 = [2, 43, 34, 10, 3, 345, 212]
-    //     let array2 = [2, 43, 34, 345, 212]
+        let array1 = [2, 43, 34, 10, 3, 345, 212]
+        let array2 = [2, 43, 34, 345, 212]
 
-    //     let every = array1.every((item) => item > 1)
-    //     console.log(every);
-    //     let some = array1.some((item) => item < 9)
+        // let every = array1.every((item) => item > 10)
+        // console.log(every);
+    //     let some = array1.some((item) => item < 44)
     //   console.log(some);
     // let array1 = [5]
     // let array2 = [5]

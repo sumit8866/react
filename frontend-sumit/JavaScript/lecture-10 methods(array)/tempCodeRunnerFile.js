@@ -1,2 +1,2 @@
-nshift());
-    console.log(array1);
+ry((item) => item > 10)
+        // console.log(every);
