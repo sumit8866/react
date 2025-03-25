@@ -89,11 +89,11 @@
 
 {
 
-        let array1 = [2, 43, 34, 10, 3, 345, 212]
-        let array2 = [2, 43, 34, 345, 212]
+    let array1 = [2, 43, 34, 10, 3, 345, 212]
+    let array2 = [2, 43, 34, 345, 212]
 
-        // let every = array1.every((item) => item > 10)
-        // console.log(every);
+    // let every = array1.every((item) => item > 10)
+    // console.log(every);
     //     let some = array1.some((item) => item < 44)
     //   console.log(some);
     // let array1 = [5]
@@ -110,9 +110,7 @@
 //GIVE ARRAY YOU GIVE TARGET AND FILL EMPTY WITH START OF ARRAY
 
 // copyWithin(target, start)
-
 // give array your target and start to end example array is 11 target is 3 start is 6 
-
 // array is 1,2,3,6,7,8,9,10,11,10,11
 
 // copyWithin(target, start, end)
@@ -183,6 +181,7 @@
 
 {
     // let array1 = [2, 43, 34, 10, 3, 345, 212, 6, 54, 23]
+
 
     // console.log(array1.fill(1));
     // console.log(array1.fill("sumit"));
@@ -255,7 +254,7 @@
     // console.log(array1.includes(20));
     // console.log(array1.includes(20 , 5));
     // console.log(array1.includes(80 , 5));
-    
+
 }
 
 // Array.unshift //add value in frist index
@@ -265,16 +264,278 @@
 
 {
 
-    let array1 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+    // let array1 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
 
-    console.log(array1.unshift(0));
-    console.log(array1);
-    console.log(array1.push(100));
-    console.log(array1);
-    console.log(array1.shift());
-    console.log(array1);
-    console.log(array1.pop());
-    console.log(array1);
-    
+    // console.log(array1.unshift(0));
+    // console.log(array1);
+    // console.log(array1.push(100));
+    // console.log(array1);
+    // console.log(array1.shift());
+    // console.log(array1);
+    // console.log(array1.pop());
+    // console.log(array1);
+
+}
+
+//Array.flat() Method*********************************************************************************************
+
+// flat()
+// flat(depth)
+
+
+//flat remove subarray(depth)
+
+{
+
+    // let array =[1,2,[3,4,5,[6,7,8,[9,10]]]]
+
+    // console.log(array);
+    // // console.log(array.flat(1));
+    // // console.log(array.flat(2));
+    // // console.log(array.flat(3));
+    // // console.log(array.flat(4));
+    // // console.log(array.flat(5));
+    // // console.log(array.flat(50));
+
+    // console.log(array.map((x)=> x *2));
+    // console.log(array.flat(4).map((x)=>x*x));
+
+}
+
+// Array.flatMap()**********************************************************************************************
+
+//flatMap(callbackFn)
+// flatMap(callbackFn, thisArg)
+
+//flatmap add subarray(depth) 
+
+{
+
+    // let array=[1,2,2,1,2,3,4,5]
+    // // console.log(array);
+    // console.log(array.flatMap((x)=> (x===2?[[2,2]]: 1)));
+    // let demoReducer1 = array.flat(5).map((prev , next) => prev * next , 2)
+
+    // console.log(demoReducer1);
+
+    // console.log(array);
+}
+
+// /* Array.forEach() */************************************************************************************* */
+
+// forEach(callbackFn)
+// forEach(callbackFn, thisArg)
+
+{
+    // let array = [1 , 2 , 2 , 1]
+
+    // let demoeach = array.forEach((item) => console.log(item * 2))
+    // let demomap = array.map((item) => console.log(item * 2))
+
+    // console.log(demomap);
+    // console.log(demoeach);
+}
+
+
+// Array.indexOf()*********************************************************************************************
+
+// indexOf(searchElement)
+// indexOf(searchElement, fromIndex)
+// lastIndexOf(searchElement)
+// lastIndexOf(searchElement, fromIndex)
+
+//find the index using value
+
+{
+
+    // let array = ['html' , 'css' , 'bootstrap' , 'sass' , 'tailwindcss'  , 'javascript' , 'reactJS' ]
+
+    // console.log(array.indexOf('javascript'));
+
+}
+
+
+// Array.join()***********************************************************************************************
+
+// join()
+// join(separator)
+
+//using join method to make array to string
+
+{
+    // let array = ['html' , 'css' , 'bootstrap' , 'sass' , 'tailwindcss'  , 'javascript' , 'reactJS' ]
+
+    // console.log(array.join(``));
+    // console.log(array.join(` `));
+    // console.log(array.join(` + `));
+
+}
+
+// Array.keys()***********************************************************************************************
+
+// keys()
+{
+
+    // let array = [1, 2, 3, 4, 5, , 7]
+
+    // console.log(array);
+
+    // // let keys = Object.keys(array)
+
+    // // console.log(keys);
+
+    // let demo1 = array.keys()
+
+    // console.log(demo1.next().value);
+    // console.log(demo1.next().value);
+    // console.log(demo1.next().value);
+    // console.log(demo1.next().value);
+    // console.log(demo1.next().value);
+    // console.log(demo1.next().value);
+    // console.log(demo1.next().value);
+    // console.log(demo1.next().value);
+
+    // for(key in array){
+
+    //     console.log(key);
+
+    // }
+
+}
+
+//Array.reduce()*************************************************************************************************
+
+// reduce(callbackFn)
+// reduce(callbackFn, initialValue)
+
+
+{
+
+    //     let array = [1,2,3,4,5,6,7,8,9,10]
+
+
+    // let sum = array.reduce((prev, next) => prev + next, 0);
+
+    // console.log(sum);
+
+    // let num = [1,2,3,4,5,6]
+
+    //  // 2 * 1 = 2
+    //   // 2 * 2 = 4
+    //   // 4 * 3 = 12
+    //   // 12 * 4 = 48
+    //   // 48 * 5 = 240
+    //   // 240 * 6 = 1440
+
+    //   // 2 * 6 = 12
+    //   // 12 * 5 = 60
+    //   // 60 * 4 = 240
+    //   // 240 * 3 = 720
+    //   // 720 * 2 = 1440
+    //   // 1440 * 1 = 1440
+
+    //   console.log(num);
+
+
+    //   let demoReducer = num.reduce((prev , next) => prev * next , 2)
+    //   let demoReducer1 = num.reduceRight((prev , next) => prev * next , 2)
+
+    //   console.log(demoReducer);
+    //   console.log(demoReducer1);
+
+}
+
+//Array.reverse()*********************************************************************************************
+
+// reverse()
+
+//give reverse array elements
+{
+    // let array1=[1,2,3,4,5,17,,908,21,678,0]
+
+    // let array2=[`yesh`,`raj`,`manav`,`om`,`divy`]
+
+    // console.log(array1.reverse());
+    // console.log(array2.reverse());
+
+}
+
+//Array.slice()***********************************************************************************************
+
+// slice()
+// slice(start)
+// slice(start, end)
+
+//slice can crop the array and give new array
+
+{
+
+    // let array=[`yesh`,`raj`,`manav`,`om`,`divy`]
+
+    // console.log(array.slice(3));
+    // console.log(array.slice(2,3));
+
+}
+
+//Array.sort()***********************************************************************************************
+
+// sort()
+// sort(compareFn)
+
+{
+    // let array1 = [1, 2, 3, 4, 5, 17, , 908, 21, 678, 0]
+
+    // let array2 = [`yesh`, `raj`, `manav`, `om`, `divy`]
+
+
+    // console.log(array2.sort());
+    // console.log(array1.sort());
+    // console.log(array1.sort((a,b)=> a-b));
+
+}
+
+//Array.splice()***********************************************************************************************
+
+// splice(start)
+// splice(start, deleteCount)
+// splice(start, deleteCount, item1)
+// splice(start, deleteCount, item1, item2)
+// splice(start, deleteCount, item1, item2, /* …, */ itemN)
+
+{
+    let array = [`yesh`, `raj`, `manav`, `om`, `divy`, `meet`, `raju`, `ramesh`, `kanti`]
+
+    // console.log(array.splice(1));
+    // console.log(array.splice(1,4));
+    console.log(array.splice(1, 0, `hasmukh`));
+
+    console.log(array);
+
+    console.log(array.splice(4, 0, `nilesh`));
+    console.log(array);
+}
+
+
+//Array.values()****************************************************************************************
+
+// values()
+
+{
+    let array = [`yesh`, `raj`, `manav`, `om`, `divy`, `meet`, `raju`, `ramesh`, `kanti`]
+
+   let demo = array.values()
+    console.log(demo.next().value);
+    console.log(demo.next().value);
+    console.log(demo.next().value);
+    console.log(demo.next().value);
+    console.log(demo.next().value);
+    console.log(demo.next().value);
+    console.log(demo.next().value);
+    console.log(demo.next().value);
+    console.log(demo.next().value);
+    console.log(demo.next().value);
+    console.log(demo.next().value);
     
 }
+
+

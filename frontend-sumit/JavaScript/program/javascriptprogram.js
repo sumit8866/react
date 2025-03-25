@@ -616,16 +616,210 @@
 //43.JavaScript Program to Check if a Key Exists in an Object
 
 {
-    let object = {
-        firstName: "raj",
-        lastName: "shah",
-        age: 40,
-    };
+    // let object = {
+    //     firstName: "raj",
+    //     lastName: "shah",
+    //     age: 40,
+    // };
 
-    for (let key in object){
+    // let str=`age`
 
-        console.log(key.object);
-        
-    }
+    // for (let key in object){
+
+    //     if(key == str){
+    //         console.log(`key is exists `);
+    //     }else{
+    //         console.log(`key is not exists`); 
+    //     }
+
+    // }
 
 }
+
+// 44.JavaScript Program to Clone a JS Object
+{
+
+
+
+
+
+}
+
+//45.JavaScript Program to Loop Through an Object
+
+{
+
+
+
+
+}
+
+//46.JavaScript Program to Merge Property of Two Objects
+
+{
+
+
+
+
+}
+
+//47.JavaScript Program to Count the Number of Keys/Properties in an Object
+
+{
+    // let object = {
+    //         firstName: "raj",
+    //         lastName: "shah",
+    //         age: 40,
+    //     };
+
+    //     sum =0
+
+    //     for (let key in object){
+
+    //     }
+
+}
+
+//48.JavaScript Program to Add Key/Value Pair to an Object
+
+{
+
+
+}
+
+//49.JavaScript Program to Replace All Occurrences of a String
+
+{
+
+    // let str =`what what what why why why when when when `
+
+    // let regex=/wh/gi
+
+    // console.log(str.replaceAll(regex,"th"));
+
+}
+
+//50.JavaScript Program to Create Multiline Strings
+
+{
+
+    //     let str = `this is cat
+    // this is dog
+    // this is cow`
+
+    //     console.log(str);
+
+}
+
+//51.JavaScript Program to Format Numbers as Currency Strings
+
+{
+    // let num = `2000`
+
+    // let sum=0
+
+    // sum = 85.62 * num
+
+    // console.log(` ${num} inr = ${sum} usd`);
+
+}
+
+//52.JavaScript Program to Generate Random String
+
+{
+
+
+
+}
+
+//53.JavaScript Program to Check if a String Starts With Another String
+
+{
+
+
+
+}
+
+//54.JavaScript Program to Trim a String
+
+{
+    // let str =`    hello    `
+    // console.log(str);
+
+    // console.log(str.trim());
+
+}
+
+//55.JavaScript Program to Convert Objects to Strings
+
+{
+    
+    // let str = new String("    Hello ")
+
+    // console.log(str.toString());
+    // console.log(str.valueOf());
+    
+}
+
+//56.JavaScript Program to Check Whether a String Contains a Substring
+
+{
+
+    // let str =`hello world`
+
+    // console.log(str.substring(6));
+    // console.log(str.substring(0,6));
+    
+}
+
+//57.JavaScript Program to Compare Two Strings
+
+{
+    // let str1 =`hello world`
+    // let str2 =`hello world`
+
+    // if(str1===str2){
+    //     console.log(`both are same`);
+    // }else{
+    //     console.log(`both not same`);
+        
+    // }
+
+}
+
+// 58.JavaScript Program to Encode a String to Base64
+
+{
+
+
+
+}
+
+//59.JavaScript Program to Replace all Instances of a Character in a String
+
+{
+
+
+
+
+}
+
+//60.JavaScript Program to Replace All Line Breaks with
+
+{
+
+
+
+
+}
+
+//61.JavaScript Program to Display Date and Time
+
+{
+
+    // let date = Date()
+    // console.log(date);
+    
+}
+
+//62
