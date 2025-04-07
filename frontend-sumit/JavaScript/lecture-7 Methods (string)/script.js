@@ -243,10 +243,9 @@
 // Give and in Lowercase string
 
 {
-    // let str =`**** <<PAVASIYA SUMIT>> ****`
-    
-    // console.log(str.toLowerCase());
-    
+    let str =`**** <<PAVASIYA SUMIT>> ****`
+    console.log(str.toLowerCase());
+
 }
 
 // javascript 

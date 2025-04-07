@@ -57,6 +57,10 @@ header {
   overflow: hidden;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .navbar {
   max-width: calc(100% - 100px);
   margin: auto;
@@ -104,7 +108,7 @@ header {
     padding: 0 5px;
     /* border: 1px solid black; */
     height: 50px;
-    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     a{
       display: flex;
       align-items: center;
