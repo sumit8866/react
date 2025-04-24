@@ -791,7 +791,15 @@
 
 {
 
+    let str =`Hello world`
 
+    let base64 = btoa(str)
+
+    console.log(base64);
+
+    let decode = atob(base64)
+
+    console.log(decode);
 
 }
 

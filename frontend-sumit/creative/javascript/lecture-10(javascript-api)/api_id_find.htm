@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Search by ID</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    img {
+      width: 50px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Search by ID</h2>
+  <input type="number" id="search-id" placeholder="Enter ID" />
+  <button onclick="searchById()">Search</button>
+
+  <h3>Post Details</h3>
+  <table id="single-post">
+    <thead>
+      <tr>
+        <th>UserID</th><th>ID</th><th>Title</th><th>Body</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>User Details</h3>
+  <table id="single-user">
+    <thead>
+      <tr>
+        <th>ID</th><th>Name</th><th>Email</th><th>Avatar</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Product Details</h3>
+  <table id="single-product">
+    <thead>
+      <tr>
+        <th>ID</th><th>Product Name</th><th>Price</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Product Details</h3>
+  <table id="s-product">
+    <thead>
+      <tr>
+        <th>ID</th><th>Product Name</th><th>Price</th><th>Image</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    let posts = [], users = [], products1 = [], products2 = [];
+  
+    async function loadData() {
+      const [postRes, userRes, productRes1, productRes2] = await Promise.all([
+        fetch('https://jsonplaceholder.typicode.com/posts'),
+        fetch('https://reqres.in/api/users?page=1'),
+        fetch('https://dummyjson.com/products'),
+        fetch('https://fakestoreapi.com/products')
+      ]);
+  
+      posts = await postRes.json();
+      const userJson = await userRes.json();
+      users = userJson.data;
+      const productJson1 = await productRes1.json();
+      products1 = productJson1.products;
+      products2 = await productRes2.json();
+    }
+  
+    function searchById() {
+      const id = parseInt(document.getElementById("search-id").value);
+  
+      // Posts
+      const post = posts.find(p => p.id === id);
+      const postTable = document.querySelector("#single-post tbody");
+      postTable.innerHTML = post ? `
+        <tr>
+          <td>${post.userId}</td>
+          <td>${post.id}</td>
+          <td>${post.title}</td>
+          <td>${post.body}</td>
+        </tr>` : `<tr><td colspan="4">No post found</td></tr>`;
+  
+      // Users
+      const user = users.find(u => u.id === id);
+      const userTable = document.querySelector("#single-user tbody");
+      userTable.innerHTML = user ? `
+        <tr>
+          <td>${user.id}</td>
+          <td>${user.first_name} ${user.last_name}</td>
+          <td>${user.email}</td>
+          <td><img src="${user.avatar}" alt="${user.first_name}" /></td>
+        </tr>` : `<tr><td colspan="4">No user found</td></tr>`;
+  
+      // DummyJSON Products
+      const product1 = products1.find(p => p.id === id);
+      const product1Table = document.querySelector("#single-product tbody");
+      product1Table.innerHTML = product1 ? `
+        <tr>
+          <td>${product1.id}</td>
+          <td>${product1.title}</td>
+          <td>${product1.price}$</td>
+        </tr>` : `<tr><td colspan="3">No product found</td></tr>`;
+  
+      // FakeStoreAPI Products
+      const product2 = products2.find(p => p.id === id);
+      const product2Table = document.querySelector("#s-product tbody");
+      product2Table.innerHTML = product2 ? `
+        <tr>
+          <td>${product2.id}</td>
+          <td>${product2.title}</td>
+          <td>${product2.price}$</td>
+          <td><img src="${product2.image}" alt="${product2.title}" /></td>
+        </tr>` : `<tr><td colspan="4">No product found</td></tr>`;
+    }
+  
+    loadData();
+  </script>
+  
+</body>
+</html>
