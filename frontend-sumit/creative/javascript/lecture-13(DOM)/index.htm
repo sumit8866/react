@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    
+}
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+
+
+#bulb {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    .bulb {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+</style>
+<body>
+    
+    <!-- <h1 class="demo" id="hello">hello</h1> -->
+    <!-- <button onclick="change()">click me</button> -->
+    <!-- <button onclick="change()"> submit</button> -->
+
+
+
+    <!-- text change************************************************** -->
+    <h1 id="text">Hello</h1>
+
+    <button onclick="change1()">a</button>
+    <button onclick="change2()">b</button>
+    <button onclick="change3()">c</button>
+    <button onclick="change4()">d</button>
+
+    <br>
+
+
+
+ <!-- Switch Button************************************************** -->
+    <h3>Switch Button</h3>
+
+<label class="toggle-switch square">
+    <div class="back"></div>
+    <span id="check"  class="slider"></span>
+</label> 
+<br>
+<button onclick="change5()" id="btn-1">on</button>
+<button onclick="change6()" id="btn-2">off</button>
+
+<br>
+
+
+ <!--  bulb************************************************** -->
+
+ <h3>Bulb On/Off Switch</h3>
+
+ <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Bulb">
+
+ <br>
+ <button onclick="toggleBulb()" class="bulb">on/off</button>
+
+
+
+ <!-- menu switch************************************************** -->
+
+<h3>menu</h3>
+<button  onclick="change8()" style="height: auto; width: 30px; border: none;"><img src="./img/list.png" alt="menu"></button>
+
+<div id="menu" style=" overflow: hidden ; " >
+    <div style="display: flex; justify-content: space-between; width: 150px;" >
+        <ul id="list">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+        <div>
+
+            <button onclick="change9()" style="align-items: start; border: none;"><img src="./img/close.png" alt="close"></button>
+        </div>
+    </div>
+    
+</div>
+
+    
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
