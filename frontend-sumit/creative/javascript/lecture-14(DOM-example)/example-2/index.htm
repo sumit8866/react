@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <section class="form-section">
+
+    Name <br><input type="text" id="Name" placeholder="Enter your Name"><br>
+    <p id="Name-error"></p>
+    SurName <br><input type="text" id="SurName" placeholder="Enter your SurName"><br>
+    <p id="SurName-error"></p>
+    Age <br><input type="text" id="Age" placeholder="Enter your Age"><br>
+    <p id="Age-error"></p>
+    <button onclick="submit()">submit</button>
+
+  </section>
+
+  
+<section class="table-section">
+
+  <table id="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>SurName</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+  
+  </table>
+  
+  <button class="Delete-btn" onclick="DeleteData()">Delete</button>
+</section>
+
+<script src="./main.js"></script>
+</body>
+</html>

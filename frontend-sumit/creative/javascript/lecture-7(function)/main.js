@@ -79,13 +79,3 @@
   first(90,callback)
 }
 
-
- 
-{
-  function toCelsius(f) {
-    return (f * (9/5))+ 32;
-  }
-  
-  let value = toCelsius(50);
-  document.getElementById("demo").innerHTML = value;
-}

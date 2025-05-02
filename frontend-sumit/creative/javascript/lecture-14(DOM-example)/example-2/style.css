@@ -1,0 +1,76 @@
+body{
+  background-color: gray;
+  display: flex;
+}
+
+
+p{
+  color: rgb(109, 2, 2);
+  font-size: 12px;
+  margin-top: -20px ;
+  margin-bottom: 10px;
+}
+.form-section{
+  margin: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  input{
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    
+  }
+}
+.table-section{
+  height: auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+button{
+  color: green;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 0;
+
+  cursor: pointer;
+  &:hover{
+    background-color: lightgray;
+    color: blue;
+
+  }
+}
+.Delete-btn{
+  margin: 10px
+}
+
+table{
+  margin: 10px;
+  border-collapse: collapse;
+  width: 25%;
+  th{
+
+    background-color: lightgray;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 2px solid black;
+  }
+  td{
+    padding: 5px 15px;
+    background-color: lightgray;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    
+  }
+}
+

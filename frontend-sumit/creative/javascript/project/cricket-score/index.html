@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scoreboard">
+        <h1>🏏 Cricket Scoreboard</h1>
+        
+        <div class="score" id="runs">Runs: 0</div>
+        <div class="score" id="wickets">Wickets: 0</div>
+        <div class="score" id="overs">Overs: 0.0</div>
+        <div class="score" id="runRate">Run Rate: 0.00</div>
+        <div class="score" id="extras">Extras: 0</div>
+        <div class="score" id="total">Total: 0</div>
+        <div class="score" id="partnership">Partnership: 0</div>
+        <div class="score" id="projectedScore">Projected Score (20 overs): 0</div>
+        <div class="score" id="striker">Striker: Player A</div>
+        <div class="score" id="nonStriker">Non-Striker: Player B</div>
+        <div class="score" id="bowler">Bowler: Bowler 1</div>
+    
+        <button onclick="addDotBall()">Dot Ball</button>
+        <button onclick="addRun(1)">+1 Run</button>
+        <button onclick="addRun(4)">+4 Runs</button>
+        <button onclick="addRun(6)">+6 Runs</button>
+        <button onclick="addWicket()">+Wicket</button>
+        <button onclick="addWideBall()">+Wide</button>
+        <button onclick="deleteLast()">Undo Last ball</button>
+        <button onclick="reset()">🔄 Reset</button>
+      </div>
+
+      <table id="table">
+        <thead>
+            <tr>
+                <th>Overs</th>
+                <th>Runs</th>
+                <th>Wicket</th>
+                <th>Extras</th>
+                <th>total</th>
+            </tr>
+        </thead>
+        <tbody id="ballHistory"></tbody>
+      </table>
+
+      <script src="script.js"></script>
+</body>
+</html>
