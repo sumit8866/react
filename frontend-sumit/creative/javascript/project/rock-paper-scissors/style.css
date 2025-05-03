@@ -60,12 +60,8 @@ body {
   width: 100px;
 }
 
-.user_result img {
-  transform: rotate(90deg);
-}
-
 .bot_result img {
-  transform: rotate(-90deg) rotateY(180deg);
+  transform: rotate(-0deg) rotateY(180deg);
 }
 
 .result {

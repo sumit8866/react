@@ -15,7 +15,7 @@
     <p id="Name-error"></p>
     SurName <br><input type="text" id="SurName" placeholder="Enter your SurName"><br>
     <p id="SurName-error"></p>
-    Age <br><input type="text" id="Age" placeholder="Enter your Age"><br>
+    Age <br><input type="number" id="Age" placeholder="Enter your Age"><br>
     <p id="Age-error"></p>
     <button onclick="submit()">submit</button>
 
@@ -30,12 +30,15 @@
         <th>Name</th>
         <th>SurName</th>
         <th>Age</th>
+        <th>Delete Data</th>
+        <th>Update Data</th>
       </tr>
+     
     </thead>
   
+    <!-- <button class="Delete-btn" onclick="DeleteData()">Delete</button> -->
   </table>
   
-  <button class="Delete-btn" onclick="DeleteData()">Delete</button>
 </section>
 
 <script src="./main.js"></script>
