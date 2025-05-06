@@ -6,8 +6,8 @@ function calculateAge() {
 
     let store = date2.getTime() - date1.getTime();
     let age = new Date(store);
-    let year = date2.getTime()-date1.getTime();
-    let years = Math.floor(year / (1000 * 60 * 60 * 24 * 365.25));
+    
+    let years = Math.floor(store / (1000 * 60 * 60 * 24 * 365.25));
     let months = age.getMonth();
     let days = age.getDate();
     
