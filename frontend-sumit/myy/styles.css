@@ -1,0 +1,19 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* High-quality background image */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://img.freepik.com/free-vector/technology-wire-mesh-network-connection-digital-background_1017-28407.jpg?t=st=1731925539~exp=1731929139~hmac=6901ef1d7ab4463f3aca6a676ef4074c17c49f716b9eb325b7a7e350bd1b899c&w=1060') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
