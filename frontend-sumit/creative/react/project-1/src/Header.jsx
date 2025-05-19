@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "./logo.png";
 import saladImg from "./first-slider.png";
 import call from "./call.png";
 import play_button from "./play_button.png";
 
-const Header = () => {
+const Header1 = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -13,7 +13,6 @@ const Header = () => {
 
   return (
     <header>
-      {/* Header Top Navigation */}
       <div className="header-container">
         <div className="logo">
           <img src={logo} alt="Cafeu Logo" />
@@ -27,15 +26,24 @@ const Header = () => {
 
         <nav className={`nav-menu ${isMobileMenuOpen ? "active" : ""}`}>
           <ul className="nav-list">
-            {["Home", "Pages", "Menu", "Blog", "About Us", "Contact"].map((item, idx) => (
-              <li key={idx} className="nav-item">
-                <a href={`#${item.toLowerCase().replace(/\s+/g, "")}`} onClick={() => setMobileMenuOpen(false)}>
-                  {item}
-                </a>
-              </li>
-            ))}
+            {["Home", "Pages", "Menu", "Blog", "About Us", "Contact"].map(
+              (item, idx) => (
+                <li key={idx} className="nav-item">
+                  <a
+                    href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item}
+                  </a>
+                </li>
+              )
+            )}
             <li className="nav-item number">
-              <a href="tel:+919714051182" className="call-link" onClick={() => setMobileMenuOpen(false)}>
+              <a
+                href="tel:+919714051182"
+                className="call-link"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 <img src={call} alt="Call" /> +91 9714051182
               </a>
             </li>
@@ -45,13 +53,14 @@ const Header = () => {
 
       {/* Hero Section */}
       <section id="home" className="hero">
-        {/* Left Side */}
+        {/* Left Column */}
         <div className="hero-left">
           <h4>Best In Cafeu</h4>
           <h1>
-            <span className="highlight">Different Spice</span>
+            <span className="inline">Different </span>
+            <span className="highlight">Spice</span>
             <br />
-            <span>For A Different Taste</span>
+            <span className="inline">For A Different Taste</span>
           </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -69,7 +78,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Right Side */}
+        {/* Right Column */}
         <div className="hero-right">
           <img src={saladImg} alt="Special Salad" />
           <div className="discount-badge">
@@ -82,4 +91,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header1;
