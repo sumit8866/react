@@ -30,7 +30,7 @@ const Header1 = () => {
               (item, idx) => (
                 <li key={idx} className="nav-item">
                   <a
-                    href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
+                    href={`#${item.toLowerCase()}`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item}

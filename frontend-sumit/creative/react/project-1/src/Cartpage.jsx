@@ -143,13 +143,7 @@ const Cartpage = () => {
               <div className="cart-value">$12.00</div>
             </div>
             <div className="Flex-Cloume">
-              <div className="cart-actions">
-                <button className="update-btn">Update Cart</button>
-                <div className="coupon-section">
-                  <input type="text" placeholder="Coupon code" />
-                  <button className="apply-btn">Apply coupon</button>
-                </div>
-              </div>
+              
 
               <div className="cart-totals">
                 <h2>Cart Totals</h2>

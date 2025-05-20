@@ -174,6 +174,10 @@ const Userreview = () => {
         </div>
       </section>
 
+
+<div>
+    {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4798.641847482605!2d-74.43219252080083!3d40.55511173436224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b86c9db667e9%3A0x72b8da0ab98d48e6!2sA2B%20Indian%20Veg%20Restaurant%20-%20South%20Plainfield!5e0!3m2!1sen!2sin!4v1747643250706!5m2!1sen!2sin" width="600" height="450" style={{border:'0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+</div>
       <div className="footer" id="footer">
         <footer>
           <div class="footer_main">

@@ -92,8 +92,8 @@ const Menu = () => {
               Fried chicken breast, chilli sauce, tomatoes, pickles, coleslaw
               <button>Add to Cart</button>
             </div>
-            <div className="burger-item">
-              <img src={burger_02} alt="Ultimate Bacon" />
+            <div className="burger-item minus-item1">
+              <img src={burger_02} alt="Ultimate Bacon " />
               <h3>Ultimate Bacon</h3>
               <p>$9.99</p>
               Fried chicken breast, chilli sauce, tomatoes, pickles, coleslaw

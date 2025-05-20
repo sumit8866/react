@@ -1160,8 +1160,7 @@ footer {
     color: #333;
   }
 
-  input[type="email"],
-  input[type="password"] {
+  input {
     padding: 0.65rem 0.9rem;
     border: 1.8px solid #ddd;
     border-radius: 8px;
@@ -1170,8 +1169,7 @@ footer {
     transition: border-color 0.3s ease;
   }
 
-  input[type="email"]:focus,
-  input[type="password"]:focus {
+  input:focus {
     outline: none;
     border-color: #ff6347;
     box-shadow: 0 0 6px rgba(255, 99, 72, 0.67);
@@ -1253,9 +1251,7 @@ footer {
     color: #333;
   }
 
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
+  input {
     padding: 0.65rem 0.9rem;
     border: 1.8px solid #ddd;
     border-radius: 8px;
@@ -1505,6 +1501,22 @@ footer {
     width: 100%;
   }
 
+  .contact-container {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  background: rgb(226, 226, 226);
+  .contact-img{
+    width: 80%;
+    margin: auto;
+    img{
+      width: 100%;
+    }
+  }
+  .form-container{
+    width: 80%;
+  }
+}
   .overlay {
     width: 90%;
     height: 90%;
@@ -1531,6 +1543,32 @@ footer {
       }
     }
   }
+  .burger-menu,
+    .salads-menu,
+    .fries-menu,
+    .desserts-menu {
+      .burger-item,
+      .salads-item,
+      .fries-item,
+      .desserts-item {
+        width: 70%;
+        font-size: small;
+        .all-img {
+          height: 30px;
+          width: 30px;
+        }
+        h3 {
+          font-size: large;
+        }
+        p {
+          font-size: medium;
+        }
+      }
+      .minus-item1 {
+        display: none;
+      }
+    }
+  
 
   .cartpage {
     .cart-page {
