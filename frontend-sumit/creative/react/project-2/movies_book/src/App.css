@@ -72,6 +72,11 @@
 
 /* Responsive @ 768px */
 @media (max-width: 768px) {
+
+  .movie-card4 , .movie-card5{
+    display: none;
+  }
+ 
   .hamburger {
     display: flex;
   }
@@ -114,5 +119,22 @@
     transform: translateY(-10px);
     transition: all 0.5s ease;
   }
+  
 }
 
+
+
+.css-u52jrg-MuiButtonBase-root-MuiButton-root{
+  border-radius: 0% !important;
+}
+
+.css-1fxz92m-MuiButtonBase-root-MuiButton-root{
+  border-radius: 0% !important;
+}
+.css-o9saw6-MuiButtonBase-root-MuiButton-root{
+  border-radius: 0% !important;
+}
+
+.css-dd8qur-MuiButtonBase-root-MuiButton-root{
+  border-radius: 0% !important;
+}
