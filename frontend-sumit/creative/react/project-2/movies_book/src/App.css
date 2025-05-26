@@ -1,0 +1,118 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 80%;
+  margin: auto;
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: yellow;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: orange;
+}
+
+/* Top Movies Section */
+.Top_Movies_section .heading {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.context_1 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.context_2 {
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive @ 768px */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 1rem 2rem;
+    z-index: 10;
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .Top_Movies_section .heading {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .context_1,
+  .context_2 {
+    width: 100%;
+  }
+}
+.Movie_img{
+  border-radius: 10px 10px 0px 0;
+  transition: all 0.5s ease;
+  &:hover{
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+  }
+}
+

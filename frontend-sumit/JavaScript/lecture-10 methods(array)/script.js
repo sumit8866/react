@@ -502,18 +502,18 @@
 // splice(start, deleteCount, item1, item2)
 // splice(start, deleteCount, item1, item2, /* …, */ itemN)
 
-{
-    let array = [`yesh`, `raj`, `manav`, `om`, `divy`, `meet`, `raju`, `ramesh`, `kanti`]
+// {
+//     let array = [`yesh`, `raj`, `manav`, `om`, `divy`, `meet`, `raju`, `ramesh`, `kanti`]
 
-    // console.log(array.splice(1));
-    // console.log(array.splice(1,4));
-    console.log(array.splice(1, 0, `hasmukh`));
+//     // console.log(array.splice(1));
+//     // console.log(array.splice(1,4));
+//     console.log(array.splice(1, 0, `hasmukh`));
 
-    console.log(array);
+//     console.log(array);
 
-    console.log(array.splice(4, 0, `nilesh`));
-    console.log(array);
-}
+//     console.log(array.splice(4, 0, `nilesh`));
+//     console.log(array);
+// }
 
 
 //Array.values()****************************************************************************************
@@ -521,21 +521,36 @@
 // values()
 
 {
-    let array = [`yesh`, `raj`, `manav`, `om`, `divy`, `meet`, `raju`, `ramesh`, `kanti`]
+//     let array = [`yesh`, `raj`, `manav`, `om`, `divy`, `meet`, `raju`, `ramesh`, `kanti`]
 
-   let demo = array.values()
-    console.log(demo.next().value);
-    console.log(demo.next().value);
-    console.log(demo.next().value);
-    console.log(demo.next().value);
-    console.log(demo.next().value);
-    console.log(demo.next().value);
-    console.log(demo.next().value);
-    console.log(demo.next().value);
-    console.log(demo.next().value);
-    console.log(demo.next().value);
-    console.log(demo.next().value);
+//    let demo = array.values()
+//     console.log(demo.next().value);
+//     console.log(demo.next().value);
+//     console.log(demo.next().value);
+//     console.log(demo.next().value);
+//     console.log(demo.next().value);
+//     console.log(demo.next().value);
+//     console.log(demo.next().value);
+//     console.log(demo.next().value);
+//     console.log(demo.next().value);
+//     console.log(demo.next().value);
+//     console.log(demo.next().value);
     
 }
 
+{
+
+    let array =[]
+let sum = 0
+    let array_count = parseInt(prompt('enter array size'))
+
+    for (let i=0;i<array_count;i++){
+        let value = parseInt(prompt('enter array size'))
+sum +=value
+        array.push(value)
+    }
+
+    document.writeln(array)
+    document.writeln("sum is:"+sum)
+}
 
