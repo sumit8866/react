@@ -70,8 +70,22 @@
   align-items: center;
 }
 
-/* Responsive @ 768px */
+@media (max-width:992px){
+  .gallery-5{
+    display: none !important;
+  }
+  .upcoming-movie-card3{
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
+  .upcoming-movie-card2{
+    display: none !important;
+  }
+  .gallery-4 ,.gallery-3{
+    display: none !important;
+  }
 
   .movie-card4 , .movie-card5{
     display: none;
@@ -138,3 +152,6 @@
 .css-dd8qur-MuiButtonBase-root-MuiButton-root{
   border-radius: 0% !important;
 }
+
+
+

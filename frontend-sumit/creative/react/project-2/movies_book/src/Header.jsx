@@ -1,4 +1,14 @@
-import { Box, Typography, Button, Container ,Stack, Card, CardContent, CardMedia} from "@mui/material";
+import {
+  Box,
+  Typography,
+  Button,
+  Container,
+  Stack,
+  Card,
+  CardContent,
+  CardMedia,
+  IconButton,
+} from "@mui/material";
 import React, { useState } from "react";
 import logo from "./logo.png";
 import banner from "./banner1.jpg";
@@ -7,12 +17,25 @@ import Movie_1 from "./Movie_1.jpg";
 import Movie_2 from "./Movie_2.jpg";
 import Movie_3 from "./Movie_3.jpg";
 import Movie_4 from "./banner-1.jpg";
-import photo_1 from './photo-1.jpg'
-import photo_2 from './photo-2.jpg'
+import photo_1 from "./photo-1.jpg";
+import photo_2 from "./photo-2.jpg";
+import gallery_bg from "./gallery_bg.png";
+import gallery_1 from "./gallery_1.jpg";
+import gallery_2 from "./gallery_2.jpg";
+import gallery_3 from "./gallery_3.jpg";
+import gallery_4 from "./gallery_4.jpg";
+import gallery_5 from "./gallery_5.jpg";
+import offer_bg from "./offer_bg.png";
 import SearchSharpIcon from "@mui/icons-material/SearchSharp";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import { Transform } from "@mui/icons-material";
+import {
+  FaTwitter,
+  FaFacebookF,
+  FaPinterestP,
+  FaInstagram,
+} from "react-icons/fa";
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -43,45 +66,118 @@ const Header = () => {
   ];
 
   const moviess = [
-  {
-    title: "The Fifth Day",
-    genres: "Comedy",
-    duration: "180 Mins",
-    image:Movie_2,
-    className: "movie-card1",
-  },
-  {
-    title: "Black and White Twins",
-    genres: "Animation, Comedy",
-    duration: "190 Mins",
-    image: Movie_1,
-    className: "movie-card2",
-  },
-  {
-    title: "The Scariest Dream",
-    genres: "Thriller",
-    duration: "180 Mins",
-    image: Movie_3,
-    className: "movie-card3",
-  },
-  {
-    title: "The Pursuit of Dreams",
-    genres: "Animation",
-    duration: "180 Mins",
-    image: Movie_4,
-    className: "movie-card4",
-  },
-  {
-    title: "Alis Keep Walking",
-    genres: "Crime, Thriller",
-    duration: "180 Mins",
-    image: Movie_2,
-    className: "movie-card5",
-  },
-];
+    {
+      title: "The Fifth Day",
+      genres: "Comedy",
+      duration: "180 Mins",
+      image: Movie_2,
+      className: "movie-card1",
+    },
+    {
+      title: "Black and White Twins",
+      genres: "Animation, Comedy",
+      duration: "190 Mins",
+      image: Movie_1,
+      className: "movie-card2",
+    },
+    {
+      title: "The Scariest Dream",
+      genres: "Thriller",
+      duration: "180 Mins",
+      image: Movie_3,
+      className: "movie-card3",
+    },
+    {
+      title: "The Pursuit of Dreams",
+      genres: "Animation",
+      duration: "180 Mins",
+      image: Movie_4,
+      className: "movie-card4",
+    },
+    {
+      title: "Alis Keep Walking",
+      genres: "Crime, Thriller",
+      duration: "180 Mins",
+      image: Movie_2,
+      className: "movie-card5",
+    },
+  ];
+
+  const upcomingMovies = [
+    {
+      title: "The Fifth Day",
+      genres: "Comedy",
+      duration: "180 Mins",
+      image: Movie_2,
+      className: "upcoming-movie-card1",
+    },
+    {
+      title: "Black and White Twins",
+      genres: "Animation, Comedy",
+      duration: "190 Mins",
+      image: Movie_1,
+      className: "upcoming-movie-card2",
+    },
+    {
+      title: "The Scariest Dream",
+      genres: "Thriller",
+      duration: "180 Mins",
+      image: Movie_3,
+      className: "upcoming-movie-card3",
+    },
+  ];
+
+  const gallery_images = [
+    {
+      img: gallery_1,
+      className: "gallery-1",
+    },
+    {
+      img: gallery_2,
+      className: "gallery-2",
+    },
+    {
+      img: gallery_3,
+      className: "gallery-3",
+    },
+    {
+      img: gallery_4,
+      className: "gallery-4",
+    },
+    {
+      img: gallery_5,
+      className: "gallery-5",
+    },
+  ];
+
+  const offers = [
+    {
+      title: "Special Offer",
+      desc: "Get 50% off on your first movie ticket purchase.",
+      btn: "Claim Offer",
+    },
+    {
+      title: "Movie of the Month",
+      desc: "Check out our featured movie of the month and enjoy exclusive content.",
+      btn: "Watch Now",
+    },
+    {
+      title: "Refer a Friend",
+      desc: "Invite your friends and get rewards for every successful referral.",
+      btn: "Refer Now",
+    },
+  ];
+
+  const icons = [
+    { icon: <FaTwitter />, label: "Twitter", link: "#" },
+    { icon: <FaFacebookF />, label: "Facebook", link: "#" },
+    { icon: <FaPinterestP />, label: "Pinterest", link: "#" },
+    { icon: <FaInstagram />, label: "Instagram", link: "#" },
+  ];
 
   return (
     <>
+      {/* header */}
       <Box
         sx={{
           width: "100%",
@@ -169,15 +265,17 @@ const Header = () => {
                   >
                     Adventure Movie
                   </Typography>
-                  <Typography variant="h2" fontWeight="bold"
-                  
-                  sx={{
-                    transition:'all 0.6s ease',
-                     "&:hover": {
+                  <Typography
+                    variant="h2"
+                    fontWeight="bold"
+                    sx={{
+                      transition: "all 0.6s ease",
+                      "&:hover": {
                         color: "#f57c00",
-                        transition:'all 0.6s ease'
+                        transition: "all 0.6s ease",
                       },
-                  }}>
+                    }}
+                  >
                     LOVE NIGHTMARE
                   </Typography>
                   <Typography
@@ -191,11 +289,12 @@ const Header = () => {
                     sx={{
                       mt: 4,
                       backgroundColor: "#f57c00",
-                      transition:'all 0.6s ease',
-                      "&:hover": { backgroundColor: 'white',
-                        color:'#f57c00',
-                        transition:'all 0.6s ease'
-                       },
+                      transition: "all 0.6s ease",
+                      "&:hover": {
+                        backgroundColor: "white",
+                        color: "#f57c00",
+                        transition: "all 0.6s ease",
+                      },
                     }}
                   >
                     Get Ticket
@@ -220,14 +319,14 @@ const Header = () => {
           </Box>
         </Box>
       </Box>
-
+      {/* Hero section */}
       <Box
         className="Top_Movies_section"
         sx={{ width: "100%", mt: { xs: "60px", md: "100px" } }}
       >
-        <Box className="heading" >
+        <Box className="heading">
           <Box className="context_1">
-            <img  src={logo2} alt="" height={"36px"} width={"36px"} />
+            <img src={logo2} alt="" height={"36px"} width={"36px"} />
             <Typography variant="p" color="gray" fontWeight={600} marginTop={1}>
               Checkout top movies
             </Typography>
@@ -243,14 +342,14 @@ const Header = () => {
           </Box>
         </Box>
       </Box>
-
+      {/* top movies section */}
       <Box
         sx={{
           display: "flex",
           flexWrap: "wrap",
           gap: 3,
-          width:'90%',
-          margin:'auto',
+          width: "90%",
+          margin: "auto",
           justifyContent: { xs: "center", md: "space-between" },
           px: { xs: 2, md: 4 },
           py: 4,
@@ -278,18 +377,18 @@ const Header = () => {
               <Box
                 sx={{
                   maxWidth: 280,
-                  margin:'auto',
+                  margin: "auto",
                   padding: 3,
                   // border: "1px solid #eee",
                   // borderRadius: 2,
                   // boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
                   backgroundColor: "#fff",
                   fontFamily: "Arial, sans-serif",
-                  transform: 'translateY(-30px)',
-                  transition:'all 0.6s ease',
-                  "&:hover":{
-                    transform: 'translateY(-15px)',
-                    transition:'all 0.6s ease'
+                  transform: "translateY(-30px)",
+                  transition: "all 0.6s ease",
+                  "&:hover": {
+                    transform: "translateY(-15px)",
+                    transition: "all 0.6s ease",
                   },
                 }}
               >
@@ -342,15 +441,15 @@ const Header = () => {
                     sx={{
                       backgroundColor: "#f5f5f5",
                       color: "#444",
-                      borderRadius:'none',
+                      borderRadius: "none",
                       fontWeight: "bold",
                       textTransform: "none",
-                      transition:'all 0.6s ease',
-                      marginBottom:'10px',
+                      transition: "all 0.6s ease",
+                      marginBottom: "10px",
                       "&:hover": {
                         backgroundColor: "#f57c00",
-                        color:'white',
-                        transition:'all 0.6s ease'
+                        color: "white",
+                        transition: "all 0.6s ease",
                       },
                     }}
                   >
@@ -363,12 +462,12 @@ const Header = () => {
                       backgroundColor: "#f5f5f5",
                       color: "#444",
                       fontWeight: "bold",
-                       transition:'all 0.6s ease',
-                      marginBottom:'10px',
+                      transition: "all 0.6s ease",
+                      marginBottom: "10px",
                       "&:hover": {
                         backgroundColor: "#f57c00",
-                        color:'white',
-                        transition:'all 0.6s ease'
+                        color: "white",
+                        transition: "all 0.6s ease",
                       },
                     }}
                   >
@@ -381,276 +480,792 @@ const Header = () => {
         ))}
       </Box>
 
-      <Box overflow={'hidden'} sx={{ width: '100%', backgroundColor: '#f5f5f5', py: 4 }} >
-      <Box sx={{ px: 4, py: 8, backgroundColor: '#fff' }}>
-      {/* Wrapper Flex Container */}
       <Box
-        sx={{
-          display: 'flex',
-          flexDirection: { xs: 'column', md: 'row' },
-          alignItems: 'flex-start',
-          gap: 6,
-        }}
+        overflow={"hidden"}
+        sx={{ width: "100%", backgroundColor: "#f5f5f5", py: 4 }}
       >
-        {/* Left Side (Images and Experience) */}
-
+        <Box sx={{ px: 4, py: 8, backgroundColor: "#fff" }}>
+          {/* Wrapper Flex Container */}
           <Box
-      sx={{
-        position: 'relative',
-        width: { xs: '100%',sm:'60%', md: '50%' },
-        height: { xs: 300, sm:360, md: 420 },
-        mx: 'auto',
-        "&:hover":{
-          transform: 'scale(1.05)',
-          transition: 'transform 0.3s ease',
-        }
-      }}
-      marginTop={{md:'100px'}}
-    >
-      {/* Rotated Beach Image */}
-      <Box
-        component="img"
-        src={photo_1}
-        alt="Beach"
-        sx={{
-          width: '50%',
-          borderRadius: 2,
-          transform: 'rotate(-10deg)',
-          position: 'absolute',
-          left: 0,
-          top: 60,
-          boxShadow: 3,
-          zIndex: 1,
-        }}
-      />
+            sx={{
+              display: "flex",
+              flexDirection: { xs: "column", md: "row" },
+              alignItems: "flex-start",
+              gap: 6,
+            }}
+          >
+            {/* Left Side (Images and Experience) */}
 
-      {/* Overlapping Clown Image */}
-      <Box
-        component="img"
-        src={photo_2}
-        alt="Clown"
-        sx={{
-          width: '50%',
-          borderRadius: 2,
-          position: 'absolute',
-          right: 40,
-          top: 60,
-          boxShadow: 4,
-          zIndex: 1,
-          transform: 'translateY(-50%) rotate(10deg)',
-        }}
-      />
+            <Box
+              sx={{
+                position: "relative",
+                width: { xs: "100%", sm: "60%", md: "50%" },
+                height: { xs: 300, sm: 360, md: 420 },
+                mx: "auto",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                  transition: "transform 0.3s ease",
+                },
+              }}
+              marginTop={{ md: "100px" }}
+            >
+              {/* Rotated Beach Image */}
+              <Box
+                component="img"
+                src={photo_1}
+                alt="Beach"
+                sx={{
+                  width: "50%",
+                  borderRadius: 2,
+                  transform: "rotate(-10deg)",
+                  position: "absolute",
+                  left: 0,
+                  top: 60,
+                  boxShadow: 3,
+                  zIndex: 1,
+                }}
+              />
 
-      {/* Badge */}
-      <Box
-        sx={{
-          position: 'absolute',
-          bottom: 0,
-          left: '40%',
-          
-          transform: 'translateX(50%)',
-          // transform: 'translateY(-180%)',
-          transform:{ xs: 'translateX(-30%)', md: 'translateY(-180%)'},
-          backgroundColor: '#fff',
-          borderRadius: '50%',
-          width: 100,
-          height: 100,
-          border: '3px solid #eee',
-          boxShadow: 2,
-          zIndex: 3,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <Typography variant="h5" sx={{ color: '#F26522', fontWeight: 700 }}>
-          20
-        </Typography>
-        <Typography variant="caption" sx={{ color: 'text.secondary', textAlign: 'center' }}>
-          Years of<br />Producing
-        </Typography>
-      </Box>
-    </Box>    
-        
-       
+              {/* Overlapping Clown Image */}
+              <Box
+                component="img"
+                src={photo_2}
+                alt="Clown"
+                sx={{
+                  width: "50%",
+                  borderRadius: 2,
+                  position: "absolute",
+                  right: 40,
+                  top: 60,
+                  boxShadow: 4,
+                  zIndex: 1,
+                  transform: "translateY(-50%) rotate(10deg)",
+                }}
+              />
 
-        {/* Right Side (Text & Cards) */}
-        <Box sx={{ flex: 1 }}>
-          <Typography variant="subtitle2" sx={{ color: '#F26522', mb: 1 }}>
-            Get To Know Us
-          </Typography>
+              {/* Badge */}
+              <Box
+                sx={{
+                  position: "absolute",
+                  bottom: 0,
+                  left: "40%",
 
-          <Typography variant="h4" sx={{ fontWeight: 700, mb: 2 }}>
-            The Best Movie Ticket Distributor
-          </Typography>
-
-          <Typography variant="body1" sx={{ color: 'text.secondary', mb: 3 }}>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod tempor incididunt labore dolore magna aliqua. Sed risus augue, commodo ornare felis non, eleifend pharetra eleifend.
-          </Typography>
-
-          {/* Award Section */}
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-            <Card variant="outlined">
-              <CardContent>
-                <Typography variant="h6" sx={{ fontWeight: 600 }}>Unlimited Awards</Typography>
-                <Typography variant="body2">
-                  We’ve designed a culture that allows our stewards to assimilate.
+                  transform: "translateX(50%)",
+                  // transform: 'translateY(-180%)',
+                  transform: {
+                    xs: "translateX(-30%)",
+                    md: "translateY(-180%)",
+                  },
+                  backgroundColor: "#fff",
+                  borderRadius: "50%",
+                  width: 100,
+                  height: 100,
+                  border: "3px solid #eee",
+                  boxShadow: 2,
+                  zIndex: 3,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Typography
+                  variant="h5"
+                  sx={{ color: "#F26522", fontWeight: 700 }}
+                >
+                  20
                 </Typography>
-              </CardContent>
-            </Card>
-            <Card variant="outlined">
-              <CardContent>
-                <Typography variant="h6" sx={{ fontWeight: 600 }}>Our Directors</Typography>
-                <Typography variant="body2">
-                  We’ve designed a culture that allows our stewards to assimilate.
+                <Typography
+                  variant="caption"
+                  sx={{ color: "text.secondary", textAlign: "center" }}
+                >
+                  Years of
+                  <br />
+                  Producing
                 </Typography>
-              </CardContent>
-            </Card>
-          </Box>
+              </Box>
+            </Box>
 
-          {/* CTA Button */}
-          <Button variant="contained" color="warning" size="large" sx={{ mt: 3 }}>
-            Discover More
-          </Button>
-
-          {/* Career Box */}
-          <Card variant="outlined" sx={{ mt: 4, backgroundColor: '#fff5f0' }}>
-            <CardContent>
-              <Typography variant="overline" sx={{ color: 'orangered' }}>JOIN US</Typography>
-              <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
-                Seeking a Career in a Movie Production
+            {/* Right Side (Text & Cards) */}
+            <Box sx={{ flex: 1 }}>
+              <Typography variant="subtitle2" sx={{ color: "#F26522", mb: 1 }}>
+                Get To Know Us
               </Typography>
-            </CardContent>
-          </Card>
+
+              <Typography variant="h4" sx={{ fontWeight: 700, mb: 2 }}>
+                The Best Movie Ticket Distributor
+              </Typography>
+
+              <Typography
+                variant="body1"
+                sx={{ color: "text.secondary", mb: 3 }}
+              >
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sed
+                eiusmod tempor incididunt labore dolore magna aliqua. Sed risus
+                augue, commodo ornare felis non, eleifend pharetra eleifend.
+              </Typography>
+
+              {/* Award Section */}
+              <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                <Card variant="outlined">
+                  <CardContent>
+                    <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                      Unlimited Awards
+                    </Typography>
+                    <Typography variant="body2">
+                      We’ve designed a culture that allows our stewards to
+                      assimilate.
+                    </Typography>
+                  </CardContent>
+                </Card>
+                <Card variant="outlined">
+                  <CardContent>
+                    <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                      Our Directors
+                    </Typography>
+                    <Typography variant="body2">
+                      We’ve designed a culture that allows our stewards to
+                      assimilate.
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Box>
+
+              {/* CTA Button */}
+              <Button
+                variant="contained"
+                color="warning"
+                size="large"
+                sx={{ mt: 3 }}
+              >
+                Discover More
+              </Button>
+
+              {/* Career Box */}
+              <Card
+                variant="outlined"
+                sx={{ mt: 4, backgroundColor: "#fff5f0" }}
+              >
+                <CardContent>
+                  <Typography variant="overline" sx={{ color: "orangered" }}>
+                    JOIN US
+                  </Typography>
+                  <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
+                    Seeking a Career in a Movie Production
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Box>
+          </Box>
         </Box>
       </Box>
-    </Box>
 
-      </Box>
-
-      <Box width={'100%'} sx={{bgcolor: "#000"}} >
-          <Box sx={{  py: 8,  width:'80% ', margin:'auto', borderRadius: '10px' }}>
-      {/* Header */}
-      <Box textAlign="center" mb={5}>
-        <img src={logo} alt="Clapperboard" height="36px" width="90px" />
-        <Typography variant="subtitle2" color="#f57c00" fontWeight="bold">
-          Watch New Movies
-        </Typography>
-        <Typography
-          variant="h4"
-          sx={{ color: "#fff", fontWeight: "bold", mt: 1 }}
+      {/* Movie Now Playing Section */}
+      <Box width={"100%"} sx={{ bgcolor: "#000" }}>
+        <Box
+          sx={{ py: 8, width: "80% ", margin: "auto", borderRadius: "10px" }}
         >
-          Movie Now Playing
-        </Typography>
+          {/* Header */}
+          <Box textAlign="center" mb={5}>
+            <img src={logo} alt="Clapperboard" height="36px" width="90px" />
+            <Typography variant="subtitle2" color="#f57c00" fontWeight="bold">
+              Watch New Movies
+            </Typography>
+            <Typography
+              variant="h4"
+              sx={{ color: "#fff", fontWeight: "bold", mt: 1 }}
+            >
+              Movie Now Playing
+            </Typography>
+          </Box>
+
+          {/* Flex Movie Cards */}
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: 3,
+              px: 2,
+            }}
+          >
+            {moviess.map((movie, index) => (
+              <Box
+                className={movie.className}
+                key={index}
+                sx={{
+                  flex: {
+                    xs: " 100%", // full width on phones
+                    sm: " 47%", // 2 in a row on small screens
+                    md: " 18%", // 5 in a row on medium+ screens
+                  },
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  boxShadow: 4,
+                  position: "relative",
+                  backgroundColor: "#121212",
+                  transition: "all 0.4s ease",
+                  "&:hover": {
+                    boxShadow: "4px 4px 8px #f57c00",
+                    // border: "6px solid #f57c00",
+                    transition: "all 0.4s ease",
+                  },
+                }}
+              >
+                <Box
+                  sx={{
+                    position: "relative",
+                    width: "100%",
+                    height: "389px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <img
+                    style={{
+                      transition: "all 0.5s ease",
+                      display: "block",
+                      width: "100%",
+                      height: "389px",
+                      objectFit: "cover",
+                    }}
+                    src={movie.image}
+                    alt={movie.title}
+                  />
+                  <Box
+                    sx={{
+                      position: "absolute",
+                      bottom: 0,
+                      left: 0,
+                      width: "100%",
+                      background: "rgba(0, 0, 0, 0.57)",
+                      color: "#fff",
+                      padding: 2,
+                    }}
+                  >
+                    <Typography
+                      variant="h6"
+                      fontWeight="bold"
+                      fontSize={"1rem"}
+                    >
+                      {movie.title}
+                    </Typography>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
+                        mt: 1,
+                      }}
+                    >
+                      <Box
+                        marginBottom={1}
+                        display={"flex"}
+                        flexDirection={"column"}
+                        fontSize={"0.7rem"}
+                        flexWrap={"wrap"}
+                      >
+                        <Typography variant="body2" color="#f57c00">
+                          {movie.genres}
+                        </Typography>
+
+                        <Typography variant="body2" color="#f57c00">
+                          {movie.duration}
+                        </Typography>
+                      </Box>
+                      <Box>
+                        <Button
+                          variant="contained"
+                          sx={{
+                            backgroundColor: "#f57c00",
+                            color: "#fff",
+                            "&:hover": {
+                              backgroundColor: "#fff",
+                              color: "#f57c00",
+                            },
+                          }}
+                        >
+                          Watch Now
+                        </Button>
+                      </Box>
+                    </Box>
+                  </Box>
+                </Box>
+              </Box>
+            ))}
+          </Box>
+        </Box>
       </Box>
 
-      {/* Flex Movie Cards */}
+      {/* Gallery Section */}
+      <Box>
+        <Box
+          height={{ xs: "100px", md: "140px" }}
+          sx={{ position: "relative", backgroundColor: "#f57c00" }}
+          width={"100%"}
+        >
+          <img
+            src={gallery_bg}
+            alt=""
+            style={{ objectFit: "cover", position: "absolute", opacity: "0.1" }}
+            height={"100%"}
+            width={"100%"}
+          />
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Typography
+              variant="h4"
+              sx={{
+                color: "#fff",
+                fontWeight: "700",
+                fontSize: { xs: "1.5rem", sm: "2rem" },
+                textAlign: "center",
+              }}
+            >
+              Our Photo Gallery
+            </Typography>
+          </Box>
+        </Box>
+        <Box sx={{ backgroundColor: "black", width: "100%" }}>
+          <Box
+            sx={{
+              width: "90%",
+              margin: "auto",
+              py: 4,
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 2,
+              justifyContent: "center",
+            }}
+          >
+            {gallery_images.map((image, index) => (
+              <Box
+                className={`gallery-card ${image.className} `}
+                key={index}
+                sx={{
+                  width: { xs: "100%", sm: "45%", md: "18%" },
+                  marginBottom: 2,
+                  position: "relative",
+                  overflow: "hidden",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  boxShadow: 3,
+                }}
+              >
+                <img
+                  src={image.img}
+                  alt={`Gallery ${index}`}
+                  style={{
+                    width: "100%",
+                    height: "350px",
+                    objectFit: "cover",
+                    transition: "transform 0.3s ease",
+                  }}
+                />
+                <Box
+                  sx={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "120%",
+                    backgroundColor: "rgba(0, 0, 0, 0.5)",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    opacity: 0,
+                    transition: "opacity 0.3s ease",
+                  }}
+                  className="gallery-overlay"
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.opacity = 1;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.opacity = 0;
+                  }}
+                >
+                  <Typography
+                    variant="p"
+                    sx={{
+                      color: "#fff",
+                      fontWeight: "bold",
+                      textAlign: "center",
+                    }}
+                  >
+                    Gallery {index + 1}
+                  </Typography>
+                </Box>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+
+      {/* upcomingMovies */}
+      <Box width={"100%"} sx={{ bgcolor: "#000" }}>
+        <Box
+          sx={{ py: 8, width: "80% ", margin: "auto", borderRadius: "10px" }}
+        >
+          {/* Header */}
+          <Box textAlign="center" mb={5}>
+            <img src={logo} alt="Clapperboard" height="36px" width="90px" />
+            <Typography variant="subtitle2" color="#f57c00" fontWeight="bold">
+              New upcoming movies
+            </Typography>
+            <Typography
+              variant="h4"
+              sx={{ color: "#fff", fontWeight: "bold", mt: 1 }}
+            >
+              Movies Coming Soon
+            </Typography>
+          </Box>
+
+          {/* Flex Movie Cards */}
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: 3,
+              px: 2,
+            }}
+          >
+            {upcomingMovies.map((movie, index) => (
+              <Box
+                className={movie.className}
+                key={index}
+                sx={{
+                  flex: {
+                    xs: " 100%", // full width on phones
+                    sm: " 47%", // 2 in a row on small screens
+                    md: " 18%", // 5 in a row on medium+ screens
+                  },
+
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  boxShadow: 4,
+                  position: "relative",
+                  backgroundColor: "#121212",
+                  transition: "all 0.4s ease",
+                  "&:hover": {
+                    boxShadow: "4px 4px 8px #f57c00",
+                    // border: "6px solid #f57c00",
+                    transition: "all 0.4s ease",
+                  },
+                }}
+              >
+                <Box
+                  sx={{
+                    position: "relative",
+                    width: "100%",
+                    height: "389px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <img
+                    style={{
+                      transition: "all 0.5s ease",
+                      display: "block",
+                      width: "100%",
+                      height: "389px",
+                      objectFit: "cover",
+                    }}
+                    src={movie.image}
+                    alt={movie.title}
+                  />
+                  <Box
+                    sx={{
+                      position: "absolute",
+                      bottom: 0,
+                      left: 0,
+                      width: "100%",
+                      background: "rgba(0, 0, 0, 0.57)",
+                      color: "#fff",
+                      padding: 2,
+                    }}
+                  >
+                    <Typography
+                      variant="h6"
+                      fontWeight="bold"
+                      fontSize={"1rem"}
+                    >
+                      {movie.title}
+                    </Typography>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
+                        mt: 1,
+                      }}
+                    >
+                      <Box
+                        marginBottom={1}
+                        display={"flex"}
+                        flexDirection={"column"}
+                        fontSize={"0.7rem"}
+                        flexWrap={"wrap"}
+                      >
+                        <Typography variant="body2" color="#f57c00">
+                          {movie.genres}
+                        </Typography>
+
+                        <Typography variant="body2" color="#f57c00">
+                          {movie.duration}
+                        </Typography>
+                      </Box>
+                      <Box>
+                        <Button
+                          variant="contained"
+                          sx={{
+                            backgroundColor: "#f57c00",
+                            color: "#fff",
+                            "&:hover": {
+                              backgroundColor: "#fff",
+                              color: "#f57c00",
+                            },
+                          }}
+                        >
+                          Watch Now
+                        </Button>
+                      </Box>
+                    </Box>
+                  </Box>
+                </Box>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+
+      {/* offer section */}
       <Box
         sx={{
+          width: "100%",
+          height: { xs: "auto", md: "400px" },
+          backgroundColor: "black",
+          py: 4,
           display: "flex",
-          flexWrap: "wrap",
           justifyContent: "center",
-          gap: 3,
-          px: 2,
+          alignItems: "end",
+          position: "relative",
         }}
       >
-        {moviess.map((movie, index) => (
-          <Box className={movie.className}
-            key={index}
+        {/* Background Image */}
+        <Box>
+          <img
+            src={offer_bg}
+            alt="Offer Background"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              opacity: 0.2,
+            }}
+          />
+        </Box>
+
+        {/* Offer Content */}
+        <Box
+          sx={{
+            width: "80%",
+            display: "flex",
+            zIndex: 2,
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: "space-between",
+            alignItems: "center",
+            gap: 4,
+          }}
+        >
+          {offers.map((item, index) => (
+            <Box
+              key={index}
+              sx={{
+                flex: 1,
+                textAlign: "center",
+                color: "white",
+                p: 3,
+              }}
+            >
+              <Typography
+                variant="h4"
+                sx={{
+                  fontWeight: "bold",
+                  mb: 2,
+                  color: "white",
+                  transition: "color 0.3s ease",
+                  "&:hover": {
+                    color: "#f57c00",
+                  },
+                }}
+              >
+                {item.title}
+              </Typography>
+              <Typography variant="body1" sx={{ color: "#999", mb: 3 }}>
+                {item.desc}
+              </Typography>
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: "#f57c00",
+                  color: "#fff",
+                  "&:hover": {
+                    backgroundColor: "#fff",
+                    color: "#f57c00",
+                  },
+                }}
+              >
+                {item.btn}
+              </Button>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+
+      {/* Locion secion  */}
+
+      <Box width="100%" sx={{ bgcolor: "#000" }}>
+        <Box sx={{ py: 8, width: "80%", mx: "auto", borderRadius: "10px" }}>
+          {/* Header */}
+          <Box textAlign="center" mb={5}>
+            <img src={logo} alt="Clapperboard" height="36px" width="90px" />
+            <Typography
+              variant="subtitle2"
+              color="#f57c00"
+              fontWeight="bold"
+              mt={2}
+            >
+              New upcoming movies
+            </Typography>
+            <Typography
+              variant="h4"
+              sx={{ color: "#fff", fontWeight: "bold", mt: 1 }}
+            >
+              Movies Coming Soon
+            </Typography>
+          </Box>
+
+          {/* Google Maps Embed */}
+          <Box
             sx={{
-              flex: {
-                xs: " 100%",  // full width on phones
-                sm: " 47%",   // 2 in a row on small screens
-                md: " 18%",   // 5 in a row on medium+ screens
-              },
-              maxWidth: "100%",
+              display: "flex",
+              justifyContent: "center",
+              width: "100%",
               overflow: "hidden",
-              boxShadow: 4,
-              position: "relative",
-              backgroundColor: "#121212",
-              transition: "all 0.4s ease",
+              borderRadius: 2,
+            }}
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7061.006854920001!2d-73.99922193564265!3d40.74084807584689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bc82a46511%3A0xfc860761b1d78e34!2sInox!5e0!3m2!1sen!2sin!4v1748341580552!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style={{ border: 0, maxWidth: "100%" }}
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </Box>
+        </Box>
+      </Box>
+
+      {/* Footer section  */}
+
+      <Box
+        sx={{ width: "100%", backgroundColor: "#000", py: 4, color: "#fff" }}
+      >
+        <Box
+          display={"flex"}
+          flexDirection={{ xs: "column", md: "row" }}
+          justifyContent={"space-between"}
+          alignItems={"center"}
+          width={"80%"}
+          margin={"auto"}
+        >
+          <Box
+            width={"50%"}
+            margin={"auto"}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            padding={2}
+          >
+            <img
+              src={logo}
+              alt=""
+               style={{ width: {xs:'40%',sm:'30%'}, height: "auto", maxHeight: 80 }}
+            />
+          </Box>
+          <Box
+            display={"flex"}
+            width={{ xs: "100%", md: "50%" }}
+            flexDirection={{ xs: "column", md: "row" }}
+            alignItems={"center"}
+            justifyContent={"center"}
+          >
+            <Typography variant="p" color="gray" fontWeight={600} padding={2} >
+              help / Privacy Policy
+            </Typography>
+            <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
+              {icons.map((item, index) => (
+                <IconButton
+                  key={index}
+                  aria-label={item.label}
+                  href={item.link}
+                  sx={{
+                    width: 48,
+                    height: 48,
+                    backgroundColor: "#333",
+                    color: "#fff",
+                    borderRadius: "50%",
+                    "&:hover": {
+                      backgroundColor: "#f57c00",
+                      color: "#fff",
+                    },
+                  }}
+                >
+                  {item.icon}
+                </IconButton>
+              ))}
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+
+      <Box sx={{ width: "100%", backgroundColor: "#f5f5f5", py: 4 }}>
+        <Box sx={{ width: "80%", margin: "auto", textAlign: "center" }}>
+          <Typography variant="h4" sx={{ fontWeight: "bold", mb: 2 }}>
+            Join Our Newsletter
+          </Typography>
+          <Typography variant="body1" sx={{ color: "#666", mb: 3 }}>
+            Subscribe to our newsletter for the latest updates and offers.
+          </Typography>
+          <Button
+            variant="contained"
+            sx={{
+              backgroundColor: "#f57c00",
+              color: "#fff",
               "&:hover": {
-                boxShadow: "4px 4px 8px #f57c00",
-                // border: "6px solid #f57c00",
-                transition: "all 0.4s ease",
+                backgroundColor: "#fff",
+                color: "#f57c00",
               },
             }}
           >
-          
-            <Box sx={{
-              position: "relative",
-              width: "100%",
-              height: "389px",
-              overflow: "hidden",
-            }}>
-            <img style={{transition: "all 0.5s ease",
-    display: "block",
-    width: "100%",
-    height: "389px",
-    objectFit: "cover",
-    }}
-              src={movie.image}
-              alt={movie.title}
-              
-            />
-            <Box
-              sx={{
-                position: "absolute",
-                bottom: 0,
-                left: 0,
-                width: "100%",
-                background: "rgba(0, 0, 0, 0.57)",
-                color: "#fff",
-                padding: 2,
-              }}
-            >
-              <Typography variant="h6" fontWeight="bold" fontSize={"1rem"}>
-                {movie.title}
-              </Typography>
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                  mt: 1,
-                }}
-              >
-                <Box marginBottom={1} display={"flex"} flexDirection={'column'} fontSize={"0.7rem"}flexWrap={'wrap'}>
-                  <Typography variant="body2" color="#f57c00" >
-                    {movie.genres}
-                  </Typography>
-                  
-                  <Typography variant="body2" color="#f57c00">
-                    {movie.duration}
-                  </Typography>
-                </Box>
-                <Box>
-
-                <Button
-                  variant="contained"
-                  sx={{
-                    backgroundColor: "#f57c00",
-                    color: "#fff",
-                    "&:hover": {
-                      backgroundColor: '#fff',
-                      color: '#f57c00',
-                    },
-                  }}
-                  >
-                  Watch Now
-                </Button>
-                  </Box>
-              </Box>
-            </Box>
-          </Box>
+            Subscribe Now
+          </Button>
+        </Box>
       </Box>
-        ))}
-        </Box>
-        </Box>
-    </Box>
-
-
     </>
   );
 };
