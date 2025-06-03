@@ -37,7 +37,7 @@ import offer_bg from "./offer_bg.png";
 import SearchSharpIcon from "@mui/icons-material/SearchSharp";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
-import { Transform } from "@mui/icons-material";
+import { Margin, Transform } from "@mui/icons-material";
 import SendIcon from '@mui/icons-material/Send';
 import {
   FaTwitter,
@@ -45,6 +45,7 @@ import {
   FaPinterestP,
   FaInstagram,
 } from "react-icons/fa";
+import Header1 from "./Header1";
 
 const Bookt = () => {
 
@@ -55,7 +56,7 @@ const Bookt = () => {
     //   };
 
       
-const dates = Array.from({ length: 15 }, (_, i) => {
+const dates = Array.from({ length: 12 }, (_, i) => {
   const d = new Date();
   d.setDate(d.getDate() + i);
   return {
@@ -121,8 +122,9 @@ const cities = [
             </nav>
           </Box>
           </Box> */}
+          <Header1></Header1>
 
-          <Box sx={{ bgcolor: "#fdfbef", minHeight: "100vh", p: 2 }}>
+          <Box sx={{ bgcolor: "#fdfbef", minHeight: "100vh", p: 2, width:{xs:'100%',md:'80%'} ,margin:'auto'}}>
       {/* Date Tabs */}
       <Box
         sx={{

@@ -52,6 +52,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import seat from './seat_map1.jpg'
+import Header1 from "./Header1";
 const Selectt = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -68,43 +69,7 @@ const Selectt = () => {
 
   return (
     <>
-      <Box bgcolor={"black"}>
-        <Box className="header-container">
-          <Box className="logo">
-            <a href="#home">
-              <img src={logo} alt="logo" />
-            </a>
-          </Box>
-
-          <Box className="hamburger" onClick={toggleMobileMenu}>
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
-          </Box>
-
-          <nav className={`nav-menu ${isMobileMenuOpen ? "active" : ""}`}>
-            <ul className="nav-list">
-              {["Home", "Pages", "Menu", "Blog", "About Us", "Contact"].map(
-                (item, idx) => (
-                  <li key={idx} className="nav-item">
-                    <a
-                      href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
-              <li className="nav-item">
-                <a href="#" onClick={() => setMobileMenuOpen(false)}>
-                  <SearchSharpIcon sx={{ color: "yellow" }} />
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </Box>
-      </Box>
+      <Header1></Header1>
       <Box width={"80%"} margin={"auto"} py={5}>
         <Box display={"flex"} justifyContent={"space-between"} flexDirection={{xs:'column' }}>
           <Typography variant="p">

@@ -9,11 +9,13 @@ import {
 } from "@mui/material";
 import logo from './logo.png';
 import main from './Movie_3.jpg';
+import Header1 from "./Header1";
 
 const LoginPage = () => {
   const isMobile = useMediaQuery("(max-width:768px)");
 
-  return (
+  return (<>
+    <Header1></Header1>
     <Box
       display="flex"
       flexDirection={isMobile ? "column" : "row"}
@@ -129,6 +131,7 @@ const LoginPage = () => {
         </Typography>
       </Paper>
     </Box>
+    </>
   );
 };
 

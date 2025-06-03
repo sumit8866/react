@@ -12,7 +12,7 @@ import main from './Movie_3.jpg';
 
 const SignUpPage = () => {
   const isMobile = useMediaQuery("(max-width:768px)");
-
+  
   return (
     <Box
       display="flex"
