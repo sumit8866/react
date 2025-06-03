@@ -1,0 +1,12 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* .css-1yrc8ca-MuiInputBase-input-MuiInput-input{
+    width: 400px !important;
+} */
+
+.input{
+    width: 50% !important;
+}
