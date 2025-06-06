@@ -22,6 +22,7 @@ const Crud1 = () => {
   const [list, setList] = useState([]);
 
   const handleAdd = () => {
+    const newEntry = { name, surname, number, password, email };
     if (
       name === "" ||
       surname === "" ||
@@ -31,7 +32,6 @@ const Crud1 = () => {
     ) {
       alert("Fill all details");
     } else {
-      const newEntry = { name, surname, number, password, email };
       setList([...list, newEntry]);
       setName("");
       setSurname("");

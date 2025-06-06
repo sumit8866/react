@@ -12,360 +12,314 @@ const Result = () => {
   const [math, setmath] = useState("");
   const [science, setscience] = useState("");
   const [List, setList] = useState([]);
+  const [edit ,setedit] =useState(null)
 
   const getData = () => {
-    const Newdata = {
-      Name,
-      Surname,
-      Roll_No,
-      Div,
-      gujrati,
-      english,
-      hindi,
-      math,
-      science,
-    };
+    if(( Name&&
+      Surname&&
+      Roll_No&&
+      Div&&
+      gujrati&&
+      english&&
+      hindi&&
+      math&&
+      science)===''){
+        alert("fill all details");
+      }else{
+        const Newdata = {
+          Name,
+          Surname,
+          Roll_No,
+          Div,
+          gujrati,
+          english,
+          hindi,
+          math,
+          science,
+        };
+
+        if(edit != null){
+          const copydata = [...List]
+          copydata[edit] = Newdata
+          setList(copydata)
+          setedit(null)
+        }else{
     setList([...List, Newdata]);
-    setName("");
-    setSurname("");
-    setRoll_No("");
-    setDiv("");
-    setgujrati("");
-    setenglish("");
-    sethindi("");
-    setmath("");
-    setscience("");
-    console.log(List);
+        }
+        setName("");
+        setSurname("");
+        setRoll_No("");
+        setDiv("");
+        setgujrati("");
+        setenglish("");
+        sethindi("");
+        setmath("");
+        setscience("");
+        // console.log(List);
+      }
   };
 
-  const total = (gujrati, english, hindi, math, science) => {
+  const total = (item) => {
     return (
-      parseInt(gujrati) +
-      parseInt(english) +
-      parseInt(hindi) +
-      parseInt(math) +
-      parseInt(science)
+      parseInt(item.gujrati) +
+      parseInt(item.english) +
+      parseInt(item.hindi) +
+      parseInt(item.math) +
+      parseInt(item.science)
     );
   };
-  const per = (gujrati, english, hindi, math, science) => {
+  const per = (item) => {
     return (
-      (parseInt(gujrati) +
-        parseInt(english) +
-        parseInt(hindi) +
-        parseInt(math) +
-        parseInt(science)) /
+      (parseInt(item.gujrati) +
+        parseInt(item.english) +
+        parseInt(item.hindi) +
+        parseInt(item.math) +
+        parseInt(item.science)) /
       5
     );
   };
-  const minimum = (gujrati, english, hindi, math, science) => {
-    const arr = [gujrati, english, hindi, math, science];
+  const minimum = (item) => {
+    const arr = [
+      item.gujrati,
+      item.english,
+      item.hindi,
+      item.math,
+      item.science,
+    ];
     return Math.min(...arr);
   };
-  const maximum = (gujrati, english, hindi, math, science) => {
-    const arr = [gujrati, english, hindi, math, science];
+  const maximum = (item) => {
+    const arr = [
+      item.gujrati,
+      item.english,
+      item.hindi,
+      item.math,
+      item.science,
+    ];
     return Math.max(...arr);
   };
-  const grade = (gujrati, english, hindi, math, science) => {
-    const total =
-      parseInt(gujrati) +
-      parseInt(english) +
-      parseInt(hindi) +
-      parseInt(math) +
-      parseInt(science);
-    const per = total / 5;
+ const grade = (item) => {
+  const total =
+    Number(item.gujrati) +
+    Number(item.english) +
+    Number(item.hindi) +
+    Number(item.math) +
+    Number(item.science);
+  const per = total / 5;
 
-    let finalGrade;
+  let finalGrade;
 
-    if (per >= 90) {
-      finalGrade = "A+";
-    } else if (per >= 80) {
-      finalGrade = "A";
-    } else if (per >= 70) {
-      finalGrade = "B+";
-    } else if (per >= 60) {
-      finalGrade = "B";
-    } else if (per >= 50) {
-      finalGrade = "C";
-    } else if (per >= 40) {
-      finalGrade = "D";
-    } else {
-      finalGrade = "F";
-    }
+  if (per >= 90) {
+    finalGrade = "A+";
+  } else if (per >= 80) {
+    finalGrade = "A";
+  } else if (per >= 70) {
+    finalGrade = "B+";
+  } else if (per >= 60) {
+    finalGrade = "B";
+  } else if (per >= 50) {
+    finalGrade = "C";
+  } else if (per >= 40) {
+    finalGrade = "D";
+  } else {
+    finalGrade = "F";
+  }
 
-    return finalGrade;
-  };
+  return finalGrade;
+};
 
-  const passfail = (gujrati, english, hindi, math, science) => {
-    if (
-      gujrati >= 33 &&
-      english >= 33 &&
-      hindi >= 33 &&
-      math >= 33 &&
-      science >= 33
-    ) {
-      return "student is pass";
-    } else {
-      return "student is fail";
-    }
-  };
+const passfail = (item) => {
+  if (
+    Number(item.gujrati) >= 33 &&
+    Number(item.english) >= 33 &&
+    Number(item.hindi) >= 33 &&
+    Number(item.math) >= 33 &&
+    Number(item.science) >= 33
+  ) {
+    return grade(item);
+  } else {
+    return "Student has failed";
+  }
+};
+
+
+  const Deletedata =(i,index)=>{
+    
+    const copydata = [...List];
+
+     copydata.splice(index,1);
+
+    setList(copydata);
+    
+  }
+  const Editdata=(item,index) =>{
+
+setName(item.Name)
+setSurname(item.Surname)
+setRoll_No(item.Roll_No)
+setDiv(item.Div)
+setgujrati(item.gujrati)
+sethindi(item.hindi)
+setenglish(item.english)
+setmath(item.math)
+setscience(item.science)
+setedit(index)
+  }
   return (
     <>
-      <table border="1" cellspacing="6" bgcolor="white">
+      <table border="1" cellSpacing="6" bgcolor="white">
         <caption>
-          <b>Input Marks</b>
+          <b>Result</b>
         </caption>
-        <tr>
-          <th rowspan={2}>Name</th>
-          <th rowSpan={2}>Surname</th>
-          <th rowSpan={2}>ROllNo.</th>
-          <th rowSpan={2}>Division</th>
-          <th colspan={5}>Score</th>
-        </tr>
-        <tr>
-          <th>Gujrati</th>
-          <th>Hindi</th>
-          <th>Math</th>
-          <th>English</th>
-          <th>Science</th>
-        </tr>
-        <tr>
-          <td>
-            <Input
-              type="text"
-              placeholder="ENTER NAME"
-              value={Name}
-              onChange={(e) => setName(e.target.value)}
-            ></Input>{" "}
-          </td>
-          <td>
-            <Input
-              type="text"
-              placeholder="ENTER SURNAME"
-              value={Surname}
-              onChange={(e) => setSurname(e.target.value)}
-            ></Input>
-          </td>
-          <td>
-            <Input
-              type="number"
-              value={Roll_No}
-              placeholder="ENTER Roll_No"
-              onChange={(e) => setRoll_No(e.target.value)}
-            ></Input>
-          </td>
-          <td>
-            <Input
-              type="text"
-              placeholder="ENTER DIVISION"
-              value={Div}
-              onChange={(e) => setDiv(e.target.value)}
-            ></Input>
-          </td>
-          <td>
-            <Input
-              type="number"
-              placeholder="GUJRATI MARK"
-              value={gujrati}
-              onChange={(e) => setgujrati(e.target.value)}
-            ></Input>
-          </td>
-          <td>
-            <Input
-              type="number"
-              placeholder="HINDI MARK"
-              value={english}
-              onChange={(e) => setenglish(e.target.value)}
-            ></Input>
-          </td>
-          <td>
-            <Input
-              type="number"
-              placeholder="MATH MARK"
-              value={hindi}
-              onChange={(e) => sethindi(e.target.value)}
-            ></Input>
-          </td>
-          <td>
-            <Input
-              type="number"
-              placeholder="ENGLISH  MARK"
-              value={math}
-              onChange={(e) => setmath(e.target.value)}
-            ></Input>
-          </td>
-          <td>
-            <Input
-              type="number"
-              placeholder="SCIENCE MARK"
-              value={science}
-              onChange={(e) => setscience(e.target.value)}
-            ></Input>
-          </td>
-        </tr>
+        <thead>
+          <tr>
+            <th rowSpan={2}>Name</th>
+            <th rowSpan={2}>Surname</th>
+            <th rowSpan={2}>Roll No.</th>
+            <th rowSpan={2}>Division</th>
+            <th colSpan={5}>Score</th>
+          </tr>
+          <tr>
+            <th>Gujrati</th>
+            <th>Hindi</th>
+            <th>Math</th>
+            <th>English</th>
+            <th>Science</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <Input
+                type="text"
+                placeholder="ENTER NAME"
+                value={Name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </td>
+            <td>
+              <Input
+                type="text"
+                placeholder="ENTER SURNAME"
+                value={Surname}
+                onChange={(e) => setSurname(e.target.value)}
+              />
+            </td>
+            <td>
+              <Input
+                type="number"
+                placeholder="ENTER ROLL NO"
+                value={Roll_No}
+                onChange={(e) => setRoll_No(e.target.value)}
+              />
+            </td>
+            <td>
+              <Input
+                type="text"
+                placeholder="ENTER DIVISION"
+                value={Div}
+                onChange={(e) => setDiv(e.target.value)}
+              />
+            </td>
+            <td>
+              <Input
+                type="number"
+                placeholder="GUJRATI MARK"
+                value={gujrati}
+                onChange={(e) => setgujrati(e.target.value)}
+              />
+            </td>
+            <td>
+              <Input
+                type="number"
+                placeholder="HINDI MARK"
+                value={hindi}
+                onChange={(e) => sethindi(e.target.value)}
+              />
+            </td>
+            <td>
+              <Input
+                type="number"
+                placeholder="MATH MARK"
+                value={math}
+                onChange={(e) => setmath(e.target.value)}
+              />
+            </td>
+            <td>
+              <Input
+                type="number"
+                placeholder="ENGLISH MARK"
+                value={english}
+                onChange={(e) => setenglish(e.target.value)}
+              />
+            </td>
+            <td>
+              <Input
+                type="number"
+                placeholder="SCIENCE MARK"
+                value={science}
+                onChange={(e) => setscience(e.target.value)}
+              />
+            </td>
+          </tr>
+        </tbody>
       </table>
-      <br /> <br />
+
       <Button onClick={getData}>Submit</Button>
-      {List.map((item) => (
-        <>
-          {/* <p>
-            {per(
-              item.gujrati,
-              item.english,
-              item.hindi,
-              item.math,
-              item.science
-            )}
-          </p>
-          <p>
-            {total(
-              item.gujrati,
-              item.english,
-              item.hindi,
-              item.math,
-              item.science
-            )}
-          </p>
-          <p>
-            {minimum(
-              item.gujrati,
-              item.english,
-              item.hindi,
-              item.math,
-              item.science
-            )}
-          </p>
-          <p>
-            {maximum(
-              item.gujrati,
-              item.english,
-              item.hindi,
-              item.math,
-              item.science
-            )}
-          </p>
-           <p>
-            {grade(
-              item.gujrati,
-              item.english,
-              item.hindi,
-              item.math,
-              item.science
-            )}
-          </p>
-          <p>
-            {passfail(
-              item.gujrati,
-              item.english,
-              item.hindi,
-              item.math,
-              item.science
-            )}
-          </p> */}
 
-          <Box width="80%" margin="auto" textAlign="center">
-            <Typography variant="h2" fontWeight={900} fontFamily="monospace">
-              Student Result
-            </Typography>
+      <table border="1" cellSpacing="6" bgcolor="white">
+        <caption>
+          <b>Students Results</b>
+        </caption>
+        <thead>
+          <tr>
+            <th rowSpan={2}>Name</th>
+            <th rowSpan={2}>Surname</th>
+            <th rowSpan={2}>Roll No.</th>
+            <th rowSpan={2}>Division</th>
+            <th colSpan={10}>Score</th>
+            <th rowSpan={2}>Delete</th>
+            <th rowSpan={2}>Edit</th>
+          </tr>
+          <tr>
+            <th>Gujrati</th>
+            <th>Hindi</th>
+            <th>Math</th>
+            <th>English</th>
+            <th>Science</th>
+            <th>Total</th>
+            <th>per</th>
+            <th>maximum</th>
+            <th>minimum</th>
+            <th>Result</th>
+          </tr>
+        </thead>
 
-            <Box display={'flex'} flexDirection={'column'} textAlign={'start'}>
-              <Typography variant="body1">
-                Student Name : {item.Name} {item.Surname}
-              </Typography>
-              <Typography variant="body1">
-                Student Roll No. : {item.Roll_No}
-              </Typography>
-              <Typography variant="body1">
-                Student Division : {item.Div}
-              </Typography>
-            </Box>
-
-              <Typography variant="h4" fontWeight={900} fontFamily="monospace">Subject Mark</Typography>
-            <Box display={'flex'} width={'100%'} justifyContent={'center'}>
-
-              <Box textAlign={'center'}>
-                <Typography variant="body1" border={'1px dotted gold'} width={'300px'}  margin={2}>
-                GUJRATI :{item.gujrati}
-                </Typography>
-                <Typography variant="body1" border={'1px dotted gold'} width={'300px'}  margin={2}>
-                HINDI   :{item.hindi}
-                </Typography>
-                <Typography variant="body1" border={'1px dotted gold'} width={'300px'}  margin={2}>
-                MATH    :{item.math}
-                </Typography>
-                <Typography variant="body1" border={'1px dotted gold'} width={'300px'}  margin={2}>
-                ENGLISH :{item.english}
-                </Typography>
-                <Typography variant="body1" border={'1px dotted gold'} width={'300px'}  margin={2}>
-                SCIRNCE :{item.science}
-                </Typography>
-              </Box>
-
-
-              <Box textAlign={'center'}>
-                <Typography variant="body1" border={'1px dotted gold'} width={'300px'}  margin={2}>
-                Total :   {total(
-              item.gujrati,
-              item.english,
-              item.hindi,
-              item.math,
-              item.science
-            )}
-                </Typography>
-                <Typography variant="body1" border={'1px dotted gold'} width={'300px'}  margin={2}>
-                Per :{per(
-              item.gujrati,
-              item.english,
-              item.hindi,
-              item.math,
-              item.science
-            )}
-                </Typography>
-                <Typography variant="body1" border={'1px dotted gold'} width={'300px'}  margin={2}>
-                Highest Mark :{maximum(
-              item.gujrati,
-              item.english,
-              item.hindi,
-              item.math,
-              item.science
-            )}
-                </Typography>
-                <Typography variant="body1" border={'1px dotted gold'} width={'300px'}  margin={2}>
-                Lowest Mark :{minimum(
-              item.gujrati,
-              item.english,
-              item.hindi,
-              item.math,
-              item.science
-            )}
-                </Typography>
-                <Typography variant="body1" border={'1px dotted gold'} width={'300px'}  margin={2}>
-                Grade : {grade(
-              item.gujrati,
-              item.english,
-              item.hindi,
-              item.math,
-              item.science
-            )}
-                </Typography>
-              </Box>
-
-
-            </Box>
-<Box display={'flex'} justifyContent={'center'}>
-  
-            <Typography variant="body1" border={'1px dotted gold'}   width={'600px'}  margin={2}>
-              {passfail(
-              item.gujrati,
-              item.english,
-              item.hindi,
-              item.math,
-              item.science
-            )}
-                </Typography>
-</Box>
-          </Box>
-        </>
-      ))}
+        {List.map((item ,index) => (
+          <>
+            <tbody style={{ textAlign: "center" ,}}>
+              <tr style={{margin:'10px 0px'}}>
+                <td>{item.Name}</td>
+                <td>{item.Surname}</td>
+                <td>{item.Roll_No}</td>
+                <td>{item.Div}</td>
+                <td>{item.gujrati}</td>
+                <td>{item.hindi}</td>
+                <td>{item.math}</td>
+                <td>{item.english}</td>
+                <td>{item.science}</td>
+                <td>{total(item)}</td>
+                <td>{per(item)}</td>
+                <td>{maximum(item)}</td>
+                <td>{minimum(item)}</td>
+                <td>{passfail(item)}</td>
+                <td> <Button onClick={()=>Deletedata(item ,index)}>DELETE</Button></td>
+                <td> <Button onClick={()=>Editdata(item,index)}>EDIT</Button></td>
+              </tr>
+            </tbody>
+          </>
+        ))}
+      </table>
     </>
   );
 };
