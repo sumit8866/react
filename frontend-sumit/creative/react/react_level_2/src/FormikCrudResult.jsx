@@ -1,8 +1,8 @@
 import { Button, Input } from "@mui/material";
 import { useFormik } from "formik";
 import React, { useState } from "react";
-
 import * as Yup from "yup";
+
 const FormikCrudResult = () => {
   const [list, setList] = useState([]);
   const [edit, setedit] = useState(null);
@@ -235,7 +235,9 @@ const FormikCrudResult = () => {
                   onChange={formik.handleChange}
                 />
                 {formik.errors.name && formik.errors.name ? (
-                  <p style={{margin:'0px',fontSize:'14px',color:'red'}}>{formik.errors.name}</p>
+                  <p style={{ margin: "0px", fontSize: "14px", color: "red" }}>
+                    {formik.errors.name}
+                  </p>
                 ) : (
                   ""
                 )}
@@ -249,7 +251,9 @@ const FormikCrudResult = () => {
                   onChange={formik.handleChange}
                 />
                 {formik.touched.surname && formik.errors.surname ? (
-                  <p style={{margin:'0px',fontSize:'14px',color:'red'}}>{formik.errors.surname}</p>
+                  <p style={{ margin: "0px", fontSize: "14px", color: "red" }}>
+                    {formik.errors.surname}
+                  </p>
                 ) : (
                   ""
                 )}
@@ -263,7 +267,9 @@ const FormikCrudResult = () => {
                   onChange={formik.handleChange}
                 />
                 {formik.touched.roll_no && formik.errors.roll_no ? (
-                  <p style={{margin:'0px',fontSize:'14px',color:'red'}}>{formik.errors.roll_no}</p>
+                  <p style={{ margin: "0px", fontSize: "14px", color: "red" }}>
+                    {formik.errors.roll_no}
+                  </p>
                 ) : (
                   ""
                 )}
@@ -277,7 +283,9 @@ const FormikCrudResult = () => {
                   onChange={formik.handleChange}
                 />
                 {formik.touched.class && formik.errors.class ? (
-                  <p style={{margin:'0px',fontSize:'14px',color:'red'}}>{formik.errors.class}</p>
+                  <p style={{ margin: "0px", fontSize: "14px", color: "red" }}>
+                    {formik.errors.class}
+                  </p>
                 ) : (
                   ""
                 )}
@@ -291,7 +299,9 @@ const FormikCrudResult = () => {
                   onChange={formik.handleChange}
                 />
                 {formik.touched.gujrati && formik.errors.gujrati ? (
-                  <p style={{margin:'0px',fontSize:'14px',color:'red'}}>{formik.errors.gujrati}</p>
+                  <p style={{ margin: "0px", fontSize: "14px", color: "red" }}>
+                    {formik.errors.gujrati}
+                  </p>
                 ) : (
                   ""
                 )}
@@ -305,7 +315,9 @@ const FormikCrudResult = () => {
                   onChange={formik.handleChange}
                 />
                 {formik.touched.hindi && formik.errors.hindi ? (
-                  <p style={{margin:'0px',fontSize:'14px',color:'red'}}>{formik.errors.hindi}</p>
+                  <p style={{ margin: "0px", fontSize: "14px", color: "red" }}>
+                    {formik.errors.hindi}
+                  </p>
                 ) : (
                   ""
                 )}
@@ -319,7 +331,9 @@ const FormikCrudResult = () => {
                   onChange={formik.handleChange}
                 />
                 {formik.touched.math && formik.errors.math ? (
-                  <p style={{margin:'0px',fontSize:'14px',color:'red'}}>{formik.errors.math}</p>
+                  <p style={{ margin: "0px", fontSize: "14px", color: "red" }}>
+                    {formik.errors.math}
+                  </p>
                 ) : (
                   ""
                 )}
@@ -333,7 +347,9 @@ const FormikCrudResult = () => {
                   onChange={formik.handleChange}
                 />
                 {formik.touched.english && formik.errors.english ? (
-                  <p style={{margin:'0px',fontSize:'14px',color:'red'}}>{formik.errors.english}</p>
+                  <p style={{ margin: "0px", fontSize: "14px", color: "red" }}>
+                    {formik.errors.english}
+                  </p>
                 ) : (
                   ""
                 )}
@@ -347,7 +363,9 @@ const FormikCrudResult = () => {
                   onChange={formik.handleChange}
                 />
                 {formik.touched.science && formik.errors.science ? (
-                  <p style={{margin:'0px',fontSize:'14px',color:'red'}}>{formik.errors.science}</p>
+                  <p style={{ margin: "0px", fontSize: "14px", color: "red" }}>
+                    {formik.errors.science}
+                  </p>
                 ) : (
                   ""
                 )}
