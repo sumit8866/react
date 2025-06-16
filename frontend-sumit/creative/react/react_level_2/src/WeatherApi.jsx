@@ -102,7 +102,7 @@ import { Field, Form, Formik } from "formik";
 const WeatherApi = () => {
   const [data, setData] = useState([]);
  const [loction , setLocation] = useState("");
-  const ini = { city: "Surat", day: "4" };
+  const ini = { city: "", day: "" };
   const apiKey = "7ab5239082cc47dcbae50635251306 ";
 
   const getWeather = (values) => {
@@ -119,7 +119,6 @@ const WeatherApi = () => {
           console.log(res.data.location.name);
           console.log(res.data.forecast.forecastday);
           setLocation(res.data.location.name);
-
         setData(res.data.forecast.forecastday);
 
       })
@@ -129,7 +128,7 @@ const WeatherApi = () => {
   };
 
   useEffect(() => {
-    getWeather();
+    getWeather({city: "surat", day: "3"  });
   }, []);
   
   return (
@@ -156,7 +155,7 @@ const WeatherApi = () => {
         {data.map((item, index) => (
             <>
             
-          <div key={index} className="forecast-card">
+          <div className="forecast-card">
             <h3>{item.date}</h3>
             <img src={item.day.condition.icon} alt="weather icon" />
             <p>

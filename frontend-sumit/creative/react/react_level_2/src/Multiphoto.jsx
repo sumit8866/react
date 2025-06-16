@@ -13,7 +13,7 @@ const Multiphoto = () => {
 
   const [data, setData] = useState([]);
 
-  const fetchImages = () => {
+  const getdata = () => {
     axios
       .get("https://generateapi.onrender.com/api/multiimg", {
         headers: {
@@ -21,6 +21,7 @@ const Multiphoto = () => {
         },
       })
       .then((res) => {
+        console.log(res.data.Data.image);
         setData(res.data.Data);
         setInit({ name: "", image: [] });
       })
@@ -28,7 +29,7 @@ const Multiphoto = () => {
   };
 
   useEffect(() => {
-    fetchImages();
+    getdata();
   }, []);
 
   const handleSubmit = (values, { resetForm }) => {
@@ -49,7 +50,7 @@ const Multiphoto = () => {
       .then((res) => {
         console.log("Upload success", res.data);
         resetForm();
-        fetchImages();
+        getdata();
       })
       .catch((error) => console.error("Upload error:", error));
   };
@@ -63,7 +64,7 @@ const Multiphoto = () => {
       })
       .then((res) => {
         console.log("Deleted", res.data);
-        fetchImages();
+        getdata();
       })
       .catch((error) => console.error("Delete error:", error));
   };
@@ -75,7 +76,8 @@ const Multiphoto = () => {
           <Form encType="multipart/form-data">
             <label htmlFor="name">Name:</label>
             <Field id="name" name="name" placeholder="Enter Name" type="text" />
-            <br /><br />
+            <br />
+            <br />
 
             <label htmlFor="image">Select Images:</label>
             <input
@@ -84,11 +86,17 @@ const Multiphoto = () => {
               name="image"
               accept="image/*"
               multiple
-              onChange={(e) =>
-                setFieldValue("image", Array.from(e.currentTarget.files))
-              }
+              onChange={(e) => {
+                const files = e.currentTarget.files;
+                const fileArray = [];
+                fileArray.push(...files);
+
+                console.log(fileArray);
+                setFieldValue("image", fileArray);
+              }}
             />
-            <br /><br />
+            <br />
+            <br />
 
             <button type="submit">Submit</button>
           </Form>
@@ -97,11 +105,19 @@ const Multiphoto = () => {
 
       <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, mt: 4 }}>
         {data.map((item, index) => (
-          <Box key={index} display="flex" flexDirection="column" alignItems="center">
-            <img src={item.image} alt="Uploaded" width="200" />
-            <br />
+          <>
+            <Box key={index} display="flex" alignItems="center">
+              {item.image.map((img, idx) => (
+                // console.log(img)
+                <Box display={"flex"} flexDirection={"row"}>
+                  <img key={idx} src={img} alt="Uploaded" width="200px" />
+                </Box>
+              ))}
+              <br />
+              <br />
+            </Box>
             <button onClick={() => deleteData(item._id)}>DELETE</button>
-          </Box>
+          </>
         ))}
       </Box>
     </>

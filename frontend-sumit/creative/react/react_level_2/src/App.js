@@ -37,10 +37,10 @@ function App() {
 {/* <Files></Files> */}
 {/* <Portfolio></Portfolio> */}
 {/* <ApiCallingImage></ApiCallingImage> */}
-{/* <WeatherApi></WeatherApi> */}
+<WeatherApi></WeatherApi>
 
 {/* <Apiimg></Apiimg> */}
-<Multiphoto></Multiphoto>
+{/* <Multiphoto></Multiphoto> */}
 </>
   );
 }
