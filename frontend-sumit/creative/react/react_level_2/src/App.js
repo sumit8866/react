@@ -16,6 +16,8 @@ import ApiCallingImage from './Apiimg'
 import WeatherApi from './WeatherApi';
 import Apiimg from './Apiimg';
 import Multiphoto from './Multiphoto';
+import Hooks from './Hooks';
+import Textstore from './Textstore'
 
 function App() {
   return (
@@ -37,10 +39,13 @@ function App() {
 {/* <Files></Files> */}
 {/* <Portfolio></Portfolio> */}
 {/* <ApiCallingImage></ApiCallingImage> */}
-<WeatherApi></WeatherApi>
+{/* <WeatherApi></WeatherApi> */}
 
 {/* <Apiimg></Apiimg> */}
 {/* <Multiphoto></Multiphoto> */}
+
+{/* <Hooks></Hooks> */}
+<Textstore></Textstore>
 </>
   );
 }
