@@ -18,6 +18,8 @@ import Apiimg from './Apiimg';
 import Multiphoto from './Multiphoto';
 import Hooks from './Hooks';
 import Textstore from './Textstore'
+import Context from './Context';
+import FormContext from './FormContext';
 
 function App() {
   return (
@@ -45,7 +47,9 @@ function App() {
 {/* <Multiphoto></Multiphoto> */}
 
 {/* <Hooks></Hooks> */}
-<Textstore></Textstore>
+{/* <Textstore></Textstore> */}
+{/* <Context></Context> */}
+<FormContext></FormContext>
 </>
   );
 }
