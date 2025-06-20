@@ -16,7 +16,7 @@ function App() {
   
   {/* <Props demo={{name:"Sumit" , age:20}}></Props>
    */}
-  {/* <Props demo={[{name:"Sumit" , age:20},{name:"raj",age:40},{name:"radha",age:4}]}></Props> */}
+  <Props demo={[{name:"Sumit" , age:20},{name:"raj",age:40},{name:"radha",age:4}]} demos={[{name:"Sumit" , age:20}]}></Props>
 
 <State></State>
 

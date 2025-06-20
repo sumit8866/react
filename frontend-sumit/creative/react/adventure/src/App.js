@@ -1,13 +1,15 @@
 
 import './App.css';
 import Header from './components/Header';
-import Herosection from './components/Herosection';
+import Homesection from './components/Homesection'
+import AutoPlay from './components/Slider';
 
 
 function App() {
   return (
     <>
-    <Herosection></Herosection>
+    <Homesection></Homesection>
+    {/* <AutoPlay></AutoPlay> */}
     </>
   );
 }

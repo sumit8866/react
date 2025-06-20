@@ -166,7 +166,7 @@ const Crud2 = () => {
     copydata.splice(index, 1);
     setlist(copydata);
     if (edit === index) {
-      setedit(null); // reset if deleted item is being edited
+      setedit(null);
     }
   };
 

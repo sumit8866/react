@@ -26,7 +26,7 @@ import React from 'react'
 //   export default Props
 
 
-const Props = ({demo}) => {
+const Props = ({demo,demos}) => {
     const getid = (index) => {
         return index + 1
     }
@@ -49,7 +49,13 @@ const Props = ({demo}) => {
                         </tr>
                     ))
                 }
-                    
+                    {
+                        demos.map((item,index)=>(
+                            <>
+                            <p>{item.name}</p>
+                            <p>{item.age}</p></>
+                        ))
+                    }
               </table>
     </div>
      )

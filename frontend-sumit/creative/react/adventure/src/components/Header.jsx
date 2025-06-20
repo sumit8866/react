@@ -49,12 +49,14 @@ const Header = () => {
               {navItems.map((item) => (
                 <li key={item}>
                   <a
-                    href={`#${item.toLowerCase().replace(/\s/g, "")}`}
+                  className="nav-link"
+                    href={`${item.toLowerCase().replace(/\s/g, "")}`}
                     style={{
                       color: "white",
                       textDecoration: "none",
                       fontWeight: "500",
                       fontSize: "16px",
+                     
                     }}
                   >
                     {item}
@@ -98,7 +100,7 @@ const Header = () => {
             {navItems.map((item) => (
               <li key={item} style={{ marginBottom: "15px" }}>
                 <a
-                  href={`#${item.toLowerCase().replace(/\s/g, "")}`}
+                  href={`${item.toLowerCase().replace(/\s/g, "")}`}
                   style={{
                     color: "white",
                     textDecoration: "none",

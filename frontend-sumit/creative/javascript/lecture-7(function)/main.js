@@ -73,7 +73,7 @@
     console.log(`and i got ${mark} in english`);
   }
   function callback(){
-    console.log(`my name is sumit`);
+   return console.log(`my name is sumit`);
     
   }
   first(90,callback)

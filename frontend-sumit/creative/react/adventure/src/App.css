@@ -19,3 +19,18 @@ body{
 .background-img{
   background-image: url('./image/herobgimg.jpg');
 }
+
+
+.slick-slide:focus {
+  outline: none !important;
+}
+
+
+.slick-slide > div {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.nav-link:hover{
+
+color: gray;
+}
