@@ -1,5 +1,11 @@
-import React, { useState } from "react";
-import { Box, Drawer, IconButton, Typography } from "@mui/material";
+import React, { useState, useEffect } from "react";
+import {
+  Box,
+  Drawer,
+  IconButton,
+  Typography,
+  useTheme,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Logo from "../image/logo.png";
@@ -8,29 +14,51 @@ const navItems = ["Home", "About", "Tour", "Hotels", "Contact", "Add Listing"];
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prev) => !prev);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      setScrolled(offset > 100); 
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-    
-      <Box sx={{  height: "80px" }}>
+      <Box
+        sx={{
+          height: "80px",
+          width: "100%",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: 1300,
+          backgroundColor: scrolled ? "#000" : "transparent",
+          transition: "background-color 0.3s ease",
+        }}
+      >
         <Box
-          width={{xs:'100%', md:'80%'}}
+          width={{ xs: "100%", md: "80%" }}
           mx="auto"
           height="100%"
           display="flex"
           alignItems="center"
           justifyContent="space-between"
         >
-         
           <Box>
-            <img src={Logo} alt="Logo" style={{paddingLeft:'10px'}}/>
+            <img
+              src={Logo}
+              alt="Logo"
+            />
           </Box>
 
-          
           <Box
             component="nav"
             sx={{
@@ -49,14 +77,13 @@ const Header = () => {
               {navItems.map((item) => (
                 <li key={item}>
                   <a
-                  className="nav-link"
-                    href={`${item.toLowerCase().replace(/\s/g, "")}`}
+                    className="nav-link"
+                    href={`#${item.toLowerCase().replace(/\s/g, "")}`}
                     style={{
                       color: "white",
                       textDecoration: "none",
                       fontWeight: "500",
                       fontSize: "16px",
-                     
                     }}
                   >
                     {item}
@@ -66,7 +93,6 @@ const Header = () => {
             </ul>
           </Box>
 
-         
           <IconButton
             sx={{ color: "white", display: { xs: "block", md: "none" } }}
             onClick={handleDrawerToggle}
@@ -76,7 +102,6 @@ const Header = () => {
         </Box>
       </Box>
 
-      
       <Drawer
         anchor="right"
         open={mobileOpen}
@@ -86,11 +111,7 @@ const Header = () => {
         }}
       >
         <Box p={2}>
-          <Box
-            display="flex"
-            justifyContent="space-between"
-            alignItems="center"
-          >
+          <Box display="flex" justifyContent="space-between" alignItems="center">
             <Typography variant="h6">Menu</Typography>
             <IconButton onClick={handleDrawerToggle} sx={{ color: "white" }}>
               <CloseIcon />
@@ -100,7 +121,7 @@ const Header = () => {
             {navItems.map((item) => (
               <li key={item} style={{ marginBottom: "15px" }}>
                 <a
-                  href={`${item.toLowerCase().replace(/\s/g, "")}`}
+                  href={`#${item.toLowerCase().replace(/\s/g, "")}`}
                   style={{
                     color: "white",
                     textDecoration: "none",

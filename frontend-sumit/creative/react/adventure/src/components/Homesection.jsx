@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Box, Typography, Button, Paper } from "@mui/material";
+import { Box, Typography, Button, Paper, Rating } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-
 import herobg1 from "../image/herobgimg.jpg";
 import herobg2 from "../image/slider2.jpg";
 import herobg3 from "../image/slider3.jpg";
@@ -15,6 +14,9 @@ import service3 from "../image/customer-service.png";
 import service4 from "../image/search.png";
 import about from "../image/about-img.jpg";
 import Header from "./Header";
+import axios from "axios";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { useNavigate } from "react-router-dom";
 
 const slides = [
   {
@@ -75,7 +77,6 @@ const CustomNextArrow = (props) => {
         transform: "translateY(-50%)",
         zIndex: 3,
         cursor: "pointer",
-
         color: "white",
       }}
     >
@@ -105,6 +106,10 @@ const CustomPrevArrow = (props) => {
 };
 
 const Sliders = () => {
+  // const navigate = useNavigate();
+
+  const key = "Ofokc8bYPo2MB7Ll";
+  const [data, setData] = useState([]);
   const settings = {
     arrows: true,
     infinite: true,
@@ -118,6 +123,20 @@ const Sliders = () => {
     prevArrow: <CustomPrevArrow />,
   };
 
+  const getdata = () => {
+    axios
+      .get("https://generateapi.onrender.com/api/detailstour", {
+        headers: { Authorization: key },
+      })
+      .then((res) => {
+        setData(res.data.Data);
+      })
+      .catch((err) => console.error("Fetch error:", err));
+  };
+
+  useEffect(() => {
+    getdata();
+  }, []);
   return (
     <>
       <Box className="slider-container" style={{ position: "relative" }}>
@@ -268,62 +287,61 @@ const Sliders = () => {
         </Box>
       </Box>
 
-       <Box
-    
-      sx={{
-        width: "90%",
-        display: "flex",
-        flexDirection: { xs: "column", md: "row" },
-        alignItems: "center",
-        justifyContent: "center",
-        px: { xs: 2, md: 4 },
-        py: { xs: 4, md: 6 },
-        gap: { xs: 4, md: 0 },
-      }}
-    >
-      {/* Left - Image */}
       <Box
         sx={{
-          width: { xs: "100%", md: "60%" },
+          width: "90%",
           display: "flex",
-          justifyContent: "center",
+          flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
+          justifyContent: "center",
+          px: { xs: 2, md: 4 },
+          py: { xs: 4, md: 6 },
+          gap: { xs: 4, md: 0 },
         }}
       >
         <Box
-          component="img"
-          src={about}
-          alt="About Section"
           sx={{
-            width: { xs: "80%", sm: "70%", md: "60%" },
-            border: "50px solid",
-            borderColor: "transparent #ff0055 transparent #ff0055",
-            boxSizing: "border-box",
+            width: { xs: "100%", md: "60%" },
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-        />
-      </Box>
+        >
+          <Box
+            component="img"
+            src={about}
+            alt="About Section"
+            sx={{
+              width: { xs: "80%", sm: "70%", md: "70%" },
+              border: "50px solid",
+              borderColor: "transparent #ff0055 transparent #ff0055",
+              boxSizing: "border-box",
+            }}
+          />
+        </Box>
 
-      {/* Right - Text */}
-      <Box
-        sx={{
-          width: { xs: "100%", md: "60%" },
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Box sx={{ width: { xs: "90%", sm: "85%", md: "70%" } }}>
-          <Typography
-            variant="h4"
-            sx={{ width: { xs: "100%", md: "80%" }, mb: 3 }}
-          >
-            We Realize that there are reduced Wastage Stand out
-          </Typography>
+        {/* Right - Text */}
+        <Box
+          sx={{
+            width: { xs: "100%", md: "60%" },
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Box sx={{ width: { xs: "80%", sm: "85%", md: "70%" } }}>
+            <Typography
+              variant="h4"
+              sx={{ width: { xs: "100%", md: "80%" }, mb: 3 }}
+            >
+              We Realize that there are reduced Wastage Stand out
+            </Typography>
 
-          {["Inappropriate behavior is often laughed off as “boys will be boys.” Women face higher conduct standards – especially in the workplace. That’s why it’s crucial that, as women.",
-            "Inappropriate behavior is often laughed off as “boys will be boys.” Women face higher conduct standards – especially in the workplace.",
-            "Inappropriate behavior is often laughed off as “boys will be boys.” Women face higher conduct standards – especially in the workplace."]
-            .map((text, index) => (
+            {[
+              "Inappropriate behavior is often laughed off as “boys will be boys.” Women face higher conduct standards – especially in the workplace. That’s why it’s crucial that, as women.",
+              "Inappropriate behavior is often laughed off as “boys will be boys.” Women face higher conduct standards – especially in the workplace.",
+              "Inappropriate behavior is often laughed off as “boys will be boys.” Women face higher conduct standards – especially in the workplace.",
+            ].map((text, index) => (
               <Typography
                 key={index}
                 variant="body2"
@@ -332,9 +350,104 @@ const Sliders = () => {
                 {text}
               </Typography>
             ))}
+          </Box>
         </Box>
       </Box>
-    </Box>
+
+      <Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 2,
+            width: "80%",
+            margin: "auto",
+          }}
+        >
+          {data.slice(0,4).map((item) => (
+            <Box
+              key={item._id}
+              border="1px solid #ccc"
+              borderRadius={2}
+              textAlign="center"
+              width={250}
+              margin={'30px 0px 50px 0px'}
+            >
+              {item.image.length > 0 && (
+                <img
+                  src={item.image[0]}
+                  alt="Tour"
+                  width="100%"
+                  height="250px"
+                  style={{ marginBottom: "8px", objectFit: "cover" }}
+                />
+              )}
+              <Box>
+                <Box
+                  display="flex"
+                  justifyContent="space-between"
+                  alignItems="center"
+                  mb={1}
+                  px={1}
+                >
+                  <Typography height={'45px'} display={'flex'} alignItems={'center'} variant="p" fontSize={'18px'} textAlign={'start'} fontWeight="bold">
+                    {item.title}
+                  </Typography>
+                  <Typography variant="subtitle1" color="primary">
+                    ${item.price}
+                  </Typography>
+                </Box>
+                <Box display="flex" alignItems="center" gap={0.5} mb={1} px={1}>
+                  <Rating size="small" value={item.rating} readOnly />
+                  <Typography variant="body2" fontWeight={300}>
+                    {item.ratingCount} Rating
+                  </Typography>
+                </Box>
+                <Typography
+                  variant="body2"
+                  color="gray"
+                  mb={1}
+                  px={2}
+                  textAlign="start"
+                  height={"100px"}
+                  whiteSpace={"wrap"}
+                  overflow={"hidden"}
+                  textOverflow={"ellipsis"}
+                >
+                  {item.description}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="gray"
+                  mb={1}
+                  p={2}
+                  textAlign="start"
+                >
+                  {item.day} Days / {item.night} Nights
+                </Typography>
+                <Box
+                  
+                >
+                  <Box display="flex" alignItems="center" justifyContent={'center'}>
+                    <LocationOnIcon fontSize="small" color="action" />
+                    <Typography variant="body2">{item.location.toUpperCase()}</Typography>
+                  </Box>
+                  <Button
+                    size="small"
+                    variant="contained"
+                    color="success"
+                    
+                    sx={{margin:'10px'}}
+                    // onClick={() => navigate(`/tour/${item._id}`)}
+                  >
+                    Discover
+                  </Button>
+                </Box>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
     </>
   );
 };

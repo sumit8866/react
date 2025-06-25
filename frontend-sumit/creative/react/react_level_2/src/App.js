@@ -44,12 +44,12 @@ function App() {
 {/* <WeatherApi></WeatherApi> */}
 
 {/* <Apiimg></Apiimg> */}
-{/* <Multiphoto></Multiphoto> */}
+<Multiphoto></Multiphoto>
 
 {/* <Hooks></Hooks> */}
 {/* <Textstore></Textstore> */}
 {/* <Context></Context> */}
-<FormContext></FormContext>
+{/* <FormContext></FormContext> */}
 </>
   );
 }
